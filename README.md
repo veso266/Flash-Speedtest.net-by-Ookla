@@ -40,7 +40,7 @@ after having the sources, the keygen in 2 languages it still wasn't enough, I wa
 but I wanted the API Ookla uses to show the results, I saved the pictures and decided to rewrite it but....
 in February 2017 (02.02.2017) to be precise everything changed my happines was better than ever and I completely forgot who I am, for once I didn't need a computer or a radio to be happy, I just was every day and every night, being awake was better then being asleep :smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile:
 
-but I knew :sad:, I kne... my happiness will end as I had to go, and in 11.07.2018 as we knew the results for national Matura it was the last day, after that I slowly walked out of high-school :sad:, and my happiness ended :sad: and it still hasn't returned 
+but I knew :cry: , I kne... my happiness will end as I had to go, and in 11.07.2018 as we knew the results for national Matura it was the last day, after that I slowly walked out of high-school :cry: , and my happiness ended :cry: and it still hasn't returned 
 
 I did all this in the time I was still happy, I got an F occasionaly but....life was so so sweat :smile:, this is the song that makes me normal now and describes that times for a bit: [Ana Bekuta - Ljubav bez adrese]: https://www.youtube.com/watch?v=bZoxRLwfBX0
 and this one: [Ana Bekuta - Voli me voli]: https://www.youtube.com/watch?v=NrChc23jn50
