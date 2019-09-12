@@ -1,0 +1,45 @@
+<settings>
+<licensekey>c3331be178c7ee59-W33029200a56f3d9c-75021f8679871ecd</licensekey>
+<customer>trial</customer>
+<servers>
+<!--
+ upload.php, upload.jsp, upload.aspx or upload.asp can be used
+-->
+<server url="http://installationurl/speedtest/upload.php" />
+</servers>
+<!--
+ testlength - number of seconds download test should last (default = 10)
+ threads - 1 for single download thread or 2 for two parallel threads (default = 2)
+ maximagesize - largest sample file that will be used for the download test (default = 40M)
+-->
+<download testlength="10" threads="2" maximagesize="40M" />
+<!--
+ testlength - number of seconds upload test should last (default = 10)
+ ratio - assumed ratio of upload speed to download speed (default = 10)
+ threads - 1 for single upload thread or 2 for two parallel threads (default = 2)
+ maxchunksize - largest block of data so send at a time during upload test (default = 1M)
+ maxchunkcount - maximum number of blocks of data to send (default = 10)
+ disabled - set this to true to completely disable the upload test (default = false)
+-->
+<upload testlength="10" ratio="10" threads="2" maxchunksize="256K" maxchunkcount="100" disabled="false" />
+<!--
+ testlength - number of samples to use for calculating http latency (default = 10)
+-->
+<latency testlength="10" />
+<!--
+ autostart - true would make the test start on page load without needing to press a button (default = false)
+ repeat - the number of seconds between the test repeating indefinitely (default = 0)
+-->
+<extras autostart="false" repeat="0" />
+<!--
+ incrementtemplate - choose between 10M, 20M, 50M and 100M for the maximum value of the speedometer (default = 20M)
+ template - choose between kbps and mbps for showing speeds in kbps or Mbps (default = kbps)
+ clienticon - choose between person, computer, house, laptop (default = person)
+ servericon - choose between pyramid, globe, building, rack, tower and satellite (default = pyramid)
+ showborder - toggle the border around the test (default = true)
+-->
+<interface incrementtemplate="50M" template="mbps" clienticon="person" servericon="globe" showborder="true" />
+<errors linktodocs="true" />
+<reporting jsreporting="2" />
+<ip enabled="2" />
+</settings>

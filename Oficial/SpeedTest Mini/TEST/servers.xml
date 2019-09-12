@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+<servers><server url="http://hinglajnetwork.com/speedtest/upload.php" lat="72.5800" lon="72.5800" name="Ahmedabad" country="India" cc="IN" sponsor="Hinglaj Network Pvt. Ltd." id="12126"  host="hinglajnetwork.com:8080" />
+<server url="http://88.84.191.230/speedtest/upload.php" lat="70.0733" lon="29.7497" name="Vadso" country="Norway" cc="NO" sponsor="Varanger KraftUtvikling AS" id="4600"  url2="http://speedmonster.varangerbynett.no/speedtest/upload.php" host="88.84.191.230:8080" />
+<server url="http://speedtest.nornett.net/speedtest/upload.php" lat="69.9403" lon="23.3106" name="Alta" country="Norway" cc="NO" sponsor="Nornett AS" id="4961"  url2="http://speedtest2.nornett.net/speedtest/upload.php" host="speedtest.nornett.net:8080" />
+<server url="http://speedo.eltele.no/speedtest/upload.php" lat="69.9403" lon="23.3106" name="Alta" country="Norway" cc="NO" sponsor="Eltele AS" id="3433"  host="speedo.eltele.no:8080" />
+<server url="http://tos.speedtest.as2116.net/speedtest/upload.php" lat="69.6492" lon="18.9553" name="Tromso" country="Norway" cc="NO" sponsor="Broadnet" id="11786"  host="tos.speedtest.as2116.net:8080" />
+<server url="http://speedtest.videosatnet.com.br/speedtest/upload.php" lat="-11.7655" lon="-63.0314" name="Seringueiras" country="Brazil" cc="BR" sponsor="VIDEOSAT" id="10460"  url2="http://speedtest1.videosatnet.com.br/speedtest/upload.php" host="speedtest.videosatnet.com.br:8080" />
+<server url="http://ush.supercanal.com.ar/speedtest/upload.php" lat="-54.8019" lon="-68.3029" name="Ushuaia" country="Argentina" cc="AR" sponsor="Arlink" id="14267"  host="ush.supercanal.com.ar:8080" />
+</servers>
+</settings>

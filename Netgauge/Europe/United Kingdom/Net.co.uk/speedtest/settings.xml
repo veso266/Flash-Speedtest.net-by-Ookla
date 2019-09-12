@@ -1,0 +1,47 @@
+<settings>
+<licensekey>V3#3107#D20181231#S1#cbe685f05c29cc80-S14bab6ea9ced4f01-W75710bf2dee8be69-Wefe12bccfbf691d4-He4cbd96a50ca2c1c-Heefdb7356ce22c01-H5d13341814b629a4-da1dc783a188afcc-f0728ff581f553f0</licensekey>
+<customer>xilo</customer>
+<servers>
+<server name="RDG" id="1">
+  <method type="tcp" host="host-1.speedtest.net.uk:8080"/>
+  <method type="http" url="http://host-1.speedtest.net.uk/speedtest/upload.php" url2="http://host-2.speedtest.net.uk/speedtest/upload.php"/>
+</server>
+</servers>
+<!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates
+ connection - broadband, fiber, lan 
+-->
+<configuration connection="fiber"/>
+<!--  NetGauge settings: 
+ activetests - test list from speedtest,latency,packetloss,firewall 
+-->
+<netgauge activetests="speed, latency"/>
+<!--  skiponfailure - Skip test when Java is missing instead of displaying an error 
+-->
+<java skiponfailure="true"/>
+<interface clienticon="user" incrementtemplate="100M" template="hybridmbps" servericon="globe"/>
+<!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration 
+-->
+<endoftest columns="4" toprow="LLSS" bottomrow="JJSS"/>
+<errors linktodocs="false" showexpirewarning="false"/>
+<linequality packetlosslength="100" packetlosspause="20"/>
+<extras autostart="false" repeat="0" allowinteractions="true"/>
+<!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3)  
+-->
+<ip enabled="1" ip="%CLIENT_IP%"/>
+<reporting jsreporting="2"/>
+
+<download testlength="10" initialtest="250K" mintestsize="250K" threadsperurl="4"/>
+<upload testlength="10" ratio="5" initialtest="0" mintestsize="32K" threads="2" maxchunksize="512K" maxchunkcount="50" threadsperurl="4"/>
+<latency testlength="10" waittime="50" timeout="20"/>
+<socket-download testlength="15" initialthreads="4" minthreads="4" maxthreads="32" threadratio="750K" maxsamplesize="5000000" minsamplesize="32000" startsamplesize="1000000" startbuffersize="1" bufferlength="5000" packetlength="1000" readbuffer="65536"/>
+<socket-upload testlength="15" initialthreads="dyn:tcpulthreads" minthreads="dyn:tcpulthreads" maxthreads="32" threadratio="750K" maxsamplesize="1000000" minsamplesize="32000" startsamplesize="100000" startbuffersize="2" bufferlength="1000" packetlength="1000" disabled="false"/>
+<socket-latency testlength="10" waittime="50" timeout="20"/>
+
+<conditions>
+<cond name="tcpulthreads" download="+40000" value="8"/>
+<cond name="tcpulthreads" download="+10000" value="4"/>
+<cond name="tcpulthreads" value="2"/>
+</conditions>
+
+</settings>

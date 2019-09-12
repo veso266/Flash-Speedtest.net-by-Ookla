@@ -1,0 +1,3 @@
+standard-wide-new-1button.swf = http://c.speedtest.net/flash/standard-wide-new-1button.swf?v=352081
+wave-bd-wide.swf = http://c.speedtest.net/flash/wave-bd-wide.swf?v=352081
+59rvvrpc.swf = http://c.speedtest.net/flash/59rvvrpc.swf

@@ -1,0 +1,166 @@
+<settings>
+    <licensekey>V3#2996#D20180331#S34#674c81345abf31f0-S95a91acfb9906d22-95a5a7ef9564dc3f-aa108de7ece09349-40243ea52fd1e5db-17b116a1b60c4a48-3b81eb222c01a660-39f2d3e27445283c-67b5b82d4e524fb6-bc59b875c56c952d-22c90352c9e3d9ac-f2d0e2e3b94d079c-a9bcbe361da69180-7532548df501a220-8923ef54093e83dd-f63ed8abff3c6df5-3f40e4c2116e6697-ba8e6d3395ad2c36-b0f145b790adab3f-339aebf0a7f205b8-d7bb392dfca2b6f6-ee1233bde546ce0e-ce757ca31c64a225-59976b47e536ff09-9fb7281315dd8588-a880971d9e653754-3e71f2daed43edeb-43ebd98a449c7f85-7e24d4dae35ddc90-1cb4925c06e3dbfd-2c6b3665c8d6a2af-abc73c5e5c8d2ff5-7a0b7610a8d47246-9ecc5ad634b0501e-bfeb0f86553bde01-3c9cfacf3e1054ee-5b1e249c6fb22dc6-45b5cbdd6587fb91-5989d886f4e84d93-75562028c6ae7e0d-9811caa318643ad6-1eb504d50ab238eb-d07d50127901482a-f7285042da074577-0e0790c3efd99399-bb29cc710e7f7086-da45920847d5fb1a-b0f145b790adab3f-252becfff017272c-64c33efc50288146-71a1940fc109ca2a-5d9e61e9f1c907ab-d9065f7a681d875d-8a698b43f851db19-6063a8a2e1ffaa55-7cfc279c23d3814a-d8be74af89f39a3d-3f33973a6d496696-f75c347b1df98b91-bbadd18a4cd34261-33fc9a6e085b63d1-57026a8e358fd1ce-8b2f155f9c160e4b-b4a1d99c42b95b5d-e7f09f4b391dc169-044ed67d90443c6a-9c9bbaf19cbd3613-362cda7f38b47391-bb2e18f7228d6100-a9e9ac4760696f4b-109885c5dfb83db2-fae34e847a0727e8-152151a9e5351d7f-76f262ba89801fcf-ec4a6324206ac5b8-ad81aaa2764e5666-958ece5bf144a073-64b682c26c65ff28-92b7c128a65622e6-86b767e83d12c0ab-Wc4e79938a4438915-Wcca73a1ca9c330d0-W1fd9e677a662784e-Wbca9de7f4b354b21-W96e1311f767171ae-W5dd97160f1681611-3b006184a020e4ed-W0b5c7e3a7ae26d8e-4abae14e24c331d9-d66ebbaada15cf1e-Wb7c62a2420fff851-cead3963b8064e21-Wa7cbce0bcfaece3b-W1fe11ac8d56130af-1f54bc9d87e7f0ea</licensekey>
+    <customer>chartercorporate</customer>
+    <servers>
+        <server name="Allendale, MI" id="1" lat="43.0161" lon="-84.1267">
+            <method type="tcp" host="spt01aldlmi.aldl.mi.charter.com:8080"/>
+            <method type="http" url="http://spt01aldlmi.aldl.mi.charter.com/speedtest/upload.php" url2="http://spt01aldlmi-thd-1.aldl.mi.charter.com/speedtest/upload.php"/>
+        </server>
+        <!--server name="Olivette, MO" id="2" lat="38.8900" lon="-90.6270">
+            <method type="tcp" host="spt01olvemo.stls.mo.charter.com:8080"/>
+            <method type="http" url="http://spt01olvemo.stls.mo.charter.com/speedtest/upload.php" url2="http://spt01olvemo-thd-1.stls.mo.charter.com/speedtest/upload.php"/>
+        </server-->
+        <server name="Sugar Hill, GA" id="3" lat="33.5000" lon="-84.5000">
+            <method type="tcp" host="spt01sghlga.sghl.ga.charter.com:8080"/>
+            <method type="http" url="http://spt01sghlga.sghl.ga.charter.com/speedtest/upload.php" url2="http://spt01sghlga-thd-1.sghl.ga.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Monterey Park, CA" id="4" lat="34.1855" lon="-118.3140">
+            <method type="tcp" host="spt01mtpkca.mtpk.ca.charter.com:8080"/>
+            <method type="http" url="http://spt01mtpkca.mtpk.ca.charter.com/speedtest/upload.php" url2="http://spt01mtpkca-thd-1.mtpk.ca.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="San Luis Obispo, CA" id="5" lat="37.9780" lon="-121.5970">
+            <method type="tcp" host="spt01snloca.snlo.ca.charter.com:8080"/>
+            <method type="http" url="http://spt01snloca.snlo.ca.charter.com/speedtest/upload.php" url2="http://spt01snloca-thd-1.snlo.ca.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Eau Claire, WI" id="6" lat="44.3289" lon="-89.3966">
+            <method type="tcp" host="spt01euclwi.eucl.wi.charter.com:8080"/>
+            <method type="http" url="http://spt01euclwi.eucl.wi.charter.com/speedtest/upload.php" url2="http://spt01euclwi-thd-1.eucl.wi.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Oxford, MA" id="7" lat="42.1852" lon="-72.5636">
+            <method type="tcp" host="spt01oxfrma.oxfr.ma.charter.com:8080"/>
+            <method type="http" url="http://spt01oxfrma.oxfr.ma.charter.com/speedtest/upload.php" url2="http://spt01oxfrma-thd-1.oxfr.ma.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Medford, OR" id="8" lat="44.2165" lon="-118.7828">
+            <method type="tcp" host="spt01mdfdor.mdfd.or.charter.com:8080"/>
+            <method type="http" url="http://spt01mdfdor.mdfd.or.charter.com/speedtest/upload.php" url2="http://spt01mdfdor-thd-1.mdfd.or.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Reno, NV" id="9" lat="39.5545" lon="-119.8060">
+            <method type="tcp" host="spt01renonv.reno.nv.charter.com:8080"/>
+            <method type="http" url="http://spt01renonv.reno.nv.charter.com/speedtest/upload.php" url2="http://spt01renonv-thd-1.reno.nv.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Fort Worth, TX" id="10" lat="32.7279" lon="-97.3169">
+            <method type="tcp" host="spt01ftwotx.ftwo.tx.charter.com:8080"/>
+            <method type="http" url="http://spt01ftwotx.ftwo.tx.charter.com/speedtest/upload.php" url2="http://spt01ftwotx-thd-1.ftwo.tx.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Slidell, LA" id="11" lat="30.2932" lon="-89.7954">
+            <method type="tcp" host="spt01slidla.slid.la.charter.com:8080"/>
+            <method type="http" url="http://spt01slidla.slid.la.charter.com/speedtest/upload.php" url2="http://spt01slidla-thd-1.slid.la.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Kearney, NE" id="12" lat="40.7571" lon="-99.1087">
+            <method type="tcp" host="spt01krnyne.krny.ne.charter.com:8080"/>
+            <method type="http" url="http://spt01krnyne.krny.ne.charter.com/speedtest/upload.php" url2="http://spt01krnyne-thd-1.krny.ne.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="St Cloud, MN" id="13" lat="45.5574" lon="-94.1859">
+            <method type="tcp" host="spt01stcdmn.stcd.mn.charter.com:8080"/>
+            <method type="http" url="http://spt01stcdmn.stcd.mn.charter.com/speedtest/upload.php" url2="http://spt01stcdmn-thd-1.stcd.mn.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Kingsport, TN" id="14" lat="35.0000" lon="-84.8888">
+            <method type="tcp" host="spt01kgpttn.kgpt.tn.charter.com:8080"/>
+            <method type="http" url="http://spt01kgpttn.kgpt.tn.charter.com/speedtest/upload.php" url2="http://spt01kgpttn-thd-1.kgpt.tn.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Cheyenne, WY" id="15" lat="41.1399" lon="-104.8202">
+		  <method type="tcp" host="spt01chynwy.chyn.wy.charter.com:8080"/>
+		  <method type="http" url="http://spt01chynwy.chyn.wy.charter.com/speedtest/upload.php" url2="http://spt01chynwy-thd-1.chyn.wy.charter.com/speedtest/upload.php"/>
+		</server>
+        <server name="Casper, WY" id="16" lat="42.8666" lon="-106.3130">
+		  <method type="tcp" host="spt01csprwy.cspr.wy.charter.com:8080"/>
+		  <method type="http" url="http://spt01csprwy.cspr.wy.charter.com/speedtest/upload.php" url2="http://spt01csprwy-thd-1.cspr.wy.charter.com/speedtest/upload.php"/>
+		</server>
+        <!--<server name="Grand Junction, CO" id="17" lat="39.0638" lon="-108.5506">
+            <method type="tcp" host="spt01gdjtco.gdjt.co.charter.com:8080"/>
+            <method type="http" url="http://spt01gdjtco.gdjt.co.charter.com/speedtest/upload.php" url2="http://spt01gdjtco-thd-1.gdjt.co.charter.com/speedtest/upload.php"/>
+        </server>
+        <server name="Missoula, MT" id="18" lat="46.5813" lon="-114.2737">
+            <method type="tcp" host="spt01msslmt.mssl.mt.charter.com:8080"/>
+            <method type="http" url="http://spt01msslmt.mssl.mt.charter.com/speedtest/upload.php" url2="http://spt01msslmt-thd-1.mssl.mt.charter.com/speedtest/upload.php"/>
+        </server>-->
+        <server name="Billings, MT" id="19" lat="45.7832" lon="-108.5006">
+            <method type="tcp" host="spt01blngmt.blng.mt.charter.com:8080"/>
+            <method type="http" url="http://spt01blngmt.blng.mt.charter.com/speedtest/upload.php" url2="http://spt01blngmt-thd-1.blng.mt.charter.com/speedtest/upload.php"/>
+        </server>
+        <!--<server name="Bakersfield, CA" id="20" lat="35.3987" lon="-119.0391">
+		  <method type="tcp" host="bakrp-speedtest-01.noc.bhn.net:8081"/>
+		  <method type="http" url="http://bakrp-speedtest-01.noc.bhn.net/speedtest/upload.php"/>
+		</server>-->
+        <!--<server name="Birmingham, AL" id="21" lat="33.5456" lon="-86.7399">
+		  <method type="tcp" host="bhamp-speedtest-01.noc.bhn.net:8081"/>
+		  <method type="http" url="http://bhamp-speedtest-01.noc.bhn.net/speedtest/upload.php"/>
+		</server>-->
+        <server name="Livonia, MI" id="22" lat="42.3906" lon="-83.3737">
+            <method type="tcp" host="detrp-speedtest-01.noc.bhn.net:8081"/>
+            <method type="http" url="http://detrp-speedtest-01.noc.bhn.net/speedtest/upload.php"/>
+        </server>
+        <!--<server name="Indianapolis, IN" id="23" lat="39.7968" lon="-86.1137">
+		  <method type="tcp" host="indpp-speedtest-01.noc.bhn.net:8081"/>
+		  <method type="http" url="http://indpp-speedtest-01.noc.bhn.net/speedtest/upload.php"/>
+		</server>-->
+        <!--<server name="Orlando, FL" id="24" lat="28.6096" lon="-81.4242">
+            <method type="tcp" host="orldp-speedtest-01.noc.bhn.net:8081"/>
+            <method type="http" url="http://orldp-speedtest-01.noc.bhn.net/speedtest/upload.php"/>
+        </server>-->
+        <server name="Tampa, FL" id="25" lat="28.0862" lon="-82.5354">
+            <method type="tcp" host="tampp-speedtest-01.noc.bhn.net:8081"/>
+            <method type="http" url="http://tampp-speedtest-01.noc.bhn.net/speedtest/upload.php"/>
+        </server>
+        <server name="Austin, TX" id="26" lat="30.4000" lon="-97.7528">
+            <method type="tcp" host="speedtest.texas.rr.com:8080"/>
+            <method type="http" url="http://speedtest.texas.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Syracuse, NY" id="27" lat="43.0353" lon="-76.2093">
+            <method type="tcp" host="speedtest.nyroc.rr.com:8080"/>
+            <method type="http" url="http://speedtest.nyroc.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="New York, NY" id="28" lat="40.8339" lon="-73.9605">
+            <method type="tcp" host="speedtest.nyc.rr.com:8080"/>
+            <method type="http" url="http://speedtest.nyc.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Columbus, OH" id="29" lat="39.9806" lon="-83.0235">
+            <method type="tcp" host="speedtest.ohiordc.rr.com:8080"/>
+            <method type="http" url="http://speedtest.ohiordc.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Durham, NC" id="30" lat="35.9619" lon="-78.8733">
+            <method type="tcp" host="speedtest.southeast.rr.com:8080"/>
+            <method type="http" url="http://speedtest.southeast.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Centennial, CO" id="31" lat="39.5989" lon="-104.8623">
+            <method type="tcp" host="speedtest.peakview.rr.com:8080"/>
+            <method type="http" url="http://speedtest.peakview.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Los Angeles, CA" id="32" lat="34.0300" lon="-118.1500">
+            <method type="tcp" host="lsanca-speedtest-01.socal.rr.com:8080"/>
+            <method type="http" url="http://lsanca-speedtest-01.socal.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Mililani, Hawaii" id="33" lat="21.4460" lon="-158.0287">
+            <method type="tcp" host="milnhi-speedtest-01-a.hawaii.rr.com:8080"/>
+            <method type="http" url="http://milnhi-speedtest-01-a.hawaii.rr.com/speedtest/upload.php"/>
+        </server>
+        <server name="Mauna Lani, Hawaii" id="34" lat="19.9393" lon="-155.8568">
+            <method type="tcp" host="kmlahi07-speedtest-01-a.hawaii.rr.com:8080"/>
+            <method type="http" url="http://kmlahi07-speedtest-01-a.hawaii.rr.com/speedtest/upload.php"/>
+        </server>
+    </servers>
+    <!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates
+ connection - broadband, fiber, lan 
+-->
+    <configuration connection="broadband"/>
+    <!--  NetGauge settings: 
+ activetests - test list from speedtest,latency,packetloss,firewall 
+-->
+    <netgauge activetests="speed, latency"/>
+    <!--  skiponfailure - Skip test when Java is missing instead of displaying an error 
+-->
+    <java skiponfailure="true"/>
+    <interface clienticon="house" displayserver="1" incrementtemplate="1G" template="mbps" servericon="office"/>
+    <!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration 
+-->
+    <endoftest columns="2" toprow="SS" bottomrow="SS"/>
+    <errors linktodocs="true"/>
+    <linequality packetlosslength="100" packetlosspause="20"/>
+    <extras autostart="false" repeat="0"/>
+    <!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3)  
+-->
+    <ip enabled="3" ip="%CLIENT_IP%"/>
+    <reporting jsreporting="3"/>
+    <share enabled="true"/>
+</settings>

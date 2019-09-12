@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<!--Title-->
+	<title>Network Performance and Speed Test - UK Speedtest - Speed Test - Broadband Speed Test - FTTC Speed Test</title>
+
+	<!--Meta-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="XILO Communications Ltd." />
+	<meta name="copyright" content="&copy; copyright 2003-2018 XILO Communications Ltd. All rights reserved." />
+	<meta name="audience" content="all" />
+	<meta name="language" content="en" />
+	<meta name="description" content="Test your broadband or internet connection speed with our web-based test. Once complete, use our helpful code to post your test results on forums, blogs and websites." />
+	<meta name="keywords" content="XILO, uno Broadband, speedtest, performance" />
+	<meta name="robots" content="noarchive, noimageindex, notranslate, noodp, noydir, index, follow" />
+	<meta name="googlebot" content="noarchive, noimageindex, notranslate, noodp, noydir, index, follow" />
+	<meta name="rating" content="general" />
+	<meta name="distribution" content="global" />
+	<meta name="revisit-after" content="1" />
+	
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="/css/style.css" media="screen, projection" />
+	<!--[if lt IE 8]>
+	<link href="/css/ie6.css" media="screen" rel="stylesheet" type="text/css" />
+	<![endif]-->
+    
+	<!--javascript-->
+	<!--[if lt IE 9]>
+	<script src="https://ie7-js.googlecode.com/svn/version/2.1(beta1)/IE9.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="swfobject.js"></script>
+	<script type="text/javascript" src="browserdetect.js"></script>
+	<script type="text/javascript" src="functions_v3.js"></script>
+	<script type="text/javascript">
+	var loadedApplet = "";
+	function loadJava(applet) {
+        if(loadedApplet == applet) {
+                return;
+        } else {
+                loadedApplet = applet;
+        }
+        var e = document.getElementById('javadiv');
+        if(e != null) {
+                if ((BrowserDetect.browser == "Safari") || (BrowserDetect.browser == "Opera")) {
+                    applet = "VoipApplet.jar";
+                }
+                e.innerHTML = "<applet code=\"VoipApplet.class\" archive=\"" + applet + "?blah=" + Math.random() + "\" width=\"1\" height=\"1\" mayscript id=\"VoipApplet\" name=\"VoipApplet\"><param name=\"debug\" value=\"false\"></applet>";
+        }
+	}
+	</script>
+	
+</head>
+
+<body>
+
+
+    <div style="margin-top:50px; margin-bottom:50px">
+        <a href="https://my.xilo.net/link.php?id=38">
+            <img src="https://contentdn.net/banners/x/201205/shared728x90.gif" />
+        </a>
+    </div>
+<div id="wrapper">
+
+        <h3>Speedtest From: <a href="/">Reading, GB</a> | <a href="/sh/">Sheffield, GB</a></h3>
+
+	<div class="testwrap">
+	
+	<div id="flashcontainer">
+	<div id="flashcontent">
+	  This text is replaced by the Flash movie.
+	</div>
+	</div>
+
+	<br/>
+	<script type="text/javascript">
+		var flashvars = {
+			configExtension: "php"
+            
+		};
+		var params = {
+			quality: "high",
+			bgcolor: "#ffffff",
+			allowScriptAccess: "always"
+		};
+		var attributes = {
+			id: "flashtest",
+			name: "flashtest"
+		};
+		swfobject.embedSWF("netgauge.swf?v=3.0", "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+	</script>
+
+	<div id="speed1"></div></td>
+	</tr>
+	<tr><td>
+	<div id="javadiv"></div></td></tr>
+
+
+	</div>
+	<img src="/images/testbtm.png" class="testbtm" width="660" height="11" alt=""/>
+	
+	<div id="belowbefore" class="results pre-test">
+	<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE LINE QUALITY TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+		<p>Details of your speedtest results will appear here. Click "Begin Test" to start.</p>
+	</div>
+	
+	<div id="belowafter" style="display: none;" class="results post-test">
+		<div id="speed">
+		
+		</div>
+	</div>
+	
+	<!-- disabled
+    <div id="belowafter" style="display: none;" class="results post-test-text">
+        <div id="stext"></div>
+    </div>
+    -->
+
+<br />
+
+</div>
+
+</body>
+
+</html>

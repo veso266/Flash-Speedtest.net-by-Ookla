@@ -1,0 +1,39 @@
+<settings>
+<licensekey>V3#3361#D20151015#S1#56b9bdfa561f4ef0-S14bab6ea9ced4f01-2962cf06ce4d80d7-feada1f88df9ec6f-a206c0033345cd9b</licensekey>
+<customer>jamii</customer>
+<servers>
+<server name="NetGauge" id="2"   >
+  <method type="tcp" host="jamii.co.ke:8080" />
+  
+</server>
+</servers>
+<!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates
+ connection - broadband, fiber, lan 
+-->
+<configuration connection="broadband" />
+<!--  NetGauge settings: 
+ activetests - test list from speedtest,latency,packetloss,firewall 
+-->
+<netgauge activetests="speed, latency, packetloss, firewall" />
+<!--  skiponfailure - Skip test when Java is missing instead of displaying an error 
+-->
+<java skiponfailure="true" />
+<interface clienticon="house"  incrementtemplate="100M"  template="mbps"  servericon="office" />
+<!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration 
+-->
+<endoftest
+        columns="5"
+         toprow="LPFSS"
+      bottomrow="JPFSS"
+/>
+<errors linktodocs="true" />
+<linequality packetlosslength="100"  packetlosspause="20" />
+<extras autostart="false"  repeat="0" />
+<!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3)  
+-->
+<ip enabled="3"  ip="%CLIENT_IP%" />
+<reporting jsreporting="3" />
+
+
+</settings>

@@ -1,0 +1,44 @@
+<settings>
+<licensekey>V3#2646#D20160401#S3#6563ca5e56fe1c70-S651c6392cd8d7603-91eb5807512814f6-033499313657a2cb-5918c04598c2c30b-d4b8ed9438a6be39-06bd2fc3fc7131c0</licensekey>
+<customer>telecomnz</customer>
+<servers>
+<server name="Auckland" id="3">
+  <method type="tcp" host="speedtest-auckland.telecom.co.nz:8080"/>
+  <method type="http" url="http://speedtest-auckland.telecom.co.nz/speedtest/upload.php"/>
+  
+</server><server name="Wellington" id="4">
+  <method type="tcp" host="speedtest-wellington.telecom.co.nz:8080"/>
+  <method type="http" url="http://speedtest-wellington.telecom.co.nz/speedtest/upload.php"/>
+  
+</server><server name="Christchurch" id="5">
+  <method type="tcp" host="speedtest-christchurch.telecom.co.nz:8080"/>
+  <method type="http" url="http://speedtest-christchurch.telecom.co.nz/speedtest/upload.php"/>
+  
+</server>
+</servers>
+<!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates
+ connection - broadband, fiber, lan 
+-->
+<configuration connection="broadband"/>
+<!--  NetGauge settings: 
+ activetests - test list from speedtest,latency,packetloss,firewall 
+-->
+<netgauge activetests="speed, latency"/>
+<!--  skiponfailure - Skip test when Java is missing instead of displaying an error 
+-->
+<java skiponfailure="true"/>
+<interface clienticon="house" incrementtemplate="100M" template="mbps" servericon="office"/>
+<!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration 
+-->
+<endoftest columns="5" toprow="LPFSS" bottomrow="JPFSS"/>
+<errors linktodocs="true"/>
+<linequality packetlosslength="100" packetlosspause="20"/>
+<extras autostart="false" repeat="0"/>
+<!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3)  
+-->
+<ip enabled="3" ip="%CLIENT_IP%"/>
+<reporting jsreporting="3"/>
+
+
+</settings>

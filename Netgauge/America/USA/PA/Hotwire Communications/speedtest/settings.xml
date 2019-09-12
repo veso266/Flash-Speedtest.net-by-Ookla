@@ -1,0 +1,47 @@
+<settings>
+<licensekey>V3#2675#D20170714#S5#5ee6ec2d59686bf0-Sa6680ca31be17f05-abfdc7b44c818bf7-cff2f58d9eed85b4-4e17f79f95d4bc3e-ff0355b636b0fb6b-a3f2b1dd4947dbc8-1bc225eeb6ecc03d-1a03aa44f9d272f4</licensekey>
+<customer>hotwire</customer>
+<servers>
+<server name="Philadelphia" id="1">
+  <method type="tcp" host="speedtest.gethotwired.com:8080"/>
+  <method type="http" url="http://speedtest.gethotwired.com/speedtest/upload.php"/>
+</server><server name="Miami" id="2">
+  <method type="tcp" host="speedtestfl.gethotwired.com:8080"/>
+  <method type="http" url="http://speedtestfl.gethotwired.com/speedtest/upload.php"/>
+</server><server name="Atlanta" id="3">
+  <method type="tcp" host="speedtestga.gethotwired.com:8080"/>
+  <method type="http" url="http://speedtestga.gethotwired.com/speedtest/upload.php"/>
+</server><server name="Boca Raton" id="4">
+  <method type="tcp" host="speedtestboca.gethotwired.com:8080"/>
+  <method type="http" url="http://speedtestboca.gethotwired.com/speedtest/upload.php"/>
+</server><server name="Naples" id="5">
+  <method type="tcp" host="speedtestnaples.gethotwired.com:8080"/>
+  <method type="http" url="http://speedtestnaples.gethotwired.com/speedtest/upload.php"/>
+</server>
+</servers>
+<!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates
+ connection - broadband, fiber, lan 
+-->
+<configuration connection="gigabit"/>
+<!--  NetGauge settings: 
+ activetests - test list from speedtest,latency,packetloss,firewall 
+-->
+<netgauge activetests="speed, latency"/>
+<!--  skiponfailure - Skip test when Java is missing instead of displaying an error 
+-->
+<java skiponfailure="true"/>
+<interface clienticon="house" incrementtemplate="1000M" template="mbps" servericon="office"/>
+<!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration 
+-->
+<endoftest columns="5" toprow="LSSSS" bottomrow="LSSSS"/>
+<errors linktodocs="true"/>
+<linequality packetlosslength="100" packetlosspause="20"/>
+<extras autostart="false" repeat="0"/>
+<!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3)  
+-->
+<ip enabled="3" ip="%CLIENT_IP%"/>
+<reporting jsreporting="3"/>
+
+
+</settings>

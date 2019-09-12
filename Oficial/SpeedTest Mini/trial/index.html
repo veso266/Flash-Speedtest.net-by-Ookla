@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Trial Ookla Bandwidth Speed Test</title>
+</head>
+<body bgcolor="#ffffff">
+
+White Interface | <a href="index-black.html">Switch To Black Interface</a><br/><br/>
+
+<div id="abovebefore">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP ABOVE THE SPEED TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+Edit index.html to change or remove this example content that will <strong>disappear after</strong> the test is run once.
+</div>
+
+<div id="aboveafter" style="display: none;">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP ABOVE THE SPEED TEST AFTER IT COMPLETES -->
+This content will <strong>not appear until after</strong> the test is run once. Edit index.html to change or remove it.
+</div>
+
+<br/>
+
+<script type="text/javascript" src="swfobject.js"></script>
+<div id="speedtest">
+The Ookla Speed Test requires at least version 8 of Flash. <a href="http://get.adobe.com/flashplayer/">Please update your client</a>.
+</div>
+<script type="text/javascript">
+	var flashvars = {};
+	var params = {
+		quality: "high",
+		bgcolor: "#ffffff",
+		allowScriptAccess: "always"
+	};
+	var attributes = {};
+	swfobject.embedSWF("speedtest-white.swf?v=2.1.7", "speedtest", "640", "400", "8.0.0", "expressInstall.swf", flashvars, params, attributes);
+</script>
+<script type="text/javascript" src="functions.js"></script>
+<div id="speed"></div>
+
+<br/>
+
+<div id="belowbefore">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE SPEED TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+This content will <strong>disappear after</strong> the test is run once. Edit index.html to change or remove it.
+<br/><br/>
+If you are having trouble getting things working as expected, then please see our <a href="http://wiki.ookla.com" target="_blank">documentation</a>.
+</div>
+
+<div id="belowafter" style="display: none;">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE SPEED TEST AFTER IT COMPLETES -->
+Edit index.html to change or remove this example content that will <strong>not appear until after</strong> the test is run once.
+</div>
+
+</body>
+</html>

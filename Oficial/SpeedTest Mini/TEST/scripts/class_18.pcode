@@ -1,0 +1,1475 @@
+package
+{
+   import package_4.class_24;
+   
+   class class_18
+   {
+      
+      {
+         method
+         name null
+         returns null
+         
+         body
+         maxstack 3
+         localcount 1
+         initscopedepth 3
+         maxscopedepth 4
+         
+         code
+         getlocal_0
+         pushscope
+         returnvoid
+         end ; code
+         end ; body
+         end ; method
+      }
+      
+      protected var var_198 = "fours4me";
+      
+      protected var var_91 = "bling^bling";
+      
+      protected var var_173 = "n0v4super";
+      
+      protected var var_178:String;
+      
+      protected var var_137:String;
+      
+      protected var var_81:Array;
+      
+      protected var var_219:String;
+      
+      protected var var_235:Boolean = false;
+      
+      protected var var_149:Array;
+      
+      protected var var_142:Array;
+      
+      function class_18()
+      {
+         method
+         name null
+         returns null
+         
+         body
+         maxstack 6
+         localcount 3
+         initscopedepth 4
+         maxscopedepth 5
+         
+         code
+         pushfalse
+         pushtrue
+         swap
+         jump ofs000d
+         convert_u
+         subtract_i
+         pushscope
+         add_i
+         bitnot
+         modulo
+         ofs000d:setlocal_1
+         setlocal_2
+         getlocal_0
+         pushscope
+         getlocal_1
+         dup
+         iffalse ofs001a
+         pop
+         getlocal_0
+         convert_b
+         ofs001a:iftrue ofs005f
+         jump ofs0028
+         subtract
+         subtract
+         dxnslate
+         negate_i
+         newactivation
+         convert_o
+         ofs0028:getlocal_0
+         findpropstrict Qname(PackageNamespace(""),"Array")
+         pushstring "ookla.com"
+         pushstring "speedtest.net"
+         constructprop Qname(PackageNamespace(""),"Array") 2
+         initproperty Qname(ProtectedNamespace("_-G"),"var_149")
+         getlocal_1
+         dup
+         iffalse ofs004a
+         pop
+         getlocal_2
+         convert_b
+         jump ofs004a
+         lessequals
+         newactivation
+         convert_o
+         strictequals
+         multiply_i
+         convert_u
+         ofs004a:iftrue ofs005f
+         getlocal_0
+         findpropstrict Qname(PackageNamespace(""),"Array")
+         constructprop Qname(PackageNamespace(""),"Array") 0
+         initproperty Qname(ProtectedNamespace("_-G"),"var_142")
+         getlocal_2
+         iffalse ofs005f
+         getlocal_0
+         constructsuper 0
+         ofs005f:returnvoid
+         end ; code
+         end ; body
+         end ; method
+      }
+      
+      public function method_213(param1:*) : *
+      {
+         trait method Qname(PackageNamespace(""),"method_213")
+         dispid 0
+         method
+         name null
+         param null
+         returns null
+         
+         body
+         maxstack 8
+         localcount 10
+         initscopedepth 4
+         maxscopedepth 5
+         
+         code
+         pushfalse
+         pushtrue
+         swap
+         jump ofs0011
+         pushfalse
+         kill 5
+         kill 4
+         kill 7
+         declocal 7
+         pushnull
+         ofs0011:setlocal 8
+         setlocal 9
+         getlocal_0
+         pushscope
+         pushundefined
+         coerce_a
+         setlocal 4
+         pushundefined
+         coerce_a
+         setlocal 5
+         pushundefined
+         coerce_a
+         setlocal 6
+         pushundefined
+         coerce_a
+         setlocal 7
+         getlocal 9
+         iffalse ofs0085
+         getlocal_1
+         pushstring "configurationloadfailed"
+         ifne ofs005c
+         getlocal 8
+         dup
+         iffalse ofs003f
+         pop
+         getlocal_3
+         convert_b
+         ofs003f:iftrue ofs0082
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Load Failed"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         pushbyte 4
+         getlocal 8
+         dup
+         iffalse ofs0057
+         pop
+         getlocal_0
+         convert_b
+         ofs0057:iftrue ofs0084
+         returnvalue
+         ofs005c:getlocal_1
+         pushstring ""
+         equals
+         getlocal 9
+         iffalse ofs0071
+         dup
+         iftrue ofs0076
+         getlocal 9
+         iffalse ofs0076
+         ofs0071:pop
+         getlocal_1
+         getlex Qname(PackageNamespace(""),"undefined")
+         equals
+         ofs0076:iffalse ofs0085
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - License Key is missing"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         ofs0082:pushbyte 5
+         ofs0084:returnvalue
+         ofs0085:getlocal_1
+         pushstring "gallery"
+         ifne ofs0181
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Gallery Mode"
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlex Qname(PackageNamespace(""),"class_59")
+         getproperty Qname(PackageNamespace(""),"var_1")
+         getproperty Qname(PackageNamespace(""),"loaderInfo")
+         getproperty Qname(PackageNamespace(""),"loaderURL")
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"toLowerCase") 0
+         coerce_a
+         setlocal 4
+         getlex Qname(PackageInternalNs(""),"class_6")
+         getlocal 4
+         callproperty Qname(PackageNamespace(""),"method_31") 1
+         coerce_a
+         setlocal 5
+         getlocal 9
+         dup
+         iftrue ofs00bb
+         pop
+         getlocal_1
+         convert_b
+         ofs00bb:iffalse ofs00d7
+         getlocal 4
+         pushbyte 0
+         getlocal 4
+         pushstring ":"
+         callproperty Multiname("indexOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 1
+         callproperty Multiname("substr",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 2
+         pushstring "http"
+         ifne ofs0181
+         ofs00d7:getlocal 4
+         pushbyte 0
+         getlocal 4
+         pushstring "/"
+         getlocal 5
+         getproperty Multiname("length",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")])
+         pushbyte 8
+         add
+         callproperty Multiname("indexOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 2
+         pushbyte 1
+         add
+         callproperty Multiname("substr",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 2
+         coerce_a
+         setlocal 6
+         getlocal 9
+         dup
+         iftrue ofs0100
+         pop
+         getlocal_1
+         convert_b
+         ofs0100:iffalse ofs010f
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "URL: "
+         getlocal 6
+         add
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         ofs010f:getlex Qname(PackageNamespace("package_4"),"class_24")
+         pushstring "G$LL/RY"
+         getlocal 6
+         add
+         callproperty Qname(PackageNamespace(""),"hash") 1
+         coerce_a
+         dup
+         setlocal 7
+         pushstring "03855aacab57ed1311cca775f3caa3d5"
+         equals
+         getlocal 9
+         dup
+         iftrue ofs013a
+         jump ofs0137
+         declocal 3
+         checkfilter
+         modulo
+         nextvalue
+         swap
+         setlocal 5
+         ofs0137:pop
+         getlocal_1
+         convert_b
+         ofs013a:iffalse ofs0166
+         dup
+         iftrue ofs0166
+         getlocal 9
+         dup
+         iftrue ofs014d
+         pop
+         getlocal_2
+         convert_b
+         ofs014d:iffalse ofs0166
+         pop
+         getlocal 8
+         dup
+         iffalse ofs015c
+         pop
+         getlocal_1
+         convert_b
+         ofs015c:iftrue ofs0170
+         getlocal 7
+         pushstring "c3b855db38606921e3e82ee65e237ae5"
+         equals
+         ofs0166:iffalse ofs0181
+         getlocal 8
+         iftrue ofs0181
+         ofs0170:getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Gallery URL Valid"
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlocal 9
+         iffalse ofs0181
+         pushbyte 0
+         returnvalue
+         ofs0181:getlocal_1
+         pushstring "-"
+         callproperty Multiname("split",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 1
+         coerce Qname(PackageNamespace(""),"Array")
+         setlocal_2
+         getlocal 8
+         dup
+         iffalse ofs0196
+         pop
+         getlocal_2
+         convert_b
+         ofs0196:iftrue ofs01dd
+         getlocal_0
+         getlocal_1
+         setproperty Qname(ProtectedNamespace("_-G"),"var_219")
+         getlocal 8
+         iftrue ofs01dd
+         getlocal_0
+         findpropstrict Qname(PackageNamespace(""),"String")
+         getlocal_2
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"pop") 0
+         callproperty Qname(PackageNamespace(""),"String") 1
+         setproperty Qname(ProtectedNamespace("_-G"),"var_178")
+         getlocal 9
+         dup
+         iftrue ofs01bd
+         pop
+         getlocal_0
+         convert_b
+         ofs01bd:iffalse ofs01e2
+         getlocal_0
+         findpropstrict Qname(PackageNamespace(""),"String")
+         getlocal_2
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"shift") 0
+         callproperty Qname(PackageNamespace(""),"String") 1
+         setproperty Qname(ProtectedNamespace("_-G"),"var_137")
+         getlocal 9
+         dup
+         iftrue ofs01d9
+         pop
+         getlocal_1
+         convert_b
+         ofs01d9:iffalse ofs01e2
+         ofs01dd:getlocal_0
+         getlocal_2
+         setproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         ofs01e2:pushbyte 0
+         coerce_a
+         setlocal_3
+         getlocal 8
+         iftrue ofs0201
+         getlocal_0
+         callproperty Qname(PackageNamespace(""),"method_246") 0
+         getlocal 9
+         iffalse ofs025b
+         iftrue ofs0219
+         getlocal 8
+         iftrue ofs0236
+         ofs0201:pushbyte 3
+         getlocal 9
+         iffalse ofs026d
+         coerce_a
+         setlocal_3
+         getlocal 8
+         iftrue ofs0219
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Invalid Host"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         ofs0219:getlocal_0
+         callproperty Qname(PackageNamespace(""),"method_326") 0
+         getlocal 9
+         iffalse ofs025b
+         iftrue ofs0256
+         getlocal 9
+         dup
+         iftrue ofs0232
+         pop
+         getlocal_1
+         convert_b
+         ofs0232:iffalse ofs026b
+         ofs0236:pushbyte 2
+         getlocal 8
+         iftrue ofs026d
+         coerce_a
+         setlocal_3
+         getlocal 9
+         dup
+         iftrue ofs024a
+         pop
+         getlocal_1
+         convert_b
+         ofs024a:iffalse ofs0256
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - License Expired"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         ofs0256:getlocal_0
+         callproperty Qname(PackageNamespace(""),"method_263") 0
+         ofs025b:iftrue ofs027d
+         jump ofs026b
+         getglobalscope
+         lessequals
+         declocal_i 4
+         convert_o
+         declocal_i 7
+         urshift
+         ofs026b:pushbyte 1
+         ofs026d:coerce_a
+         setlocal_3
+         getlocal 9
+         iffalse ofs027d
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Invalid License"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         ofs027d:getlocal_3
+         returnvalue
+         end ; code
+         end ; body
+         end ; method
+      }
+      
+      public function method_263() : Boolean
+      {
+         trait method Qname(PackageNamespace(""),"method_263")
+         dispid 0
+         method
+         name null
+         returns Qname(PackageNamespace(""),"Boolean")
+         
+         body
+         maxstack 7
+         localcount 4
+         initscopedepth 4
+         maxscopedepth 5
+         
+         code
+         pushfalse
+         pushtrue
+         swap
+         jump ofs0010
+         instanceof
+         inclocal 2
+         instanceof
+         kill 2
+         kill 2
+         nextname
+         ofs0010:setlocal_2
+         setlocal_3
+         getlocal_0
+         pushscope
+         getlocal_2
+         iftrue ofs0077
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_137")
+         getlocal_2
+         dup
+         iffalse ofs0026
+         pop
+         getlocal_3
+         convert_b
+         ofs0026:iftrue ofs004f
+         getproperty Qname(PackageNamespace(""),"length")
+         pushbyte 16
+         ifeq ofs0046
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Bad Date Hash Length"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         pushfalse
+         getlocal_2
+         iftrue ofs0078
+         returnvalue
+         getlocal_2
+         iftrue ofs0046
+         ofs0046:getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_178")
+         getlocal_2
+         iftrue ofs0092
+         ofs004f:getproperty Qname(PackageNamespace(""),"length")
+         pushbyte 16
+         ifeq ofs0079
+         getlocal_2
+         dup
+         iffalse ofs006b
+         pop
+         getlocal_2
+         convert_b
+         jump ofs006b
+         convert_s
+         getlocal_2
+         dup
+         bitnot
+         divide
+         kill 2
+         ofs006b:iftrue ofs0079
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Bad Global Hash Length"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         ofs0077:pushfalse
+         ofs0078:returnvalue
+         ofs0079:getlex Qname(PackageNamespace("package_4"),"class_24")
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_219")
+         pushbyte 0
+         pushbyte -16
+         decrement
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"slice") 2
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_198")
+         add
+         callproperty Qname(PackageNamespace(""),"hash") 1
+         ofs0092:pushbyte 0
+         pushbyte 16
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         coerce_a
+         setlocal_1
+         getlocal_2
+         iftrue ofs00da
+         getlocal_1
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_178")
+         ifeq ofs00e1
+         getlocal_2
+         dup
+         iffalse ofs00b3
+         pop
+         getlocal_0
+         convert_b
+         ofs00b3:iftrue ofs00e1
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Corrupted License (Global)"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         getlocal_3
+         dup
+         iftrue ofs00d6
+         jump ofs00d3
+         declocal 2
+         getlocal_2
+         inclocal 2
+         inclocal_i 2
+         setlocal_3
+         declocal_i 2
+         ofs00d3:pop
+         getlocal_1
+         convert_b
+         ofs00d6:iffalse ofs00e1
+         ofs00da:pushfalse
+         getlocal_3
+         iffalse ofs00e2
+         returnvalue
+         ofs00e1:pushtrue
+         ofs00e2:returnvalue
+         end ; code
+         end ; body
+         end ; method
+      }
+      
+      public function method_246() : Boolean
+      {
+         trait method Qname(PackageNamespace(""),"method_246")
+         dispid 0
+         method
+         name null
+         returns Qname(PackageNamespace(""),"Boolean")
+         
+         body
+         maxstack 6
+         localcount 12
+         initscopedepth 4
+         maxscopedepth 5
+         
+         code
+         pushfalse
+         pushtrue
+         swap
+         jump ofs000f
+         inclocal 9
+         inclocal_i 3
+         pushwith
+         convert_d
+         pop
+         greaterthan
+         ofs000f:setlocal 10
+         setlocal 11
+         getlocal_0
+         pushscope
+         pushundefined
+         coerce_a
+         setlocal_2
+         pushundefined
+         coerce_a
+         setlocal_3
+         pushundefined
+         coerce_a
+         setlocal 5
+         pushnull
+         coerce_s
+         setlocal 6
+         pushundefined
+         coerce_a
+         setlocal 7
+         pushundefined
+         coerce_a
+         setlocal 8
+         getlocal 11
+         dup
+         iftrue ofs0035
+         pop
+         getlocal_0
+         convert_b
+         ofs0035:iffalse ofs004c
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Current URL: "
+         getlex Qname(PackageNamespace(""),"class_59")
+         getproperty Qname(PackageNamespace(""),"var_1")
+         getproperty Qname(PackageNamespace(""),"loaderInfo")
+         getproperty Qname(PackageNamespace(""),"loaderURL")
+         add
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         ofs004c:getlex Qname(PackageNamespace(""),"class_59")
+         getproperty Qname(PackageNamespace(""),"var_1")
+         getproperty Qname(PackageNamespace(""),"loaderInfo")
+         getproperty Qname(PackageNamespace(""),"loaderURL")
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"toLowerCase") 0
+         coerce_a
+         setlocal_1
+         getlocal 10
+         iftrue ofs0070
+         getlocal_1
+         pushstring "?"
+         callproperty Multiname("indexOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 1
+         pushbyte -1
+         ifngt ofs0081
+         ofs0070:getlocal_1
+         pushbyte 0
+         getlocal_1
+         pushstring "?"
+         callproperty Multiname("indexOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 1
+         callproperty Multiname("substr",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 2
+         coerce_a
+         setlocal_1
+         ofs0081:getlex Qname(PackageInternalNs(""),"class_6")
+         getlocal_1
+         callproperty Qname(PackageNamespace(""),"method_187") 1
+         coerce_a
+         setlocal_2
+         getlocal 11
+         iffalse ofs009a
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Domain: "
+         getlocal_2
+         add
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         ofs009a:getlex Qname(PackageInternalNs(""),"class_6")
+         getlocal_1
+         callproperty Qname(PackageNamespace(""),"method_31") 1
+         coerce_a
+         setlocal_3
+         getlocal 10
+         dup
+         iffalse ofs00ad
+         pop
+         getlocal_0
+         convert_b
+         ofs00ad:iftrue ofs00bb
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Host: "
+         getlocal_3
+         add
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         ofs00bb:pushbyte 0
+         coerce_a
+         setlocal 4
+         jump ofs02b6
+         ofs00c4:label
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         getlocal 4
+         getproperty MultinameL([PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")])
+         coerce_s
+         getlocal 10
+         dup
+         iffalse ofs00d9
+         pop
+         getlocal_3
+         convert_b
+         ofs00d9:iftrue ofs01f1
+         setlocal 6
+         getlocal 11
+         dup
+         iftrue ofs00e9
+         pop
+         getlocal_0
+         convert_b
+         ofs00e9:iffalse ofs02c8
+         jump ofs01ef
+         ofs00f1:label
+         jump ofs02b0
+         ofs00f6:label
+         getlex Qname(PackageNamespace("package_4"),"class_24")
+         pushstring "%wildh0st$"
+         getlocal_3
+         add
+         getlocal 10
+         iftrue ofs010a
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_91")
+         add
+         ofs010a:callproperty Qname(PackageNamespace(""),"hash") 1
+         getlocal 10
+         iftrue ofs01f1
+         pushbyte 0
+         getlocal 11
+         iffalse ofs01f3
+         pushbyte 16
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         coerce_a
+         setlocal 7
+         getlocal 11
+         iffalse ofs0175
+         getlocal 6
+         getlocal 10
+         iftrue ofs0199
+         pushstring "H"
+         getlocal 7
+         add
+         ifne ofs017d
+         getlocal 10
+         dup
+         iffalse ofs0147
+         pop
+         getlocal_0
+         convert_b
+         ofs0147:iftrue ofs017d
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Adding host: "
+         getlocal_3
+         add
+         getlocal 10
+         dup
+         iffalse ofs015c
+         pop
+         getlocal_2
+         convert_b
+         ofs015c:iftrue ofs0164
+         pushstring " to wildcard list"
+         add
+         ofs0164:callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlocal 10
+         dup
+         iffalse ofs0171
+         pop
+         getlocal_1
+         convert_b
+         ofs0171:iftrue ofs017d
+         ofs0175:getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_142")
+         getlocal_3
+         callpropvoid Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"push") 1
+         ofs017d:jump ofs02b0
+         ofs0181:label
+         getlex Qname(PackageNamespace("package_4"),"class_24")
+         pushstring "%wildc4rd$"
+         getlocal_2
+         add
+         getlocal 11
+         iffalse ofs0195
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_91")
+         add
+         ofs0195:callproperty Qname(PackageNamespace(""),"hash") 1
+         ofs0199:pushbyte 0
+         pushbyte 16
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         coerce_a
+         setlocal 8
+         getlocal 10
+         iftrue ofs01de
+         getlocal 6
+         pushstring "W"
+         getlocal 8
+         add
+         ifne ofs01e6
+         getlocal 11
+         dup
+         iftrue ofs01c0
+         pop
+         getlocal_0
+         convert_b
+         ofs01c0:iffalse ofs01e6
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Adding domain: "
+         getlocal_2
+         add
+         getlocal 11
+         iffalse ofs01d5
+         pushstring " to wildcard list"
+         add
+         ofs01d5:callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlocal 10
+         iftrue ofs01e6
+         ofs01de:getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_149")
+         getlocal_2
+         callpropvoid Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"push") 1
+         ofs01e6:jump ofs02b0
+         ofs01ea:label
+         jump ofs02b0
+         ofs01ef:getlocal 6
+         ofs01f1:pushbyte 0
+         ofs01f3:callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"charAt") 1
+         setlocal 9
+         getlocal 11
+         iffalse ofs0256
+         pushstring "S"
+         getlocal 9
+         ifstrictne ofs0222
+         getlocal 10
+         iftrue ofs0256
+         pushbyte 0
+         getlocal 11
+         dup
+         iftrue ofs021a
+         pop
+         getlocal_3
+         convert_b
+         ofs021a:iffalse ofs0249
+         jump ofs0281
+         ofs0222:pushstring "H"
+         getlocal 9
+         ifstrictne ofs024d
+         getlocal 11
+         dup
+         iftrue ofs0235
+         pop
+         getlocal_2
+         convert_b
+         ofs0235:iffalse ofs0256
+         pushbyte 1
+         getlocal 10
+         dup
+         iffalse ofs0245
+         pop
+         getlocal_2
+         convert_b
+         ofs0245:iftrue ofs0271
+         ofs0249:jump ofs0281
+         ofs024d:pushstring "W"
+         getlocal 9
+         ifstrictne ofs0275
+         ofs0256:pushbyte 2
+         jump ofs0263
+         convert_b
+         declocal_i 5
+         typeof
+         setlocal_2
+         decrement
+         getlocal_0
+         ofs0263:getlocal 11
+         dup
+         iftrue ofs026d
+         pop
+         getlocal_0
+         convert_b
+         ofs026d:iffalse ofs0281
+         ofs0271:jump ofs0281
+         ofs0275:jump ofs027f
+         pushbyte 3
+         jump ofs027f
+         ofs027f:pushbyte 3
+         ofs0281:kill 9
+         getlocal 10
+         dup
+         iffalse ofs028d
+         pop
+         getlocal_3
+         convert_b
+         ofs028d:iftrue ofs02e8
+         lookupswitch ofs01ea 3 ofs00f1 ofs00f6 ofs0181 ofs01ea
+         getlocal 10
+         dup
+         iffalse ofs02a9
+         ofs02a9:pop
+         getlocal_3
+         convert_b
+         iftrue ofs02b0
+         ofs02b0:getlocal 4
+         increment
+         coerce_a
+         setlocal 4
+         ofs02b6:getlocal 4
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         getproperty Qname(PackageNamespace(""),"length")
+         iflt ofs00c4
+         getlocal 10
+         iftrue ofs02e6
+         ofs02c8:getlocal_1
+         pushbyte 0
+         getlocal_1
+         pushstring ":"
+         callproperty Multiname("indexOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 1
+         callproperty Multiname("substr",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 2
+         pushstring "file"
+         ifne ofs02e6
+         getlocal 11
+         iffalse ofs02e6
+         pushtrue
+         returnvalue
+         ofs02e6:pushbyte 0
+         ofs02e8:coerce_a
+         setlocal 4
+         getlocal 11
+         dup
+         iftrue ofs02f5
+         pop
+         getlocal_3
+         convert_b
+         ofs02f5:iffalse ofs035c
+         jump ofs033a
+         ofs02fd:label
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         getlocal 4
+         getproperty MultinameL([PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")])
+         coerce_a
+         dup
+         setlocal 5
+         getlex Qname(PackageNamespace("package_4"),"class_24")
+         getlocal_1
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_91")
+         add
+         callproperty Qname(PackageNamespace(""),"hash") 1
+         pushbyte 0
+         pushbyte 16
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         ifne ofs0334
+         getlocal 10
+         dup
+         iffalse ofs032e
+         pop
+         getlocal_2
+         convert_b
+         ofs032e:iftrue ofs0334
+         pushtrue
+         returnvalue
+         ofs0334:getlocal 4
+         increment
+         coerce_a
+         setlocal 4
+         ofs033a:getlocal 4
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         getproperty Qname(PackageNamespace(""),"length")
+         iflt ofs02fd
+         getlocal 11
+         dup
+         iftrue ofs0350
+         pop
+         getlocal_1
+         convert_b
+         ofs0350:iffalse ofs035c
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_235")
+         iffalse ofs03e5
+         ofs035c:pushbyte 0
+         getlocal 11
+         dup
+         iftrue ofs0368
+         pop
+         getlocal_0
+         convert_b
+         ofs0368:iffalse ofs03e7
+         coerce_a
+         setlocal 4
+         getlocal 11
+         dup
+         iftrue ofs0379
+         pop
+         getlocal_1
+         convert_b
+         ofs0379:iffalse ofs03e5
+         jump ofs03d9
+         ofs0381:label
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         getlocal 4
+         getproperty MultinameL([PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")])
+         coerce_a
+         dup
+         setlocal 5
+         getlex Qname(PackageNamespace("package_4"),"class_24")
+         pushstring "***trial***"
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_91")
+         add
+         callproperty Qname(PackageNamespace(""),"hash") 1
+         pushbyte 0
+         pushbyte 16
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         ifne ofs03d3
+         getlocal 11
+         dup
+         iftrue ofs03b4
+         pop
+         getlocal_0
+         convert_b
+         ofs03b4:iffalse ofs03c6
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - !!!!!trialtest!!!!!!!!!"
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlocal 10
+         iftrue ofs03d3
+         ofs03c6:getlocal_0
+         callpropvoid Qname(PackageNamespace(""),"method_313") 0
+         getlocal 10
+         iftrue ofs03d3
+         pushtrue
+         returnvalue
+         ofs03d3:getlocal 4
+         increment
+         coerce_a
+         setlocal 4
+         ofs03d9:getlocal 4
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_81")
+         getproperty Qname(PackageNamespace(""),"length")
+         iflt ofs0381
+         ofs03e5:pushbyte 0
+         ofs03e7:coerce_a
+         setlocal 4
+         getlocal 11
+         dup
+         iftrue ofs03f4
+         pop
+         getlocal_0
+         convert_b
+         ofs03f4:iffalse ofs0431
+         jump ofs0447
+         ofs03fc:label
+         getlocal_2
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_149")
+         getlocal 4
+         getproperty MultinameL([PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")])
+         ifne ofs0441
+         getlocal 11
+         dup
+         iftrue ofs0415
+         pop
+         getlocal_2
+         convert_b
+         ofs0415:iffalse ofs0453
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Wildcard: "
+         getlocal_2
+         add
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlocal 11
+         dup
+         iftrue ofs042d
+         pop
+         getlocal_3
+         convert_b
+         ofs042d:iffalse ofs0441
+         ofs0431:pushtrue
+         returnvalue
+         getlocal 11
+         dup
+         iftrue ofs043a
+         ofs043a:pop
+         getlocal_1
+         convert_b
+         iffalse ofs0441
+         ofs0441:getlocal 4
+         increment
+         coerce_a
+         setlocal 4
+         ofs0447:getlocal 4
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_149")
+         getproperty Qname(PackageNamespace(""),"length")
+         iflt ofs03fc
+         ofs0453:pushbyte 0
+         coerce_a
+         setlocal 4
+         getlocal 11
+         dup
+         iftrue ofs0462
+         pop
+         getlocal_2
+         convert_b
+         ofs0462:iffalse ofs047f
+         jump ofs04c0
+         ofs046a:label
+         getlocal_3
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_142")
+         getlocal 4
+         getproperty MultinameL([PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")])
+         ifne ofs04ad
+         getlocal 11
+         iffalse ofs0497
+         ofs047f:getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Host: "
+         getlocal_3
+         add
+         callpropvoid Qname(PackageNamespace(""),"info") 1
+         getlocal 10
+         dup
+         iffalse ofs0493
+         pop
+         getlocal_2
+         convert_b
+         ofs0493:iftrue ofs04cc
+         ofs0497:pushtrue
+         getlocal 10
+         iftrue ofs04cd
+         returnvalue
+         getlocal 11
+         dup
+         iftrue ofs04a6
+         ofs04a6:pop
+         getlocal_2
+         convert_b
+         iffalse ofs04ad
+         ofs04ad:getlocal 4
+         jump ofs04bc
+         declocal 9
+         kill 6
+         newactivation
+         pushwith
+         multiply
+         declocal 3
+         ofs04bc:increment
+         coerce_a
+         setlocal 4
+         ofs04c0:getlocal 4
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_142")
+         getproperty Qname(PackageNamespace(""),"length")
+         iflt ofs046a
+         ofs04cc:pushfalse
+         ofs04cd:returnvalue
+         end ; code
+         end ; body
+         end ; method
+      }
+      
+      public function method_313() : *
+      {
+         trait method Qname(PackageNamespace(""),"method_313")
+         dispid 0
+         method
+         name null
+         returns null
+         
+         body
+         maxstack 4
+         localcount 4
+         initscopedepth 4
+         maxscopedepth 5
+         
+         code
+         pushfalse
+         pushtrue
+         setlocal_2
+         jump ofs000e
+         decrement
+         declocal_i 2
+         lessthan
+         getlocal_1
+         lshift
+         add
+         ofs000e:setlocal_3
+         getlocal_0
+         pushscope
+         pushundefined
+         coerce_a
+         setlocal_1
+         getlocal_3
+         iftrue ofs0046
+         getlex Qname(PackageNamespace(""),"class_59")
+         getproperty Qname(PackageNamespace(""),"var_1")
+         getlocal_3
+         dup
+         jump ofs002b
+         declocal_i 2
+         coerce_s
+         getglobalscope
+         istypelate
+         getlocal_2
+         declocal 2
+         ofs002b:iffalse ofs0032
+         pop
+         getlocal_1
+         convert_b
+         ofs0032:iftrue ofs0056
+         pushstring "trial"
+         getlocal_2
+         iffalse ofs0059
+         callproperty Qname(PackageNamespace(""),"getChildByName") 1
+         pushnull
+         ifeq ofs006b
+         ofs0046:getlex Qname(PackageNamespace(""),"class_59")
+         getproperty Qname(PackageNamespace(""),"var_1")
+         jump ofs0056
+         setlocal_2
+         increment
+         setlocal_2
+         declocal 2
+         inclocal 2
+         getlocal_3
+         ofs0056:pushstring "trial"
+         ofs0059:callproperty Qname(PackageNamespace(""),"getChildByName") 1
+         coerce_a
+         setlocal_1
+         getlocal_3
+         iftrue ofs006b
+         getlocal_1
+         pushstring "trial"
+         callpropvoid Multiname("gotoAndPlay",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 1
+         ofs006b:returnvoid
+         end ; code
+         end ; body
+         end ; method
+      }
+      
+      public function method_326() : Boolean
+      {
+         trait method Qname(PackageNamespace(""),"method_326")
+         dispid 0
+         method
+         name null
+         returns Qname(PackageNamespace(""),"Boolean")
+         
+         body
+         maxstack 6
+         localcount 9
+         initscopedepth 4
+         maxscopedepth 5
+         
+         code
+         pushfalse
+         pushtrue
+         setlocal 7
+         jump ofs0013
+         getlocal 6
+         add_i
+         getlocal 7
+         declocal_i 6
+         inclocal_i 3
+         inclocal 6
+         ofs0013:setlocal 8
+         getlocal_0
+         pushscope
+         pushundefined
+         coerce_a
+         setlocal 6
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_137")
+         pushbyte 8
+         dup
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         coerce_a
+         setlocal_1
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_137")
+         pushbyte 0
+         pushbyte 8
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         coerce_a
+         setlocal_2
+         getlex Qname(PackageNamespace("package_4"),"class_24")
+         getlocal_1
+         getlocal_0
+         getproperty Qname(ProtectedNamespace("_-G"),"var_173")
+         add
+         callproperty Qname(PackageNamespace(""),"hash") 1
+         pushbyte 0
+         pushbyte 8
+         callproperty Qname(Namespace("http://adobe.com/AS3/2006/builtin"),"substr") 2
+         coerce_a
+         setlocal_3
+         getlocal 7
+         iffalse ofs005f
+         getlocal_2
+         getlocal_3
+         ifeq ofs0077
+         getlocal 7
+         iffalse ofs0077
+         ofs005f:getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - Corrupted License (Date)"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         getlocal 8
+         dup
+         iffalse ofs0071
+         pop
+         getlocal_1
+         convert_b
+         ofs0071:iftrue ofs0077
+         pushfalse
+         returnvalue
+         ofs0077:findpropstrict Qname(PackageNamespace(""),"Date")
+         findpropstrict Qname(PackageNamespace(""),"parseInt")
+         getlocal_1
+         pushbyte 16
+         callproperty Qname(PackageNamespace(""),"parseInt") 2
+         pushshort 1000
+         multiply
+         constructprop Qname(PackageNamespace(""),"Date") 1
+         coerce_a
+         setlocal 4
+         getlocal 8
+         iftrue ofs00ee
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "Expiration Date: "
+         getlocal 4
+         callproperty Multiname("getMonth",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         pushbyte 1
+         add
+         add
+         getlocal 8
+         iftrue ofs00e4
+         pushstring "/"
+         getlocal 7
+         iffalse ofs00dd
+         add
+         getlocal 7
+         iffalse ofs00eb
+         getlocal 4
+         callproperty Multiname("getDate",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         add
+         getlocal 7
+         dup
+         iftrue ofs00d6
+         pop
+         getlocal_0
+         convert_b
+         jump ofs00d6
+         inclocal 4
+         not
+         pushundefined
+         getglobalscope
+         urshift
+         getlocal_2
+         ofs00d6:iffalse ofs00e4
+         pushstring "/"
+         ofs00dd:add
+         getlocal 7
+         iffalse ofs00eb
+         ofs00e4:getlocal 4
+         callproperty Multiname("getFullYear",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         add
+         ofs00eb:callpropvoid Qname(PackageNamespace(""),"info") 1
+         ofs00ee:findpropstrict Qname(PackageNamespace(""),"Date")
+         constructprop Qname(PackageNamespace(""),"Date") 0
+         coerce_a
+         setlocal 5
+         getlocal 7
+         dup
+         iftrue ofs0102
+         pop
+         getlocal_2
+         convert_b
+         ofs0102:iffalse ofs0150
+         getlocal 4
+         callproperty Multiname("valueOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         getlocal 5
+         callproperty Multiname("valueOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         ifnlt ofs0150
+         getlocal 8
+         dup
+         iffalse ofs0120
+         pop
+         getlocal_1
+         convert_b
+         ofs0120:iftrue ofs016a
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - License Expired"
+         callpropvoid Qname(PackageNamespace(""),"error") 1
+         getlocal 8
+         dup
+         iffalse ofs0136
+         pop
+         getlocal_0
+         convert_b
+         ofs0136:iftrue ofs016a
+         pushfalse
+         getlocal 7
+         dup
+         iftrue ofs0145
+         pop
+         getlocal_0
+         convert_b
+         ofs0145:iffalse ofs01c3
+         returnvalue
+         getlocal 7
+         iffalse ofs0150
+         ofs0150:getlocal 4
+         callproperty Multiname("valueOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         getlocal 5
+         callproperty Multiname("valueOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         pushint 86400
+         pushshort 1000
+         multiply
+         pushbyte 15
+         multiply
+         add
+         ifnlt ofs01c2
+         ofs016a:getlex Qname(PackageNamespace(""),"Math")
+         getlocal 4
+         callproperty Multiname("valueOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         getlocal 5
+         callproperty Multiname("valueOf",[PrivateNamespace("","72"),PackageNamespace(""),ProtectedNamespace("_-G"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageInternalNs(""),PrivateNamespace("","73"),StaticProtectedNs("_-G"),StaticProtectedNs("Object")]) 0
+         subtract
+         pushint 86400
+         pushshort 1000
+         multiply
+         divide
+         callproperty Qname(PackageNamespace(""),"ceil") 1
+         coerce_a
+         setlocal 6
+         getlocal 7
+         dup
+         iftrue ofs0191
+         pop
+         getlocal_3
+         convert_b
+         ofs0191:iffalse ofs01c2
+         getlex Qname(PackageNamespace(""),"class_4")
+         pushstring "License - License Expiring soon: "
+         getlocal 6
+         jump ofs01aa
+         negate_i
+         kill 7
+         inclocal_i 5
+         instanceof
+         kill 6
+         inclocal 6
+         ofs01aa:add
+         callpropvoid Qname(PackageNamespace(""),"method_10") 1
+         getlocal 7
+         iffalse ofs01c2
+         getlex Qname(PackageInternalNs(""),"class_42")
+         callproperty Qname(PackageInternalNs(""),"method_321") 0
+         getlocal 6
+         callpropvoid Qname(PackageNamespace(""),"method_206") 1
+         ofs01c2:pushtrue
+         ofs01c3:returnvalue
+         end ; code
+         end ; body
+         end ; method
+      }
+   }
+}

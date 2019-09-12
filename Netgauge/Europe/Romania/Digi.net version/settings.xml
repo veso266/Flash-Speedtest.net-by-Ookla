@@ -1,0 +1,37 @@
+<settings>
+
+<licensekey>V3#2875#D20171221#S4#d0b94fe75a3b6a00-S83537abaf89cfe04-c1c74cb770c55d60-5c4b5a49a37c7847-b7f6ef9d6aedd464-aa46c8ff730f74eb-638c16b196f40592-0170364806465a38</licensekey>
+
+<customer>rcsrds</customer>
+<servers>
+<server name="RCS-RDS" id="2">
+  <method type="tcp" host="speedtest1.rcs-rds.ro:8080"/>
+  <method type="http" url="http://speedtest1.rcs-rds.ro/speedtest/upload.php"/> </server>
+</servers>
+<!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates connection - broadband, fiber, lan -->
+<configuration connection="fiber"/>
+<!--  NetGauge settings: activetests - test list from speedtest,latency,packetloss,firewall -->
+<netgauge activetests="speedtest,latency,packetloss,firewall"/>
+<!--  skiponfailure - Skip test when Java is missing instead of displaying an error -->
+<java skiponfailure="true"/>
+<interface displayserver="1" clienticon="house" incrementtemplate="1G" template="mbps" servericon="globe"/>
+<!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration -->
+<endoftest columns="5" toprow="LSSSS" bottomrow="LSSSS"/>
+<errors linktodocs="true" showexpirewarning="false"/>
+<!--  V3 TCP Test - See configuration details here: support.ookla.com/ -->
+<!-- <socket-download initialthreads="9"   minthreads="10" maxthreads="14" startsamplesize="200000" maxsamplesize="1000000" testlength="30" /> 
+<throttling testlimit="10" dailylimit="40" />  -->
+
+<socket-download testlength="120" minthreads="16" initialthreads="16" maxthreads="128" startsamplesize="1000000" maxsamplesize="5000000"/>
+<socket-upload testlength="120" minthreads="16" initialthreads="16" maxthreads="128" startsamplesize="1000000"/>
+<http-download testlength="120" threads="8" initialtest="16M" maximagesize="40M"/>
+<http-upload testlength="120" ratio="1" threads="8" maxchunkcount="50" maxchunksize="4M"/>
+
+<latency testlength="10"/>
+<linequality packetlosslength="100" packetlosspause="20"/>
+<extras autostart="false" repeat="0"/>
+<!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3) -->
+<ip enabled="2" ip="%CLIENT_IP%"/>
+<reporting jsreporting="3"/>
+</settings>

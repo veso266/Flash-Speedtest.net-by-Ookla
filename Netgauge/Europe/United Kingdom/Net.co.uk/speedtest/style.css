@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+	background: url(../images/bg.png) repeat;
+	font: 0.5em/1.4em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #ffffff;
+}
+
+p {
+	font: 12px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+a {
+	font: 12px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: underline;
+	colornone: #313131;
+	color: aliceblue;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+	display: none;
+}
+
+#wrapper {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.header {
+	width: 612px;
+	height: 129px;
+}
+
+.header h1 {
+	width: 470px;
+	height: 129px;
+	text-indent: -999999px;
+	margin-left: 73px;
+	/* background: url(../images/logo.png) no-repeat; */
+}
+
+.testwrap {
+	width: 640px;
+	height: 428px;
+	padding-top: 5px;
+	padding-left: 6px;
+	margin-bottom: -5px;
+	background:url(../images/testbg.jpg) no-repeat;
+}
+
+img.testbtm {
+	position: relative;
+	z-index: 99;
+	margin-left: -14px;
+}
+
+.results {
+	width: 616px;
+	clear: both;
+	margin-top: 55px;
+}
+
+.pre-test {
+	height: 44px;
+	text-align: center;
+	padding-top: 20px;
+	background: url(../images/pretest.jpg) no-repeat;
+}
+
+.pre-test p {
+	text-shadow: #000 0 -1px 0;
+	font-weight: bold;
+}
+
+.post-test-text {
+	height: 64px;
+	text-align: center;
+	padding-top: 5px;
+	background: url(../images/pretest.jpg) no-repeat;
+}
+
+.post-test-text p {
+	text-shadow: #000 0 -1px 0;
+	font-weight: bold;
+}
+
+.post-test {
+	height: 188px;
+	margin-bottom: 50px;
+	padding-top: 25px;
+	padding-left: 10px;
+	background: url(../images/large.jpg) no-repeat;
+}
+
+.contain {
+	width: 635px;
+	height: 150px;
+}
+
+.resulttextall {
+	float: left;
+	display: inline;
+	width: 260px;
+}
+
+.resultimage {
+	float: left;
+	width: 347px;
+	height: 135px;
+}
+
+.resulttext {
+	font-weight: bold;
+	padding-bottom: 6px;
+	font-size: 10px;
+	text-transform: uppercase;
+	width: 250px;
+	float: right;
+	display: inline;
+}
+
+.resulttext input {
+	width: 220px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,55 @@
+<settings>
+<!-- <licensekey>V3#2848#D20171215#S1#a4323a0d5a338100-S14bab6ea9ced4f01-878bf950d1dde3e8-7cd4e1449b4bfe26</licensekey> -->
+<!-- <licensekey>V3#2848#D20171215#S1#a4323a0d5a338100-S14bab6ea9ced4f01-878bf950d1dde3e8-1b870dcf40b968ed-d3e1f144fc3de5bb</licensekey> -->
+<!-- <licensekey>V3#2848#D20180108#S1#a2502da15a532500-S14bab6ea9ced4f01-878bf950d1dde3e8-1b870dcf40b968ed-3fc2b185d32af9db</licensekey> -->
+<licensekey>V3#2848#D20180208#S1#1851f31a5a7c0380-S14bab6ea9ced4f01-878bf950d1dde3e8-1b870dcf40b968ed-7e955bad11bb3202</licensekey>
+
+<customer>upcro</customer>
+<servers>
+  <server name="UPC Romania" id="1">
+      <method type="tcp" host="fiberspeedtest.upcbiz.ro:8888" />
+<!--          <method type="http"
+             url="http://fiberspeedtest.ro/speedtest/upload.php"
+             url2="http://2.fiberspeedtest.ro/speedtest/upload.php"
+             url3="http://3.fiberspeedtest.ro/speedtest/upload.php"
+             url4="http://4.fiberspeedtest.ro/speedtest/upload.php"
+             /> -->
+  </server>
+</servers>
+<!--  Connection Templates: https://support.ookla.com/entries/23000438-NetGauge-Client-Configuration-Templates
+ connection - broadband, fiber, lan 
+-->
+<configuration connection="broadband" />
+<socket-download testlength="20" initialthreads="25" />
+<socket-upload testlength="20" initialthreads="25" />
+<http-download testlength="20" initialtest="1M" initialtestlength="2" threads="4" maximagesize="40M" />
+<http-upload testlength="10" ratio="5" threads="8" maxchunksize="1M" maxchunkcount="1000" />
+
+<!--  NetGauge settings: 
+ activetests - test list from speedtest,latency,packetloss,firewall 
+-->
+<netgauge activetests="speed, latency" />
+<!--  skiponfailure - Skip test when Java is missing instead of displaying an error 
+-->
+<java skiponfailure="true" />
+<interface clienticon="house"  increments="0,5000,10000,25000,50000,100000,250000,500000,1000000"  template="mbps"  servericon="globe" displayserver="1"/>
+<!--  toprow and bottomrow form the end of test grid. That grid can be up to 2x5 - L=latency, P = packetloss, S = speed, F = firewall
+See: https://support.ookla.com/entries/22679642-NetGauge-End-of-Test-Configuration 
+-->
+<endoftest
+        columns="5"
+         toprow="SSSSL"
+      bottomrow="SSSSJ"
+/>
+<errors linktodocs="true" showexpirewarning="false" /> 
+<!-- <errors linktodocs="true" showexpirewarning="false" />  -->
+<!-- <errors linktodocs="true" /> -->
+<linequality packetlosslength="100"  packetlosspause="20" />
+<extras autostart="false"  repeat="0" />
+<!--  enabled - Display IP available modes: disabled (0), local(1), API (2), IP+ISP (3)  
+-->
+<ip enabled="2"  ip="%CLIENT_IP%" />
+<reporting jsreporting="3" />
+
+
+</settings>

@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ookla Speedtest Readme</title>
+	<style type="text/css">
+
+		article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
+		audio,canvas,video{display:inline;zoom:1;}
+		audio:not([controls]){display:none;height:0;}
+		[hidden]{display:none;}
+		html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+		html,button,input,select,textarea{font-family:sans-serif;}
+		a:focus{outline:thin dotted;}
+		a:active,a:hover{outline:0;}
+		h1{font-size:2em;margin:.67em 0;}
+		h2{font-size:1.5em;margin:.83em 0;}
+		h3{font-size:1.17em;margin:1em 0;}
+		h4{font-size:1em;margin:1.33em 0;}
+		h5{font-size:.83em;margin:1.67em 0;}
+		h6{font-size:.75em;margin:2.33em 0;}
+		abbr[title]{border-bottom:1px dotted;}
+		b,strong{font-weight:700;}
+		blockquote{margin:1em 40px;}
+		dfn{font-style:italic;}
+		mark{background:#ff0;color:#000;}
+		code,kbd,pre,samp{font-family:monospace, serif;_font-family:'courier new', monospace;font-size:1em;}
+		pre{white-space:pre-wrap;word-wrap:break-word;}
+		q{quotes:none;}
+		q:before,q:after{content:none;}
+		small{font-size:80%;}
+		sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+		sup{top:-.5em;}
+		sub{bottom:-.25em;}
+		dd{margin:0 0 0 40px;}
+		menu,ol,ul{padding:0 0 0 40px;}
+		nav ul,nav ol{list-style:none;list-style-image:none;}
+		img{border:0;-ms-interpolation-mode:bicubic;}
+		svg:not(:root){overflow:hidden;}
+		fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}
+		legend{border:0;white-space:normal;margin-left:-7px;padding:0;}
+		button,input,select,textarea{font-size:100%;vertical-align:middle;margin:0;}
+		button,input{line-height:normal;}
+		button,html input[type=button],/* 1 */ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;overflow:visible;}
+		button[disabled],input[disabled]{cursor:default;}
+		input[type=checkbox],input[type=radio]{box-sizing:border-box;height:13px;width:13px;padding:0;}
+		input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+		input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}
+		button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+		textarea{overflow:auto;vertical-align:top;}
+		table{border-collapse:collapse;border-spacing:0;}
+		body,figure,form{margin:0;}
+		p,pre,dl,menu,ol,ul{margin:1em 0;}
+
+		html { line-height: 1.4; color: #333; }
+		a, a:visited { color: #33f; }
+		a:hover, a:active, a:focus { color: #f33; }
+		div.content { max-width: 50em; margin: 1em auto 4em; position: relative; }
+		p.footer { margin-top: 4em; font-size: 0.7em; text-align: center; }
+		h1, h2, h3 { text-align: center; }
+		h1 { clear: both; font-size: 2.5em; margin-bottom: 0; }
+		h2 { font-size: 1em; margin: .5em 0; }
+		h3 { font-size: 1.5em; margin: .83em 0; }
+		h4 { font-size: 1.17em; margin: 1em 0; }
+		h5 { font-size: 1em; display: inline; }
+		table, td, th { border: 1px solid #ccc; }
+		table { margin: 2em 0; }
+		td, th { padding: 0.75em; }
+		code { background-color: #ddd; font-size: 0.9em; padding: 0 0.2em; color: #000; }
+		div.logo { float: left; width: 300px; margin-bottom: 2em; }
+		div.expire { float: right; width: 50%; font-size: 80%; padding: 1.5em 0.5em; border: 1px solid #f05223; text-align: center; background: #fee; margin: 0 auto 2em; }
+		div.expire p { margin: 0; }
+		div.section { border-bottom: 1px solid #ddd; padding-bottom: 1em; margin-bottom: 1em; }
+		li { margin: 2em 0; }
+		ol ol { list-style-type: lower-alpha; }
+
+		@media print {
+			html { font-size: 8pt; }
+			div.content { max-width: 100%; margin: 0; }
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="content">
+
+		<div class="logo">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="214.039px" height="67.906px" viewBox="0 0 214.039 67.906" enable-background="new 0 0 214.039 67.906"
+				 xml:space="preserve">
+				<polygon fill="#827A6D" points="138.857,66.801 105.081,33.023 105.081,38.984 132.898,66.801 "/>
+				<polygon fill="#F05223" points="130.373,66.801 105.081,41.51 105.081,47.543 124.339,66.801 "/>
+				<polygon fill="#ECB42D" points="121.742,66.801 105.081,50.141 105.081,56.102 115.785,66.801 "/>
+				<polygon fill="#F05223" points="138.125,23.059 138.125,17.102 114.804,40.422 117.783,43.398 "/>
+				<polygon fill="#827A6D" points="146.666,0 110.521,36.143 113.503,39.123 146.666,5.961 "/>
+				<polygon fill="#ECB42D" points="138.111,0 106.243,31.864 109.224,34.846 138.111,5.961 "/>
+				<path fill="#827A6D" d="M39.305,44.92c0-9.578-6.49-17.427-16.505-17.427c-10.01,0-16.496,7.849-16.496,17.427
+					S12.79,62.348,22.8,62.348C32.815,62.348,39.305,54.498,39.305,44.92 M0,44.92c0-12.976,9.453-22.99,22.801-22.99
+					c13.35,0,22.81,10.015,22.81,22.99c0,12.977-9.459,22.986-22.81,22.986C9.453,67.906,0,57.896,0,44.92"/>
+				<path fill="#827A6D" d="M87.53,44.92c0-9.578-6.489-17.427-16.5-17.427c-10.012,0-16.502,7.849-16.502,17.427
+					s6.49,17.428,16.502,17.428C81.041,62.348,87.53,54.498,87.53,44.92 M48.224,44.92c0-12.976,9.457-22.99,22.807-22.99
+					c13.349,0,22.806,10.015,22.806,22.99c0,12.977-9.457,22.986-22.806,22.986C57.681,67.906,48.224,57.896,48.224,44.92"/>
+				<polygon fill="#827A6D" points="140.722,23.041 146.658,23.041 146.658,61.234 168.435,61.234 168.435,66.799 140.722,66.799 "/>
+				<polygon fill="#827A6D" points="191.796,30.705 191.673,30.705 176.966,66.799 170.296,66.799 188.718,23.041 195.148,23.041
+					213.177,66.799 206.503,66.799 "/>
+				<rect x="97.034" y="23.045" fill="#827A6D" width="6.007" height="43.756"/>
+				<g>
+					<path fill="#827A6D" d="M211.08,23.032c0.496,0,0.982,0.127,1.455,0.381c0.475,0.256,0.844,0.621,1.107,1.097
+						c0.264,0.475,0.396,0.971,0.396,1.483c0,0.512-0.131,1.002-0.391,1.473c-0.262,0.472-0.625,0.837-1.098,1.097
+						c-0.469,0.262-0.959,0.391-1.473,0.391c-0.512,0-1.004-0.129-1.473-0.391c-0.473-0.26-0.836-0.625-1.1-1.097
+						c-0.262-0.471-0.393-0.961-0.393-1.473c0-0.515,0.133-1.011,0.396-1.483c0.266-0.475,0.637-0.841,1.109-1.097
+						C210.097,23.159,210.583,23.032,211.08,23.032z M211.08,23.521c-0.416,0-0.82,0.105-1.215,0.32
+						c-0.393,0.213-0.701,0.518-0.924,0.914s-0.334,0.809-0.334,1.236c0,0.427,0.109,0.836,0.328,1.227s0.523,0.697,0.916,0.914
+						c0.393,0.219,0.803,0.328,1.229,0.328s0.836-0.109,1.229-0.328c0.395-0.217,0.697-0.523,0.914-0.914
+						c0.219-0.391,0.326-0.799,0.326-1.227s-0.109-0.84-0.332-1.236c-0.221-0.396-0.527-0.701-0.924-0.914
+						C211.898,23.627,211.494,23.521,211.08,23.521z M209.781,27.629v-3.186h1.096c0.373,0,0.646,0.029,0.812,0.088
+						c0.168,0.059,0.301,0.162,0.398,0.309c0.102,0.147,0.15,0.301,0.15,0.467c0,0.232-0.084,0.437-0.25,0.609
+						c-0.166,0.172-0.387,0.268-0.66,0.289c0.111,0.047,0.201,0.104,0.27,0.168c0.131,0.127,0.285,0.338,0.473,0.633l0.391,0.623h-0.629
+						l-0.281-0.502c-0.225-0.395-0.4-0.643-0.537-0.742c-0.094-0.072-0.232-0.109-0.412-0.109h-0.303v1.354L209.781,27.629
+						L209.781,27.629z M210.294,25.836h0.625c0.297,0,0.502-0.045,0.609-0.133c0.109-0.09,0.164-0.207,0.164-0.354
+						c0-0.095-0.027-0.179-0.08-0.254c-0.053-0.074-0.125-0.13-0.217-0.166c-0.094-0.037-0.266-0.056-0.516-0.056h-0.586V25.836
+						L210.294,25.836z"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="expire">
+			<p>This Trial Version will expire on <strong class="expire-date">March 19, 2014</strong>.</p>
+			<p>Need a longer trial period? No problem, simply <a href="https://www.ookla.com/order?default=inquire">inquire</a>.</p>
+		</div>
+
+		<h1>Speedtest<sup>&reg;</sup></h1>
+		<h2>Trial Version</h2>
+
+		<div class="section">
+			<h3>Quick Installation Guide</h3>
+			<p>Thank you for trying our fully-functional <strong>Trial Version</strong> of the widely acclaimed Ookla Speedtest. You will find out why we are the de facto global standard in primary network metrics, providing accurate and reliable results since 1999.</p>
+			<p>In fact, now over two-thirds of the world’s ISPs count on Ookla and millions of their customers test cable, DSL, wireless or satellite connections each and every day using this technology. Last year over 260 million people around the world used <a href="http://www.speedtest.net/">Speedtest.net</a>, on the Web or natively on their Android or iOS mobile device.</p>
+		</div>
+
+		<div class="section">
+			<h4>Setup takes just minutes... Get started now!</h4>
+			<p>First, you will need to access to your web directory. Common paths include:</p>
+			<table>
+				<tr>
+					<td>Windows Servers</td>
+					<td><strong>c:\Inetpub\wwwroot\</strong></td>
+				</tr>
+				<tr>
+					<td>Linux Servers</td>
+					<td><strong>/var/www/</strong> or <strong>/home/httpd/</strong> or <strong>/usr/local/apache/htdocs/</strong></td>
+				</tr>
+			</table>
+			<ol>
+				<li>
+					<p><strong>UnZip Package:</strong> Unzip the Trial Package either in your root web directory mentioned above, or a subfolder, such as <em>/speedtest</em>.</p>
+				</li>
+				<li>
+					<p><strong>Upload Test Configuration:</strong></p>
+					<ol>
+						<li>
+							<p>First find the <em>installationurl</em> line in the included <em>settings.xml</em> file.</p>
+							<p>Replace this line with a full URL pointing to one of the included upload scripts. These scripts are located in the speedtest subfolder where you extracted the Trial Package (Step 1). You only need one of these files (<em>upload.php</em>, <em>.aspx</em>, <em>.asp</em>, or <em>.jsp</em>) depending on your Server OS. <strong>Note:</strong> Please contact your System Administrator if you are not sure. It is impossible for Ookla to access or help you with this important setting.</p>
+						</li>
+						<li>
+							<p>Once you know the appropriate upload file to use, open <em>settings.xml</em> in a plain text editor and enter the <em>installationurl</em> line to point directly to that file:</p>
+							<p>Example: <code>http://demo.ookla.com/speedtest/upload.php</code></p>
+						</li>
+						<li>
+							<p>If your web domain is <em>www.mycompany.com</em> and you Unzip the Trial Package into a directory called <em>/apps</em>, then replace <code>installationurl</code> with <code>www.mycompany.com/apps</code> to make the line read:</p>
+							<p><code>&lt;server url="http://www.mycompany.com/apps/speedtest/upload.php" /&gt;</code></p>
+							<p>Note the <code>upload.php</code> portion would be if your server uses PHP, otherwise it would be one of either <code>.asp</code>, <code>.aspx</code>, or <code>.jsp</code>.</p>
+							<p><strong>To Repeat:</strong> If you want to use ASP.NET, ASP, or JSP instead of PHP, you simply need to adjust the <em>installationurl</em> line to end with <code>upload.aspx</code>, <code>upload.asp</code>, or <code>upload.jsp</code>. So for an ASP.NET server you enter:</p>
+							<p><code>&lt;server url="http://www.mycompany.com/apps/speedtest/upload.aspx" /&gt;</code></p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p><strong>Test your changes in Step 2:</strong> Visit the above URL using your web browser to ensure it is correct and working. You should see: <code>size=500</code> or very similar. That is the best sign that the script (<em>installationurl</em> setting) is correct and working properly. If it is not working, you need to again verify that the scripting language is properly configured on the server. If you see the source code of the upload script itself, or an error of any kind, then something is not setup right with the chosen scripting language on your web server.</p>
+					<p>You must contact your Systems Administrator for assistance with the above. Ookla is not able to assist with these issues for security, liability and practical reasons.</p>
+				</li>
+				<li>
+					<p><strong>You’re done!:</strong> Visit the page by entering the URL in a Web Browser. Use example as shown above (<code>http://www.mycompany.com/apps/speedtest/index.html</code>) and replace the domain name and path to match your own.</p>
+					<p><strong>Strictly optional:</strong> You can set the Trial Version to a white or black background using the corresponding HTML file provided in the Zip.</p>
+				</li>
+				<li>
+					<p><strong>Too easy?</strong> Good job! You now have a fully functional Trial Version of the Ookla Speedtest operating on your own Server. Perhaps the best news is, the production version setup is exactly the same as above.</p>
+				</li>
+			</ol>
+		</div>
+
+		<div class="section">
+			<h4>How to Order</h4>
+			<p><em>Includes Support, Maintenance, Version Updates (2.xx), and more...</em></p>
+			<p>Ready to order? Please place your <a href="https://www.ookla.com/order?default=order">order online</a>. Normally, the same Account Executive who delivered your Trial Package will contact you immediately. Your Ookla AE is your primary point of contact for everything! They are technically-minded and service-oriented, and supported directly by Ookla’s four Founding Partners. Ookla looks forward to serving you further, soon.</p>
+		</div>
+
+		<div class="section">
+			<h4>Do you need Support Now?</h4>
+			<p>Our solutions are easy to use and cost-effective due to our investments in convenient self-service options. We kindly ask that you carefully consult our documentation before contacting us for help. That said, we are always close by if you need us and our staff is always eager to see how we can improve our service automation.</p>
+			<ul>
+				<li>
+					<p>Enjoy our <strong>Support Now</strong> service during the Trial and afterwards as one of our highly valued and distinguished Clients. In order to provide <strong>Support Now</strong>, we request that you direct all questions <a href="https://www.ookla.com/order?default=inquire">here</a> to enable our prompt reply; often almost immediately during US PT (-7 or -8 hours GMT) and invariably within 24 hours time.</p>
+				</li>
+				<li>
+					<p><strong>Self-Service:</strong> The best and most popular component of <strong>Support Now</strong> is our powerful and convenient self-service option via an extensive and intelligent <a href="https://support.ookla.com/home">Knowledge Base</a> and other online resources, all of which lead to personal assistance whenever you require.</p>
+				</li>
+			</ul>
+		</div>
+
+		<p class="footer">All contents of this Zip archive are &copy; 2012 Ookla</p>
+
+	</div>
+
+</body>
+</html>
