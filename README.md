@@ -48,7 +48,7 @@ in January 2017
 after having the sources, the keygen in 2 languages it still wasn't enough, I wanted some custumized versions of Netgauge consumers(telcos) had on their websites to test internet speed, so I download them, organized them and wrote where I got them from, unfortionaly most of them are gone from the internet but they are still here on this repo for people to remember them, even if they were stil up their licenses slowly expired and the last one did in 01.01.2019, but you can generate new licenses as you have the keygen
 
 but I wanted the API Ookla uses to show the results, I saved the pictures and decided to rewrite it but....
-in February 2017 (02.02.2017) to be precise everything changed my happines was better than ever and I completely forgot who I am, for once I didn't need a computer or a radio to be happy, I just was every day and every night, being awake was better then being asleep :smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile:
+in February 2018 (02.02.2018) to be precise everything changed my happines was better than ever and I completely forgot who I am, for once I didn't need a computer or a radio to be happy, I just was every day and every night, being awake was better then being asleep :smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile::smile:
 
 but I knew :cry: , I kne... my happiness will end as I had to go, and in 11.07.2018 as we knew the results for national Matura it was the last day, after that I slowly walked out of high-school :cry: , and my happiness ended :cry: and it still hasn't returned 
 
