@@ -1,0 +1,1 @@
+I got this from here: http://broadbandspeedtestinternational.starhub.com/speedtest/

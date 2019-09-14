@@ -1,0 +1,97 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>TBC Solutions Line Quality Test</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript" src="browserdetect.js"></script>
+<script type="text/javascript" src="deployJava.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script language="JavaScript">
+<!--
+function toJava(jsmethod,args) {
+        var e = document.getElementById('VoipApplet');
+        if (e) {
+                e.fromJS(jsmethod,args);
+        }
+}
+function fromJava(jsmethod,args) {
+        setTimeout("flashCall(\'" + jsmethod + "\', \'" + args + "\')", 100);
+}
+function flashCall(jsmethod, args) {
+        var e = document.getElementById('flashtest');
+        if (e) {
+                e.fromJS(jsmethod, args);
+        }
+}
+//-->
+</script>
+</head>
+<body bgcolor="#ffffff">
+
+<div id="abovebefore">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP ABOVE THE LINE QUALITY TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+Edit index.html to change or remove this example content that will <strong>disappear after</strong> the test is run once.
+</div>
+
+<div id="aboveafter" style="display: none;">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP ABOVE THE LINE QUALITY TEST AFTER IT COMPLETES -->
+This content will <strong>not appear until after</strong> the test is run once. Edit index.html to change or remove it.
+</div>
+
+<br/>
+
+<div id="linequalitytest">
+The Ookla Line Quality Test requires at least version 8 of Flash. <a href="http://get.adobe.com/flashplayer/">Please update your client</a>.
+</div>
+<script type="text/javascript">
+        var flashvars = {
+                configExtension: "php"
+        };
+        var params = {
+                quality: "high",
+                bgcolor: "#ffffff",
+                allowScriptAccess: "always"
+        };
+        var attributes = {
+                id: "flashtest",
+                name: "flashtest"
+        };
+        swfobject.embedSWF("linequalitytest.swf?v=2.1.8", "linequalitytest", "640", "400", "8.0.0", "expressInstall.swf", flashvars, params, attributes);
+</script>
+<div id="speed"></div>
+<div id="javaerror" style="display: none;"><br/>The Ookla Line Quality Test requires Java. <a href="javascript:deployJava.installLatestJRE();">Please update your client.</a><br/><br/></div>
+<script type="text/javascript">
+        if ((BrowserDetect.browser != "Safari") && (BrowserDetect.browser != "Opera")) {
+           if (deployJava.getJREs() == "") {
+                var javaerror = document.getElementById('javaerror');
+                if (javaerror) {
+                        javaerror.style.display = "block";
+                }
+           }
+        }
+</script>
+<applet code="VoipApplet.class" archive="LQApplet.jar?v=1.1" width="640" height="400" mayscript id="VoipApplet" name="VoipApplet">
+        <param name="bgcolor" value="ffffff">
+        <param name="packetlosslength" value="100">
+        <param name="tcpport" value="8080">
+        <param name="udpport" value="8080">
+        <param name="debug" value="true">
+        <param name="latencylength" value="10">
+        <param name="latencypause" value="20">
+        <param name="packetlosspause" value="20">
+</applet>
+
+<br/>
+
+<div id="belowbefore">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE LINE QUALITY TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+This content will <strong>disappear after</strong> the test is run once. Edit index.html to change or remove it.
+</div>
+
+<div id="belowafter" style="display: none;">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE LINE QUALITY TEST AFTER IT COMPLETES -->
+Edit index.html to change or remove this example content that will <strong>not appear until after</strong> the test is run once.
+</div>
+
+</body>
+</html>

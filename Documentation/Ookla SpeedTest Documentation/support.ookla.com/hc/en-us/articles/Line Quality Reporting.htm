@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- v16739 -->
+
+  <title>Line Quality Reporting – Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="hc:meta:server:1vjT2Uv9lXXgcsv7tdzOpg/zfVpKdkN6W1zkiUzvmTGPDd7g9bxCJ037kn9V6OvP2oP05k5qWYFaHhAmCkljMw==">
+  <meta name="description" content="Custom/Local Reporting Solutions  Some of our clients choose to store their Line Quality Test results in a database on their own..."><meta property="og:image" content="https://theme.zdassets.com/theme_assets/129506/30cd4d8f1186748c8df508f15cb1cedc525b7e37.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ookla">
+<meta property="og:title" content="Line Quality Reporting">
+<meta property="og:description" content="Custom/Local Reporting Solutions
+Some of our clients choose to store their Line Quality Test results in a database on their own server(s). They may do so to respect company-wide policies, to be ab...">
+<meta property="og:url" content="http://support.ookla.com/hc/en-us/articles/234576928-Line-Quality-Reporting">
+<link rel="canonical" href="https://support.ookla.com/hc/en-us/articles/234576928-Line-Quality-Reporting">
+<link rel="alternate" hreflang="en" href="https://support.ookla.com/hc/en-us/articles/234576928-Line-Quality-Reporting">
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="Datoteke_za_Line%20Quality%20Reporting/application-d65f7c33347eaf0f5f757bd940718196.css" id="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Datoteke_za_Line%20Quality%20Reporting/style.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://theme.zdassets.com/theme_assets/129506/bad5f2a86bb087a8174023a82b46a5efa509a40e.ico">
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="Datoteke_za_Line%20Quality%20Reporting/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="Datoteke_za_Line%20Quality%20Reporting/fonts.htm">
+
+  <script type="text/javascript" src="Datoteke_za_Line%20Quality%20Reporting/script.js"></script>
+<script src="Datoteke_za_Line%20Quality%20Reporting/answerBot.js"></script><script type="text/javascript" charset="utf-8" async="" src="Datoteke_za_Line%20Quality%20Reporting/SubscriptionControls-b9499d0ae5c2437a0698a158c8384192.js"></script></head>
+<body class="" cz-shortcut-listen="true">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="https://support.ookla.com/hc/en-us">
+      <img src="Datoteke_za_Line%20Quality%20Reporting/30cd4d8f1186748c8df508f15cb1cedc525b7e37.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search" aria-label="Search">
+<input type="submit" name="commit" value="Search"></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="https://support.ookla.com/hc/en-us">Ookla</a>
+      
+    </li>
+  
+    <li title="Line Quality Test (Legacy)">
+      
+        <a href="https://support.ookla.com/hc/en-us/categories/204419808-Line-Quality-Test-Legacy-">Line Quality Test (Legacy)</a>
+      
+    </li>
+  
+    <li title="Reporting">
+      
+        <a href="https://support.ookla.com/hc/en-us/sections/207030268-Reporting">Reporting</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> Line Quality Reporting</h1>
+    <p title="Team Ookla"><a href="https://support.ookla.com/hc/en-us/profiles/154107588-Team-Ookla">
+      Team Ookla
+    </a> - <time datetime="2016-11-11T19:21:11Z" title="2016-11-11 21:21" data-datetime="calendar">November 11, 2016 21:21</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <div class="level1" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<h2 style="padding: 0.5em 0px 0px; margin: 0px 0px 1em; font-size: 20px; clear: left; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; line-height: normal;"><strong><a id="custom_local_reporting_solutions" style="padding: 0px; margin: 0px; color: #0000ee; text-decoration: underline;" name="custom_local_reporting_solutions"></a>Custom/Local Reporting Solutions</strong></h2>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Some of 
+our clients choose to store their Line Quality Test results in a 
+database on their own server(s). They may do so to respect company-wide 
+policies, to be able to build custom reports based on their data or to 
+tie the results with a customer portal.</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">We offer two options for a local storage system.</p>
+<ul style="padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0.5em; margin-left: 1.5em; line-height: 1.5em; list-style-image: none;">
+<li class="level1" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px;"><acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hyper Text Transfer Protocol">HTTP</acronym>&nbsp;POST</div>
+</li>
+<li class="level1" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px;">Javascript</div>
+</li>
+</ul>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<h2 style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a id="local_storage_via_an_http_post" style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="local_storage_via_an_http_post"></a>Local Storage via an HTTP POST</h2>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">To enable this option, include the following in your configuration file:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span class="re1" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">&lt;reporting</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span><span class="re0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">apireporting</span><span style="background-color: #f7f9fa; font-size: 12px;">=</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"true"</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span><span class="re0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">apiurl</span><span style="background-color: #f7f9fa; font-size: 12px;">=</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"http://yourcompany.com/api.php"</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span><span class="re0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">hitdefaultapi</span><span style="background-color: #f7f9fa; font-size: 12px;">=</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"true"</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span><span class="re2" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></pre>
+<table class="inline" style="padding: 0px; margin: 0px 0px 1em; font-size: 13px; border-spacing: 0px; border-collapse: collapse;">
+<tbody style="padding: 0px; margin: 0px;">
+<tr class="row0" style="padding: 0px; margin: 0px;"><th class="col0 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb; background-color: #dee7ec;">Setting</th><th class="col1 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb; background-color: #dee7ec;">Description</th><th class="col2 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb; background-color: #dee7ec;">Default</th><th class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb; background-color: #dee7ec;">Values/Example</th></tr>
+<tr class="row1" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">apireporting</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Enables the&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym>&nbsp;reporting feature</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">true</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">boolean</td>
+</tr>
+<tr class="row2" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">apiurl</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;"><acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Uniform Resource Locator">URL</acronym>&nbsp;of the custom&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym>&nbsp;to use for the reporting system</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;"><em style="padding: 0px; margin: 0px;">Ookla&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym></em></td>
+<td class="col3 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb;"><acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Uniform Resource Locator">URL</acronym></td>
+</tr>
+<tr class="row3" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">hitdefaultapi</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Used in combination with apiurl. Save results to both the Ookla&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym>&nbsp;and to a custom&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym>.</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">false</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">boolean</td>
+</tr>
+</tbody>
+</table>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Several result parameters will get passed via POST to the reporting&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym>&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Uniform Resource Locator">URL</acronym>.</p>
+<table class="inline" style="padding: 0px; margin: 0px 0px 1em; font-size: 13px; border-spacing: 0px; border-collapse: collapse;">
+<tbody style="padding: 0px; margin: 0px;">
+<tr class="row0" style="padding: 0px; margin: 0px;"><th class="col0 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb; background-color: #dee7ec;">Parameter</th><th class="col1 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb; background-color: #dee7ec;">Description</th><th class="col2 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb; background-color: #dee7ec;">Type</th><th class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb; background-color: #dee7ec;">Example</th></tr>
+<tr class="row1" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">upload</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Final upload speed in kbps</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">855</td>
+</tr>
+<tr class="row2" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">download</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Final download speed in kbps</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">8973</td>
+</tr>
+<tr class="row3" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">latency</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Final latency in ms</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">73</td>
+</tr>
+<tr class="row4" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">jitter</td>
+<td class="col1 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb;">Final jitter in ms</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">9</td>
+</tr>
+<tr class="row5" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">packetloss</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Final packet loss percentage</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">1</td>
+</tr>
+<tr class="row6" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">packetstotal</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Number of packets sent/total for the packet loss test</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">100</td>
+</tr>
+<tr class="row7" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">packetsreceived</td>
+<td class="col1 leftalign" style="padding: 3px; margin: 0px; text-align: left; border: 1px solid #8cacbb;">Number of packets received for the packet loss test</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">100</td>
+</tr>
+<tr class="row8" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">portchecks</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Firewall ports identifier</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">15</td>
+</tr>
+<tr class="row9" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">serverid</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Server ID, for multiple server setups</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">number</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">1</td>
+</tr>
+<tr class="row10" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">customer</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">Name of the customer, as specified in the test configuration.</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">string</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">“demo”</td>
+</tr>
+<tr class="row11" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">clientip</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">IP of the client, if enabled in the test configuration.</td>
+<td class="col2" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">string</td>
+<td class="col3" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">“10.2.2.1”</td>
+</tr>
+</tbody>
+</table>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Many web languages will provide you with some extra browser information that might be worth storing. For example,&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hypertext Preprocessor">PHP</acronym>&nbsp;lets you access the browser's user agent ($_SERVER['<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hyper Text Transfer Protocol">HTTP</acronym>_USER_AGENT'])
+ and the client IP address ($_SERVER['REMOTE_ADDR']), as seen by the 
+reporting server. This information can easily be saved in a database.</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Here is an example&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hypertext Preprocessor">PHP</acronym>&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Application Programming Interface">API</acronym>&nbsp;for logging the result to a MySQL database:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="color: #0000ff; background-color: #f7f9fa; font-size: 12px;">&lt;?php</span>
+
+<span style="background-color: #f7f9fa; font-size: 12px;">$download_speed = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'download'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$upload_speed = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'upload'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$latency = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'latency'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$jitter = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'jitter'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$packet_loss = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'packetloss'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$ip_address = $_SERVER</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'REMOTE_ADDR'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$user_agent = $_SERVER</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'HTTP_USER_AGENT'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span>
+
+<span style="background-color: #f7f9fa; font-size: 12px;">mysql_connect</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"server"</span><span style="background-color: #f7f9fa; font-size: 12px;">, </span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"username"</span><span style="background-color: #f7f9fa; font-size: 12px;">, </span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"password"</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">mysql_select_db</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"speedtest"</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+
+<span style="background-color: #f7f9fa; font-size: 12px;">$insert_query = sprintf</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"insert into results set result_date = now(), ip_address = inet_aton('%s'), user_agent = '%s', download_kbps = %d, upload_kbps = %d, latency = %d, jitter = %d, packet_loss = %d"</span><span style="background-color: #f7f9fa; font-size: 12px;">, mysql_real_escape_string</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span style="background-color: #f7f9fa; font-size: 12px;">$ip_address</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">, mysql_real_escape_string</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span style="background-color: #f7f9fa; font-size: 12px;">$user_agent</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">, $download_speed, $upload_speed, $latency, $jitter, $packet_loss</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">mysql_query</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span style="background-color: #f7f9fa; font-size: 12px;">$insert_query</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+
+<span style="color: #0000ff; background-color: #f7f9fa; font-size: 12px;">?&gt;</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">It expects a table in the database called results with the following columns:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">result_id int(11) unsigned auto_increment</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">result_date datetime</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">ip_address int(11) unsigned</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">user_agent varchar(255)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">download_kbps int(11)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">upload_kbps int(11)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">latency int(6)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">jitter int(6)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">packet_loss int(4)</span></pre>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<h2 style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a id="local_storage_via_javascript" style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="local_storage_via_javascript"></a>Local Storage via Javascript</h2>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">To enable this option, make sure that jsreporting is not set to 0 in your settings file:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span class="re1" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">&lt;reporting</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span><span class="re0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">jsreporting</span><span style="background-color: #f7f9fa; font-size: 12px;">=</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"2"</span><span style="background-color: #f7f9fa; font-size: 12px;"> </span><span class="re2" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></pre>
+<table class="inline" style="padding: 0px; margin: 0px 0px 1em; font-size: 13px; border-spacing: 0px; border-collapse: collapse;">
+<tbody style="padding: 0px; margin: 0px;">
+<tr class="row0" style="padding: 0px; margin: 0px;"><th class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb; background-color: #dee7ec;">Value</th><th class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb; background-color: #dee7ec;">Purpose</th></tr>
+<tr class="row1" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">0</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">no Javascript function will be called after each test is completed</td>
+</tr>
+<tr class="row2" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">1</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">legacy download_completed function will be called</td>
+</tr>
+<tr class="row3" style="padding: 0px; margin: 0px;">
+<td class="col0" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">2</td>
+<td class="col1" style="padding: 3px; margin: 0px; border: 1px solid #8cacbb;">current test_completed function will be called (this is the default setting)</td>
+</tr>
+</tbody>
+</table>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Here is an example using&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hypertext Preprocessor">PHP</acronym>&nbsp;and MySQL which can be adapted to work on other platforms.</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">After each
+ test completes, a function found in functions.js named test_completed 
+is called which displays the text version of the result below the Flash:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">speed.innerHTML = "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">Last Result:</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Download Speed: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + download_speed + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> kbps (" + download_rate + " KB/sec transfer rate)</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Upload Speed: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + upload_speed + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> kbps (" + upload_rate + " KB/sec transfer rate)</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Latency: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + latency + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> ms</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Jitter: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + jitter + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> ms</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Packet Loss: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + packet_loss + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">%";</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Edit this file. You can append some&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="HyperText Markup Language">HTML</acronym>&nbsp;to the innerHTML call for the speed DIV:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">speed.innerHTML = "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">Last Result:</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Download Speed: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + download_speed + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> kbps (" + download_rate + " KB/sec transfer rate)</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Upload Speed: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + upload_speed + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> kbps (" + upload_rate + " KB/sec transfer rate)</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Latency: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + latency + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> ms</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Jitter: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + jitter + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;"> ms</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "Packet Loss: </span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + packet_loss + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;/strong<span class="re2" style="padding: 0px; margin: 0px;">&gt;</span></span></span><span style="background-color: #f7f9fa; font-size: 12px;">%</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;br</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">" + "</span><span class="sc3" style="font-size: 12px; padding: 0px; margin: 0px;"><span class="re1" style="padding: 0px; margin: 0px; color: #0000ff;">&lt;img</span> <span class="re0" style="padding: 0px; margin: 0px; color: #0000ff;">src</span>=\<span class="st0" style="padding: 0px; margin: 0px; color: #ff0000;">"http://speedtest.company.com/log_result.php?d="</span> + download_speed + <span class="st0" style="padding: 0px; margin: 0px; color: #ff0000;">"&amp;u="</span> + upload_speed + <span class="st0" style="padding: 0px; margin: 0px; color: #ff0000;">"&amp;l="</span> + latency + <span class="st0" style="padding: 0px; margin: 0px; color: #ff0000;">"&amp;j="</span> + jitter + <span class="st0" style="padding: 0px; margin: 0px; color: #ff0000;">"&amp;pl="</span> + packet_loss + <span class="st0" style="padding: 0px; margin: 0px; color: #ff0000;">"\"</span> <span class="re0" style="padding: 0px; margin: 0px; color: #0000ff;">width</span>=<span class="nu0" style="padding: 0px; margin: 0px; color: #cc66cc;">1</span> <span class="re0" style="padding: 0px; margin: 0px; color: #0000ff;">height</span>=<span class="nu0" style="padding: 0px; margin: 0px; color: #cc66cc;">1</span><span class="re2" style="padding: 0px; margin: 0px; color: #0000ff;">&gt;</span></span><span style="background-color: #f7f9fa; font-size: 12px;">";</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Then 
+log_result.php (the location, name and scripting language is up to you 
+of course) would process the values and store them in a database of your
+ choosing. You can also get the client IP address and browser version 
+from the web server variables. Since the script masquerades as an image,
+ it needs to send an image to the browser after it has processed the 
+results. It should first send a valid Content-Type header:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">Content-Type: image/gif</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">And then 
+display a 1 pixel blank image. This way it just shows up as a 1 pixel 
+blank image in the speed DIV even though it is technically logging the 
+result. Here is an example&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hypertext Preprocessor">PHP</acronym>&nbsp;script for logging the result to a MySQL database:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="color: #0000ff; background-color: #f7f9fa; font-size: 12px;">&lt;?php</span>
+
+<span style="background-color: #f7f9fa; font-size: 12px;">$download_speed = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'d'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$upload_speed = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'u'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$latency = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'l'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$jitter = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'j'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$packet_loss = $_REQUEST</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'pl'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$ip_address = $_SERVER</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'REMOTE_ADDR'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">$user_agent = $_SERVER</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">[</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'HTTP_USER_AGENT'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">]</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;"> mysql_connect</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"server"</span><span style="background-color: #f7f9fa; font-size: 12px;">, </span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"database"</span><span style="background-color: #f7f9fa; font-size: 12px;">, </span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"password"</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">mysql_select_db</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"speedtest"</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;"> $insert_query = sprintf</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"insert into results set result_date = now(), ip_address = inet_aton('%s'), user_agent = '%s', download_kbps = %d, upload_kbps = %d, latency = %d, jitter = %d, packet_loss = %d"</span><span style="background-color: #f7f9fa; font-size: 12px;">, mysql_real_escape_string</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span style="background-color: #f7f9fa; font-size: 12px;">$ip_address</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">, mysql_real_escape_string</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span style="background-color: #f7f9fa; font-size: 12px;">$user_agent</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">, $download_speed, $upload_speed, $latency, $jitter, $packet_loss</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">mysql_query</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span style="background-color: #f7f9fa; font-size: 12px;">$insert_query</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+
+<span style="background-color: #f7f9fa; font-size: 12px;">header</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">'Content-Type: image/gif'</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+
+<span style="background-color: #f7f9fa; font-size: 12px;">// This reads a blank 1x1px image and sends it to the browser</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">readfile</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">(</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #ff0000;">"blank.gif"</span><span class="br0" style="background-color: #f7f9fa; font-size: 12px; padding: 0px; margin: 0px; color: #66cc66;">)</span><span style="background-color: #f7f9fa; font-size: 12px;">;</span>
+
+<span style="color: #0000ff; background-color: #f7f9fa; font-size: 12px;">?&gt;</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">It expects a table in the database called results with the following columns:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">result_id int(11) unsigned auto_increment</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">result_date datetime</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">ip_address int(11) unsigned</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">user_agent varchar(255)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">download_kbps int(11)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">upload_kbps int(11)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">latency int(6)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">jitter int(6)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">packet_loss int(4)</span></pre>
+</div>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="https://support.ookla.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576928-Line-Quality-Reporting"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="https://support.ookla.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576928-Line-Quality-Reporting"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">0 out of 0 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=Line+Quality+Reporting&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576928-Line-Quality-Reporting" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=Line+Quality+Reporting&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576928-Line-Quality-Reporting" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=Line+Quality+Reporting&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576928-Line-Quality-Reporting" class="share-linkedin">LinkedIn</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="https://support.ookla.com/hc/en-us/requests/new">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="Datoteke_za_Line%20Quality%20Reporting/notice.htm" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="Datoteke_za_Line%20Quality%20Reporting/en-us-893ada01a9a3cb68819a52c74af6acf2.js"></script>
+  <script src="Datoteke_za_Line%20Quality%20Reporting/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234576928-Line-Quality-Reporting" data-theme="hc" data-locale="en-us" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="Datoteke_za_Line%20Quality%20Reporting/zendesk_pci_hc.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:KZp1zJ/G1Xnj4m/9eK/KCuvPExHKtYqtYm+q7NMnKL1wb3j1IYcCK05rNnmYm+9jPr+arc6pkFZjLV5DlYHSvw==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234576928","current_record_url":"/hc/en-us/articles/234576928-Line-Quality-Reporting","current_record_title":"Line Quality Reporting","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234576928-Line-Quality-Reporting","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"3f25544049061b25f0854f315322a5aedc23792e","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://ookla.zendesk.com/knowledge/user_segments?brand_id=3273006","has_community_enabled":false,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"/access/return_to?return_to=https://ookla.zendesk.com/agent/admin/answer_bot","is_account_owner":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://ookla.zendesk.com/knowledge/arrange?brand_id=3273006","article_verification_url":"https://ookla.zendesk.com/knowledge/verification?brand_id=3273006","has_article_verification":false,"guide_language_settings_url":"https://support.ookla.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://ookla.zendesk.com/knowledge/import_articles?brand_id=3273006","community_settings_url":"https://ookla.zendesk.com/knowledge/community_settings?brand_id=3273006","has_gather_trialing":false,"gather_plan_state":"not_started"};
+</script>
+
+  <script src="Datoteke_za_Line%20Quality%20Reporting/hc_enduser-5764acd197f963b6e570cc5f38cd82db.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.ookla.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEIFz7DToKX21ldGF7CzoPYWNjb3VudF9pZGkD4vkBOhNoZWxwX2NlbnRlcl9pZGkE69PwCzoNYnJhbmRfaWRpAy7xMToMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY7BlQ7AEkiCmVuLXVzBjsGVA==--6685beb595af611b78445cfbdbf3b9d3fd79535b");
+})();
+
+  </script>
+
+<div><iframe data-reactroot="" id="automaticAnswers" class="zEWidget-automaticAnswers" tabindex="-1" style="border: medium none; background: transparent none repeat scroll 0% 0%; transform: translateZ(0px); position: fixed; opacity: 0; bottom: 0px; margin: 0px 6px 6px 0px; z-index: 2147483647; right: 0px; height: 188px; width: 410px; transition-property: none; transition-timing-function: unset; top: -9999px;"></iframe></div></body></html>

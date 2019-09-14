@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- v16739 -->
+
+  <title>Line Quality Installation – Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="hc:meta:server:0Ad26sLiNCCbhUWVbeESRzfYE+TSc8DlU45ABhCJ9cOJ8nvTfKPjcjYMHBGN1Tcu4qiaWNZv2h5SzLSpVi8PwQ==">
+  <meta name="description" content="Line Quality Test Installation Instructions  To setup the Line Quality Test files on your server, you will first need to have a..."><meta property="og:image" content="https://theme.zdassets.com/theme_assets/129506/30cd4d8f1186748c8df508f15cb1cedc525b7e37.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ookla">
+<meta property="og:title" content="Line Quality Installation">
+<meta property="og:description" content="&nbsp;Line Quality Test Installation Instructions
+To setup the Line Quality Test files on your server, you will first need to have a web-accessible folder. On many Linux distributions, /var/www/ is suc...">
+<meta property="og:url" content="http://support.ookla.com/hc/en-us/articles/234576808-Line-Quality-Installation">
+<link rel="canonical" href="https://support.ookla.com/hc/en-us/articles/234576808-Line-Quality-Installation">
+<link rel="alternate" hreflang="en" href="https://support.ookla.com/hc/en-us/articles/234576808-Line-Quality-Installation">
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="Datoteke_za_Line%20Quality%20Installation/application-d65f7c33347eaf0f5f757bd940718196.css" id="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Datoteke_za_Line%20Quality%20Installation/style.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://theme.zdassets.com/theme_assets/129506/bad5f2a86bb087a8174023a82b46a5efa509a40e.ico">
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="Datoteke_za_Line%20Quality%20Installation/jquery-c679166c1baf738bb62b9918a7a13fd4.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="Datoteke_za_Line%20Quality%20Installation/fonts.htm">
+
+  <script type="text/javascript" src="Datoteke_za_Line%20Quality%20Installation/script.js"></script>
+<script src="Datoteke_za_Line%20Quality%20Installation/answerBot.js"></script><script type="text/javascript" charset="utf-8" async="" src="Datoteke_za_Line%20Quality%20Installation/SubscriptionControls-b9499d0ae5c2437a0698a158c8384192.js"></script></head>
+<body class="" cz-shortcut-listen="true">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="https://support.ookla.com/hc/en-us">
+      <img src="Datoteke_za_Line%20Quality%20Installation/30cd4d8f1186748c8df508f15cb1cedc525b7e37.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="Search" aria-label="Search">
+<input type="submit" name="commit" value="Search"></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="https://support.ookla.com/hc/en-us">Ookla</a>
+      
+    </li>
+  
+    <li title="Line Quality Test (Legacy)">
+      
+        <a href="https://support.ookla.com/hc/en-us/categories/204419808-Line-Quality-Test-Legacy-">Line Quality Test (Legacy)</a>
+      
+    </li>
+  
+    <li title="Installation">
+      
+        <a href="https://support.ookla.com/hc/en-us/sections/207030248-Installation">Installation</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> Line Quality Installation</h1>
+    <p title="Team Ookla"><a href="https://support.ookla.com/hc/en-us/profiles/154107588-Team-Ookla">
+      Team Ookla
+    </a> - <time datetime="2016-11-11T19:21:10Z" title="2016-11-11 21:21" data-datetime="calendar">November 11, 2016 21:21</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <div class="level1" style="padding: 0px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">&nbsp;<strong style="font-size: 20px; line-height: normal; text-align: justify; background-color: white;">Line Quality Test Installation Instructions</strong></p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">To setup 
+the Line Quality Test files on your server, you will first need to have a
+ web-accessible folder. On many Linux distributions, /var/www/ is such a
+ folder. For most Windows servers this will be C:\Inetpub\wwwroot\.</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">You will also need to have Java (either&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://java.sun.com/javase/downloads/index.jsp" href="http://java.sun.com/javase/downloads/index.jsp" rel="nofollow">Sun's JRE</a>&nbsp;or&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://openjdk.java.net/install/" href="http://openjdk.java.net/install/" rel="nofollow">OpenJDK</a>) functioning properly on the server. You can verify it is working via the command-line by typing this:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">java -version</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">If successful then you will see output similar to this:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">[root@server]$ java -version</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">java version "1.5.0_14"</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_14-b03)</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">Java HotSpot(TM) 64-Bit Server VM (build 1.5.0_14-b03, mixed mode)</span></pre>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<h2 style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="package_contents"></a>Package Contents</h2>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Unzipping 
+the contents of the provided Zip archive will reveal two folders named 
+client and server. Both sets of files actually go on the server, but the
+ client ones are delivered to the client browser via a web server. Place
+ the client contents somewhere inside the web-accessible folder on your 
+server keeping the directory structure intact. The hierarchy and 
+contents should then look like this:</p>
+<table style="border-color: #8cacbb; border-width: 0px;">
+<tbody>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;crossdomain.xml</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">Flash security file specifying host and domain access</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;debug.html</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">debug version of sample HTML page for the Line Quality Test</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;deployJava.js</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">deployJava Javascript library for properly loading Java applications</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;expressInstall.swf</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">support file for SWFObject to handle Flash installations</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;functions.js</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">Javascript called from Flash after each Line Quality Test completes</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;index.html</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">sample commented HTML page for the Line Quality Test</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;linequalitytest.swf</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">core Line Quality Test Flash application</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;LQApplet.jar</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">unsigned core Line Quality Test Java client application</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;settings.*</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">settings files for the Speed Test includes license key</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;swfobject.js</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">SWFObject Javascript library for properly loading Flash applications</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;swfobject.js</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">SWFObject Javascript library for properly loading Flash applications</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;VoipApplet.jar</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">signed core Line Quality Test Java client application</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;speedtest/crossdomain.xml</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">duplicate Flash security file specifying host and domain access</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;speedtest/random*.jpg</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">highly randomized sample files used for download test</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;speedtest/upload.*</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">scripts used for the upload test</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;"></div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;"><span style="font-size: 1em; line-height: 1.45em;">The contents of the server folder are:</span>
+<table style="border-color: #8cacbb; border-width: 0px;">
+<tbody>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;pv.exe</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">&nbsp;Windows command line process viewer&nbsp;</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;pv.txt</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">&nbsp;Windows command line process viewer documentation and disclaimer</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;voipcheck.bat</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">&nbsp;batch file for starting up Line Quality Test daemon on Windows</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;voipcheck.sh</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">&nbsp;shell script for starting up Line Quality Test daemon on UNIX/Linux</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;VoipServer.jar</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">&nbsp;core Line Quality Test Java server daemon application</td>
+</tr>
+</tbody>
+</table>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;"></div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;"><span style="font-size: 1em; line-height: 1.45em;">These
+ files should now be accessible online at the host you setup when you 
+configured your web server. For this example, we will assume that you've
+ setup lqtest.mydomain.com. In your browser, go to&nbsp;</span><a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://lqtest.mydomain.com" href="http://lqtest.mydomain.com/" rel="nofollow">http://lqtest.mydomain.com</a><span style="font-size: 1em; line-height: 1.45em;">. You should see your Line Quality Test! It won't work completely yet though.</span><br><br>
+<h2><a style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="java_daemon_installation"></a>Java Daemon Installation</h2>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Place the 
+contents of the server folder somewhere else on your server. It is 
+recommended that you choose a location that is not web-accessible. For 
+UNIX/Linux we recommend creating a new user called ookla and then 
+placing the files into that home directory:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">/home/ookla/</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">For Windows we recommend creating this directory to place them into:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">C:\Program Files\Ookla\</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Open a 
+command prompt on the server and change to the directory containing 
+VoipServer.jar. Then type the following to make sure daemon starts up 
+properly:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">[ookla@server]$ java -jar VoipServer.jar</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">LOG Thu, 09 Aug 2007 22:10:07 -0700 MAIN No IP Specified, will use: 69.17.117.196</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">LOG Thu, 09 Aug 2007 22:10:07 -0700 MAIN Start UDP Thread</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">LOG Thu, 09 Aug 2007 22:10:07 -0700 MAIN Start TCP Listener</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">LOG Thu, 09 Aug 2007 22:10:07 -0700 S-TCP Listening on port: 5060</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Open another command prompt and try to telnet to port 5060 on your server (note that QUIT was typed manually in this session):</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">telnet&gt; open demo.ookla.com 5060</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">Trying 69.17.117.196...</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">Connected to dev.ookla.com.</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">Escape character is '^]'.</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">QUIT</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">BYE</span>
+<span style="background-color: #f7f9fa; font-size: 12px;">Connection closed by foreign host.</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">If your 
+session looks the same then the Java daemon is setup correctly. Go ahead
+ and kill the Java daemon (CTRL-C). We recommend using the provided 
+scripts to make the daemon start up and stay running on its own. The 
+voipcheck.sh and voipcheck.bat files serve this purpose.</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">On Linux you can setup voipcheck.sh to run as often as every minute via cron:</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://en.wikipedia.org/wiki/Cron" href="http://en.wikipedia.org/wiki/Cron" rel="nofollow">http://en.wikipedia.org/wiki/Cron</a></p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">On Windows
+ you can setup voipcheck.bat as a Scheduled Task (found in Control 
+Panel) to run every minute by editing the advanced schedule after 
+creating the job.</p>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">After 
+setting either of these up, wait a minute and then perform the telnet 
+test again to confirm things are working as expected.</p>
+<h2 style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="upload_test_verification"></a>Upload Test Verification</h2>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">Confirm that the upload testing component is setup correctly by visiting (replace&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://lqtest.mydomain.com" href="http://lqtest.mydomain.com/" rel="nofollow">http://lqtest.mydomain.com</a>&nbsp;with your host and domain):</p>
+<ul style="padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0.5em; margin-left: 1.5em; line-height: 1.5em;">
+<li class="level1" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px;">If using&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Hypertext Preprocessor">PHP</acronym>:&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://lqtest.mydomain.com/speedtest/upload.php" href="http://lqtest.mydomain.com/speedtest/upload.php" rel="nofollow">http://lqtest.mydomain.com/speedtest/upload.php</a></div>
+</li>
+<li class="level2" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px;">If using JSP:&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://lqtest.mydomain.com/speedtest/upload.jsp" href="http://lqtest.mydomain.com/speedtest/upload.jsp" rel="nofollow">http://lqtest.mydomain.com/speedtest/upload.jsp</a></div>
+</li>
+<li class="level2" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px;">If using&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Active Server Pages">ASP</acronym>.NET:&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://lqtest.mydomain.com/speedtest/upload.aspx" href="http://lqtest.mydomain.com/speedtest/upload.aspx" rel="nofollow">http://lqtest.mydomain.com/speedtest/upload.aspx</a></div>
+</li>
+<li class="level2" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px;">If using&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Active Server Pages">ASP</acronym>:&nbsp;<a class="urlextern" style="padding: 1px 0px 1px 16px; margin: 0px; color: #0000ee; background-color: transparent; background-position: 0px 1px;" title="http://lqtest.mydomain.com/speedtest/upload.asp" href="http://lqtest.mydomain.com/speedtest/upload.asp" rel="nofollow">http://lqtest.mydomain.com/speedtest/upload.asp</a></div>
+</li>
+</ul>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><br style="padding: 0px; margin: 0px;"> You should see output that looks like this:</p>
+<pre style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><span style="background-color: #f7f9fa; font-size: 12px;">size=475</span></pre>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">The number shown will vary. This indicates that things are setup correctly. Keep this&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Uniform Resource Locator">URL</acronym>&nbsp;at hand, as you will need it to finish the configuration (see Setting the Server&nbsp;<acronym style="padding: 0px; margin: 0px; cursor: help; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #000000;" title="Uniform Resource Locator">URL</acronym>&nbsp;and
+ Host below). If you see the source code of the script or an error of 
+any kind, then something is not setup right with the chosen scripting 
+language on your web server.</p>
+<h2 style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="setting_the_server_url_and_host"></a>Setting the Server URL and Host</h2>
+</div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;"><ol style="padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-bottom: 0.5em; margin-left: 1.5em; line-height: 1.5em; font-weight: bold;">
+<li class="level1" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px; font-weight: normal;">Open the settings.* file on your web server in a text editor (on Windows be sure to use Notepad and not Wordpad).</div>
+</li>
+<li class="level1" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px; font-weight: normal;">Look for the line that starts with &lt;server url=. It should look something like this:<br>
+<pre class="li" style="padding: 0px; margin: 0px; font-weight: normal;"><span class="re1" style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em; padding: 0px; margin: 0px; color: #0000ff;">&lt;server</span><span style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em;"> </span><span class="re0" style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em; padding: 0px; margin: 0px; color: #0000ff;">url</span><span style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em;">=</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em; padding: 0px; margin: 0px; color: #ff0000;">"http://lqtest.mydomain.com/speedtest/upload.php"</span><span style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em;"> </span><span class="re0" style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em; padding: 0px; margin: 0px; color: #0000ff;">linequality</span><span style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em;">=</span><span class="st0" style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em; padding: 0px; margin: 0px; color: #ff0000;">"lqtest.mydomain.com"</span><span style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em;"> </span><span class="re2" style="background-color: #f7f9fa; font-size: 12px; line-height: 1.5em; padding: 0px; margin: 0px; color: #0000ff;">/&gt;</span></pre>
+</div>
+</li>
+<li class="level1" style="padding: 0px; margin: 0px;">
+<div class="li" style="padding: 0px; margin: 0px; font-weight: normal;">Please be sure to update both the url= and linequality= sections.</div>
+</li>
+</ol></div>
+<div class="level2" style="padding: 0px; margin: 0px 0px 0px 3px; color: #000000; font-family: 'Lucida Grande', Verdana, Lucida, Helvetica, Arial, sans-serif; font-size: 13px; line-height: normal; text-align: justify;">
+<h2 style="padding: 0px; margin-top: 0px; margin-bottom: 1em;"><a style="font-size: 19px; font-weight: bold; padding: 0px 5px; margin: 0px; color: #0000ee; text-decoration: underline; background-color: #ffffff;" name="configuring_the_application"></a>Configuring the Application</h2>
+<p style="padding: 0px; margin-top: 0px; margin-bottom: 1em;">To fine tune any specific testing parameters, please review the&nbsp;<a style="padding: 0px; margin: 0px; color: #0000ee !important;" title="lq_basic_test_configuration" href="https://support.ookla.com/entries/22035916-line-quality-basic-configuration">Basic Line Quality Test Configuration</a>&nbsp;article.</p>
+</div>
+</div>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="https://support.ookla.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576808-Line-Quality-Installation"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="https://support.ookla.com/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576808-Line-Quality-Installation"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">2 out of 2 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=Line+Quality+Installation&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576808-Line-Quality-Installation" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=Line+Quality+Installation&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576808-Line-Quality-Installation" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=Line+Quality+Installation&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234576808-Line-Quality-Installation" class="share-linkedin">LinkedIn</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="https://support.ookla.com/hc/en-us/requests/new">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="Datoteke_za_Line%20Quality%20Installation/notice.htm" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="Datoteke_za_Line%20Quality%20Installation/en-us-893ada01a9a3cb68819a52c74af6acf2.js"></script>
+  <script src="Datoteke_za_Line%20Quality%20Installation/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234576808" data-theme="hc" data-locale="en-us" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="Datoteke_za_Line%20Quality%20Installation/zendesk_pci_hc.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:l7kpbOTs81rpbmbJVN7nFhleQgjs64VHVCFQHj/kzc3OTCRVWq0kCETnP0206sJ/zC7LtOj3n7xVY6SxeUI3zw==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234576808","current_record_url":"/hc/en-us/articles/234576808-Line-Quality-Installation","current_record_title":"Line Quality Installation","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234576808-Line-Quality-Installation","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"rollbar_config":{"enabled":true,"endpoint":"https://rollbar-us.zendesk.com/api/1/item/","accessToken":"731a5a953e9a4b7ab6cac9623f50c732","captureUncaught":true,"captureUnhandledRejections":true,"payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"3f25544049061b25f0854f315322a5aedc23792e","guess_uncaught_frames":true}}}},"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_professional_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_connect_ipms":false},"base_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://ookla.zendesk.com/knowledge/user_segments?brand_id=3273006","has_community_enabled":false,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/admin/billing/subscription","has_answer_bot":true,"has_block_answer_bot_embeddable":false,"answer_bot_management_url":"/access/return_to?return_to=https://ookla.zendesk.com/agent/admin/answer_bot","is_account_owner":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false,"has_guide_user_segments_search":true,"has_alternate_templates":false,"arrange_articles_url":"https://ookla.zendesk.com/knowledge/arrange?brand_id=3273006","article_verification_url":"https://ookla.zendesk.com/knowledge/verification?brand_id=3273006","has_article_verification":false,"guide_language_settings_url":"https://support.ookla.com/hc/admin/language_settings?locale=en-us","has_fetch_authenticity_token":true,"docs_importer_url":"https://ookla.zendesk.com/knowledge/import_articles?brand_id=3273006","community_settings_url":"https://ookla.zendesk.com/knowledge/community_settings?brand_id=3273006","has_gather_trialing":false,"gather_plan_state":"not_started"};
+</script>
+
+  <script src="Datoteke_za_Line%20Quality%20Installation/hc_enduser-5764acd197f963b6e570cc5f38cd82db.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "https://support.ookla.com/hc/tracking/events?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEqFv7DToKX21ldGF7CzoPYWNjb3VudF9pZGkD4vkBOhNoZWxwX2NlbnRlcl9pZGkE69PwCzoNYnJhbmRfaWRpAy7xMToMdXNlcl9pZDA6DnVzZXJfcm9sZUkiDmFub255bW91cwY7BlQ7AEkiCmVuLXVzBjsGVA==--cad77b79d23aaadf694d201ddbc649f2429bd52e");
+})();
+
+  </script>
+
+<div><iframe data-reactroot="" id="automaticAnswers" class="zEWidget-automaticAnswers" tabindex="-1" style="border: medium none; background: transparent none repeat scroll 0% 0%; transform: translateZ(0px); position: fixed; opacity: 0; bottom: 0px; margin: 0px 6px 6px 0px; z-index: 2147483647; right: 0px; height: 188px; width: 410px; transition-property: none; transition-timing-function: unset; top: -9999px;"></iframe></div></body></html>

@@ -1,6 +1,16 @@
 # Flash-Speedtest.net-by-Ookla
 This is Ooklas old Flash based Speedtest the best speedtest that ever existed
 
+**If anyone still has old Line Quality Server deamon (this files)** 
+```
+pv.exe
+pv.txt
+voipcheck.bat
+voipcheck.sh
+VoipServer.jar
+```
+I would be exztrmly happy if you open an issue and send them my way as I am still missing old Ookla Line Quality test Server (I already have the client)
+
 ### You can still use it today
 if you want to ever use Flash speedtest again you can still do it because server deamons are compatible so new speedtest still works with them which means you only need to host the player up and it can be still used to test your internet connection :smile:
 
