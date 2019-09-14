@@ -26,12 +26,12 @@ I then discovered that it was still uvailable on http://legacy.speedtest.net, an
 The product Ookla was seling was called Netgauge, so i said OK lets set it up
 
 I read documentation which is gone from the web by now but still here in this repo, and I started to crack Okklas Speedtest
-after decompiling their flash source there was a problem the source used [SecureSWF]: http://www.kindi.com/actionscript-obfuscator.php
+after decompiling their flash source there was a problem the source used [SecureSWF](http://www.kindi.com/actionscript-obfuscator.php)
 after working through the code and figuring out the date part of the license I gave up and started to try it a diferent way
 
-then a year went by and it was already 2016 after talking a break another year went by and it was March in 2017
+then a year went by and it was already 2017
 
-I tried again and found their old Latency Test used a diferent obfuscacator [Amayeta SWF Decrypt]: http://www.amayeta.com/software/swfencrypt/ it was crappy so I deobfuscacated by hand it required a day of copy/pasting and code rewriting but I had the algorithm
+I tried again and found their old Latency Test used a diferent obfuscacator [Amayeta SWF Decrypt](http://www.amayeta.com/software/swfencrypt/) it was crappy so I deobfuscacated by hand it required a day of copy/pasting and code rewriting but I had the algorithm
 
 and the thing worked but only in Latency Test, license didn't work on any recent speedtest or Netgauge versions, damm, what did I do wrong?, well it turnes out that oOkla used a diferent secrets, after finding the secrets they used I was up and running
 
@@ -52,7 +52,7 @@ in February 2017 (02.02.2017) to be precise everything changed my happines was b
 
 but I knew :cry: , I kne... my happiness will end as I had to go, and in 11.07.2018 as we knew the results for national Matura it was the last day, after that I slowly walked out of high-school :cry: , and my happiness ended :cry: and it still hasn't returned 
 
-I did all this in the time I was still happy, I got an F occasionaly but....life was so so sweat :smile:, this is the song that makes me normal now and describes that times for a bit: [Ana Bekuta - Ljubav bez adrese]: https://www.youtube.com/watch?v=bZoxRLwfBX0
+I did all this in the time I was still happy, I got an F occasionaly but....life was so so sweat :smile:, this is the song that makes me normal now and describes that times for a bit: [Ana Bekuta - Ljubav bez adrese](https://www.youtube.com/watch?v=bZoxRLwfBX0)
 
 
 the songs are in Serbian and if their names would be translated into English the first would be ``` Ljubav bez adrese => Love without adress ```
