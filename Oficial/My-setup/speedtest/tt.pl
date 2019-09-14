@@ -1,0 +1,1 @@
+print "Content-type: text/plain\n\n"; print "SUCCESS!\n";

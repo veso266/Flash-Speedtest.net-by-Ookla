@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from support.ookla.com/hc/en-us/article_attachments/216755768/index_example.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:42:39 GMT -->
+<head>
+    <meta content="no-cache" http-equiv="Content-Type" />
+
+    <title>Ookla Speed Test</title>
+    <script src="swfobject.html" type="text/javascript"></script>
+    <script src="browserdetect.html" type="text/javascript"></script>
+    <script src="functions_v3.html" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    //The following script is used to load the Java applet required for
+    //both the packetloss and firewall tests. It is only called if
+    //at least one of the tests are enable in the settings.xml.
+    var loadedApplet = "";
+    function loadJava(applet) {
+        if(loadedApplet == applet) {
+                return;
+        } else {
+                loadedApplet = applet;
+        }
+        var e = document.getElementById('javadiv');
+        if(e != null) {
+                if ((BrowserDetect.browser == "Safari") || (BrowserDetect.browser == "Opera")) {
+                    applet = "VoipApplet.jar";
+                }
+                e.innerHTML = "<applet code=\"VoipApplet.class\" archive=\"" + applet + "?blah=" + Math.random() + "\" width=\"1\" height=\"1\" mayscript id=\"VoipApplet\" name=\"VoipApplet\"><param name=\"debug\" value=\"false\"><\/applet>";
+        }
+    }
+    //End loading Java applet
+    
+    </script>
+</head>
+
+<body bgcolor="#FFFFFF">
+    <div id="status">
+        Current status: Waiting
+    </div><br />
+
+    <div id="abovebefore">
+        Expected download speed: <input id="targetDown" type=
+        "number" />Mbps<br />
+    </div>
+
+    <div id="aboveafter" style="display: none;"></div><br />
+
+    <table border="0">
+        <tr>
+            <td>
+                <div id="flashcontainer">
+                    <div id="flashcontent">
+                        This text is replaced by the Flash movie.
+                    </div>
+                </div><br />
+                <script type="text/javascript">
+
+                var flashvars = {
+                configExtension: "xml"
+
+                };
+                var params = {
+                quality: "high",
+                bgcolor: "#ffffff",
+                allowScriptAccess: "always"
+                };
+                var attributes = {
+                id: "flashtest",
+                name: "flashtest"
+                };
+                swfobject.embedSWF("netgaugec3db.html?v=3.0", "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+              
+                </script>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <!-- The following div element, javadiv, must be present for the packetloss
+                 and firewall tests to function properly.
+                -->
+
+                <div id="javadiv"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+<!-- Mirrored from support.ookla.com/hc/en-us/article_attachments/216755768/index_example.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:42:47 GMT -->
+</html>

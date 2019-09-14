@@ -11,7 +11,7 @@ For awhile I wanted to test my local LAN speed, I know I have gigabit but how mu
 
 I knew that speedtest.net was the best speedtest for me and I wanted to have it, I never got around to seting it up until one day in 2017 they decided to force a new crappy HTML5 speedtest for everyone, that was it; I knew I will have to act fast, I wanted to still use it
 
-I then discovered that it was still uvailable on http://legacy.speedtest.net, and the documentation was still up
+I then discovered that it was still uvailable on http://legacy.speedtest.net, and the documentation was still up (this site was deleted on 01.01.2019 it was still uvailable on http://c.speedtest.net until 01.05.2019 where I also got this backup for The last site on this repo)
 
 The product Ookla was seling was called Netgauge, so i said OK lets set it up
 
@@ -43,10 +43,10 @@ in February 2017 (02.02.2017) to be precise everything changed my happines was b
 but I knew :cry: , I kne... my happiness will end as I had to go, and in 11.07.2018 as we knew the results for national Matura it was the last day, after that I slowly walked out of high-school :cry: , and my happiness ended :cry: and it still hasn't returned 
 
 I did all this in the time I was still happy, I got an F occasionaly but....life was so so sweat :smile:, this is the song that makes me normal now and describes that times for a bit: [Ana Bekuta - Ljubav bez adrese]: https://www.youtube.com/watch?v=bZoxRLwfBX0
-and this one: [Ana Bekuta - Voli me voli]: https://www.youtube.com/watch?v=NrChc23jn50
 
-the songs are in Serbian and if their names would be translated into English the first would be ``` Ljubav bez adrese => Love without adress ``` and ```Voli me voli => love me love me????(hmm as Croatian is not my native language I cannot realy properly translate it :( ```
 
-after the last day I couldn't stare at all this and almost deleted it and now I feel a bit better when looking at it as I wrote my heart out in a README nobody would ever read
+the songs are in Serbian and if their names would be translated into English the first would be ``` Ljubav bez adrese => Love without adress ```
+
+after the last day I couldn't stare at this at all and almost deleted it and now I feel a bit better when looking at it as I wrote my heart out in a README nobody would ever read
 
 REMEMBER IF YOU EVER fall for someone you should do what is best for her not for yourself, because only then you can be sure you are doing nothing wrong

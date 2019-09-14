@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ookla NetGauge Demo Speed Test</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript" src="browserdetect.js"></script>
+<script type="text/javascript" src="functions_v3.js"></script>
+<script type="text/javascript">
+var loadedApplet = "";
+function loadJava(applet) {
+        if(loadedApplet == applet) {
+                return;
+        } else {
+                loadedApplet = applet;
+        }
+        var e = document.getElementById('javadiv');
+        if(e != null) {
+                if ((BrowserDetect.browser == "Safari") || (BrowserDetect.browser == "Opera")) {
+                    applet = "VoipApplet.jar";
+                }
+                e.innerHTML = "<applet code=\"VoipApplet.class\" archive=\"" + applet + "?blah=" + Math.random() + "\" width=\"1\" height=\"1\" mayscript id=\"VoipApplet\" name=\"VoipApplet\"><param name=\"debug\" value=\"false\"></applet>";
+        }
+}
+</script>
+</head>
+<body bgcolor="#ffffff">
+
+<div id="abovebefore">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP ABOVE THE TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+Edit index.html to change or remove this example content that will <strong>disappear after</strong> the test is run once.
+</div>
+
+<div id="aboveafter" style="display: none;">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP ABOVE THE TEST AFTER IT COMPLETES -->
+This content will <strong>not appear until after</strong> the test is run once. Edit index.html to change or remove it.
+</div>
+
+<br/>
+
+<table border=0>
+	<tr><td>
+
+	<div id="flashcontainer">
+	<div id="flashcontent">
+	  This text is replaced by the Flash movie.
+	</div>
+	</div>
+
+	<br/>
+	<script type="text/javascript">
+		var flashvars = {
+			configExtension: "xml"
+            
+		};
+		var params = {
+			quality: "high",
+			bgcolor: "#ffffff",
+			allowScriptAccess: "always"
+		};
+		var attributes = {
+			id: "flashtest",
+			name: "flashtest"
+		};
+		swfobject.embedSWF("speedtest.swf?v=352081", "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+	</script>
+
+	<div id="speed"></div></td>
+	</tr>
+	<tr><td>
+	<div id="javadiv"></div></td></tr>
+</table>
+
+	 
+<div id="belowbefore">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE TEST BUT DISAPPEAR AFTER IT COMPLETES -->
+This content will <strong>disappear after</strong> the test is run once. Edit index.html to change or remove it.
+</div>
+
+<div id="belowafter" style="display: none;">
+<!-- ANYTHING PLACED IN THIS DIV WILL SHOW UP BELOW THE TEST AFTER IT COMPLETES -->
+Edit index.html to change or remove this example content that will <strong>not appear until after</strong> the test is run once.
+</div>
+
+</BODY>
+</HTML>

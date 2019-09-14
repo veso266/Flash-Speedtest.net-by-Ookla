@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577948-NetGauge-OoklaServer-Daemon-Advanced-Configuration by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:46:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <!-- v13473 -->
+  <title>OoklaServer Daemon Advanced Configuration &ndash; Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1uNOXonGe+WmtGIwMIDg7ypcvV2id6lYd1QVpKhxvyMzVq4U+kYkPS2qQxVdv1vqcamiyP4iv41lh2yo6Rhlew==" />
+  <meta name="description" content="NetGauge's OoklaServer daemon configuration options are set within the OoklaServer.properties file, located in the same directory as the..." /><meta property="og:image" content="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ookla" />
+<meta property="og:title" content="OoklaServer Daemon Advanced Configuration" />
+<meta property="og:description" content="NetGauge's OoklaServer daemon configuration options are set within the OoklaServer.properties file, located in the same directory as the server application. Below is a list of all available setting..." />
+<meta property="og:url" content="234577948-OoklaServer-Daemon-Advanced-Configuration.html" />
+<link rel="canonical" href="234577948-OoklaServer-Daemon-Advanced-Configuration.html" />
+<link rel="alternate" hreflang="en" href="234577948-OoklaServer-Daemon-Advanced-Configuration.html" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="../../../../p13.zdassets.com/hc/assets/application-3b0b6df180f05e3fa954d2e4d90e4600.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../p13.zdassets.com/hc/themes/129506/213867488/style-7e0d52207fcad1926c0e889e5c777db42e21.css?brand_id=3273006&amp;locale=en-us" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://p13.zdassets.com/hc/settings_assets/129506/200332267/QivmyxkSUPNT3DWHleS9Ew-favicon.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="../../../../p13.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="../../../../www.ookla.com/fonts/519942/937932A6FB329E5FC.css" />
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/themes/129506/213867488/script-7e0d52207fcad1926c0e889e5c777db42e21.js?brand_id=3273006&amp;locale=en-us"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="../../en-us.html">
+      <img src="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="../signin4eed.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-NetGauge-OoklaServer-Daemon-Advanced-Configuration&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="https://support.ookla.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="../../en-us.html">Ookla</a>
+      
+    </li>
+  
+    <li title="Speedtest Servers">
+      
+        <a href="../categories/204419868-Speedtest-Servers.html">Speedtest Servers</a>
+      
+    </li>
+  
+    <li title="Configuration">
+      
+        <a href="../sections/115000108991-Configuration.html">Configuration</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> OoklaServer Daemon Advanced Configuration</h1>
+    <p title="Brian Turley"><a href="../profiles/406150982-Brian-Turley.html">
+      Brian Turley
+    </a> - <time datetime="2018-01-05T20:15:59Z" title="2018-01-05T20:15:59Z" data-datetime="calendar">January 05, 2018 20:15</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <p>NetGauge's OoklaServer daemon configuration options are set within the OoklaServer.properties file, located in the same directory as the server application. Below is a list of all available settings and a brief description of each. For a detailed explanation of port configuration and enabling IPv6, please refer to KB article <a href="https://support.ookla.com/entries/24728997-NetGauge-Basic-Server-Daemon-Configuration-Options">NetGauge: Basic Server Daemon Configuration Options</a>.</p>
+<p><strong>Note</strong>:  Public Speedtest.net hosts <a href="234578628-Ookla-Host-Requirements.html">require</a> port 8080 to be used.  If your server host is part of the Speedtest.net network, you should not modify ports as this may prevent your host from being listed publically on Speedtest.net.</p>
+<p> </p>
+<table class="kb-table">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Enabled (default)</th>
+<th>Default value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OoklaServer.tcpPorts</td>
+<td>Yes</td>
+<td>5060, 8080</td>
+<td>Sets the port or ports that the server daemon listens on. This can be changed to any other port if desired. Only a single port is required. For more information see KB<a href="https://support.ookla.com/entries/24728997-NetGauge-Basic-Server-Daemon-Configuration-Options"> NetGauge: Basic Server Daemon Configuration Options</a>.</td>
+</tr>
+<tr>
+<td>OoklaServer.udpPorts</td>
+<td>Yes</td>
+<td>5060, 8080</td>
+<td>Utilized for packet loss calculation.</td>
+</tr>
+<tr>
+<td>OoklaServer.useIPv6</td>
+<td>No</td>
+<td>True</td>
+<td>Commented out by default. Remove the comment to allow OoklaServer daemon to bind to an IPv6 address. For more information see KB<a href="https://support.ookla.com/entries/24728997-NetGauge-Basic-Server-Daemon-Configuration-Options"> NetGauge: Basic Server Daemon Configuration Options</a>.</td>
+</tr>
+<tr>
+<td>
+<p>OoklaServer.</p>
+<p>allowedDomains</p>
+</td>
+<td>No</td>
+<td>*.ookla.com, *.speedtest.net</td>
+<td>Commented out by default, this setting allows you to limit access to your OoklaServer. The default allows all domains, but remove the comment to only allow access from Ookla.com, Speedtest.net, and any other domain added to the list.</td>
+</tr>
+<tr>
+<td>OoklaServer.maxThreads</td>
+<td>Yes</td>
+<td>512</td>
+<td>Determines the maximum number of concurrent threads allowed by the server.</td>
+</tr>
+<tr>
+<td>logging.loggers.app.name</td>
+<td>Yes</td>
+<td>Application</td>
+<td>Do not modify this setting. This is used for logging purposes.</td>
+</tr>
+<tr>
+<td>
+<p>logging.loggers.app.</p>
+<p>channel.class</p>
+</td>
+<td>Yes</td>
+<td>ConsoleChannel</td>
+<td>Determines where logging occurs. The default behavior logs information directly to a console window. If logging to a file is desired, change the value to FileChannel.</td>
+</tr>
+<tr>
+<td>
+<p>logging.loggers.app.</p>
+<p>channel.pattern </p>
+</td>
+<td>Yes</td>
+<td>%Y-%m-%d %H:%M:%S [%p] %t</td>
+<td>Modification of this setting is not recommended. This is needed for log formatting.</td>
+</tr>
+<tr>
+<td>logging.loggers.app.level</td>
+<td>Yes</td>
+<td>information</td>
+<td>Determines logging verbosity.</td>
+</tr>
+<tr>
+<td>
+<p>logging.loggers.app</p>
+<p>.channel.path</p>
+</td>
+<td>No</td>
+<td>
+<p>${application.dir}/</p>
+<p>ooklaserver.log </p>
+</td>
+<td>Only available if the logging channel is set to FileChannel. This setting determines the location of the log file.</td>
+</tr>
+</tbody>
+</table>
+<h3>Optional Advanced Logging Parameters</h3>
+<p>The following optional advanced logging parameters only available when logging.loggers.app.channel.class is set to FileChannel. For more details, please see <a href="http://www.appinf.com/docs/poco/Poco.FileChannel.html">Poco class FileChannel</a>.</p>
+<p>ParameterArgument formatDescription</p>
+<table class="kb-table">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Argument format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">logging.loggers.app.channel.rotation</td>
+<td colspan="2">Sets the interval at which a new log file is created. Example: <span class="kb-code inline">logging.loggers.app.channel.rotation = 5 M</span></td>
+</tr>
+<tr>
+<td>never</td>
+<td>no log rotation</td>
+</tr>
+<tr>
+<td>&lt;n&gt;</td>
+<td>rotate log if file size exceeds &lt;n&gt; bytes</td>
+</tr>
+<tr>
+<td>&lt;n&gt; K</td>
+<td>rotate if file size exceeds &lt;n&gt; Kilobytes</td>
+</tr>
+<tr>
+<td>&lt;n&gt; M</td>
+<td>rotate if file size exceeds &lt;n&gt; Megabytes</td>
+</tr>
+<tr>
+<td>[day,][hh:][mm]</td>
+<td>rotated on specified weekday/time</td>
+</tr>
+<tr>
+<td>daily/weekly/monthly</td>
+<td>every day/seven days/thirty days</td>
+</tr>
+<tr>
+<td>&lt;n&gt; hours/weeks/months</td>
+<td>every &lt;n&gt; hours/weeks/months</td>
+</tr>
+<tr>
+<td rowspan="3">logging.loggers.app.channel.archive</td>
+<td colspan="2">The suffix applied to an archived log file's filename.</td>
+</tr>
+<tr>
+<td>number</td>
+<td>an automatically incremented number, starting with 0, is appended to the log file name. The newest archived file always has 0.</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>a timestamp in the form YYYYMMDDHHMMSS is appended to the log file.</td>
+</tr>
+<tr>
+<td rowspan="3">logging.loggers.app.channel.times</td>
+<td colspan="2">Defines how the logging system interprets time formats.</td>
+</tr>
+<tr>
+<td>utc</td>
+<td>Rotation times are treated as UTC.</td>
+</tr>
+<tr>
+<td>local</td>
+<td>Rotation times are treated as the local system time.</td>
+</tr>
+<tr>
+<td>logging.loggers.app.channel.compress</td>
+<td>true/false</td>
+<td>Automatically compress archived log files</td>
+</tr>
+<tr>
+<td rowspan="7">logging.loggers.app.channel.purgeAge</td>
+<td colspan="2">Archived log files will be deleted after they reach a specified age.</td>
+</tr>
+<tr>
+<td>&lt;n&gt;</td>
+<td>the maximum age is &lt;n&gt; seconds</td>
+</tr>
+<tr>
+<td>&lt;n&gt; minutes</td>
+<td>he maximum age is &lt;n&gt; minutes</td>
+</tr>
+<tr>
+<td>&lt;n&gt; hours</td>
+<td>the maximum age is &lt;n&gt; hours</td>
+</tr>
+<tr>
+<td>&lt;n&gt; days</td>
+<td>the maximum age is &lt;n&gt; days</td>
+</tr>
+<tr>
+<td>&lt;n&gt; weeks</td>
+<td>the maximum age is &lt;n&gt; weeks</td>
+</tr>
+<tr>
+<td>&lt;n&gt; months</td>
+<td>the maximum age is &lt;n&gt; months, where a month has 30 days</td>
+</tr>
+<tr>
+<td>logging.loggers.app.channel.purgeCount</td>
+<td>integer</td>
+<td>Archived log files will be deleted if the number of log files reaches a given maximum number.</td>
+</tr>
+</tbody>
+</table>
+<div class="kb-related-articles">
+<h4>Related Articles</h4>
+<ul>
+<li><a href="234577928-NetGauge-Basic-Server-Daemon-Configuration-Options.html">Basic Server Daemon Configuration Options</a></li>
+<li><a href="234577908-NetGauge-OoklaServer-properties-Default-Configuration.html">OoklaServer.properties Default Configuration</a></li>
+</ul>
+</div>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="../signin21ab.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-OoklaServer-Daemon-Advanced-Configuration"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="../signin21ab.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-OoklaServer-Daemon-Advanced-Configuration"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">3 out of 3 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=OoklaServer+Daemon+Advanced+Configuration&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-OoklaServer-Daemon-Advanced-Configuration" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=OoklaServer+Daemon+Advanced+Configuration&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-OoklaServer-Daemon-Advanced-Configuration" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=OoklaServer+Daemon+Advanced+Configuration&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-OoklaServer-Daemon-Advanced-Configuration" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577948-OoklaServer-Daemon-Advanced-Configuration" class="share-googleplus">Google+</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="../requests/new.html">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="http://consent.truste.com/notice?domain=ziffdavis.com&amp;c=teconsent&amp;js=bb&amp;noticeType=bb" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/assets/locales/en-us-81bc1ea51b70d411a7857e0f6f67df60.js"></script>
+  <script src="../../../../ookla.zendesk.com/auth/v2/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234577948-NetGauge-OoklaServer-Daemon-Advanced-Configuration" data-theme="hc" data-locale="1" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="../../../../p13.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//p13.zdassets.com/hc/assets/","current_session":{"locale":"en-us","csrf_token":"sAaPr/frTyuHqCf7J1PH2GEoW9xrMVsuDKxYgdbKFf5Vs2/lhGsQ8wy2Bt5KbHzdOt1ESTdkTfsefyGNl6PPpg==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234577948","current_record_url":"/hc/en-us/articles/234577948-OoklaServer-Daemon-Advanced-Configuration","current_record_title":"OoklaServer Daemon Advanced Configuration","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234577948-OoklaServer-Daemon-Advanced-Configuration","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"has_anonymous_kb_voting":false,"has_advanced_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_automatic_answers":false,"embeddables_connect_ipms":false},"embeddables_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.ookla.com/hc/admin/user_segments?locale=en-us","import_articles_url":"https://support.ookla.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_multiselect_field":true,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_web_form_enabled":false,"has_answer_bot_embeddable_standalone":true,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/billing","has_answer_bot":true,"has_guide_docs_importer":false,"answer_bot_management_url":"https://support.ookla.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false};
+</script>
+
+  <script src="../../../../p13.zdassets.com/hc/assets/hc_enduser-99ecbf6c6034819f1a2d9f538431319f.js"></script>
+  
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "../../tracking/eventsba3c.html?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST.html", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7BzoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEHGD7DQ==--95d741eaa2fb0f30043da38239c6ec0cf5e2cf56");
+})();
+
+  </script>
+</body>
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577948-NetGauge-OoklaServer-Daemon-Advanced-Configuration by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:46:09 GMT -->
+</html>

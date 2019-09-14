@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577988-How-to-Enable-Server-Side-Logging by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:38:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <!-- v13473 -->
+  <title>How to Enable Server-Side Logging &ndash; Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="CTuU5GBL/56JZ4NNi2QVzncyXqF3i+PbYHaez7cFV1vsjnSuE8ugRgJ5omjmW67LLMdBNCve9Q5ypefD9myNAw==" />
+  <meta name="description" content="Enabling server-side logging for the NetGauge OoklaServer Daemon is easy. First, you will need to edit the file OoklaServer.properties...." /><meta property="og:image" content="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ookla" />
+<meta property="og:title" content="How to Enable Server-Side Logging" />
+<meta property="og:description" content="Enabling server-side logging for the NetGauge OoklaServer Daemon is easy. First, you will need to edit the file OoklaServer.properties. You can do so by opening it in a text editor and uncommenting..." />
+<meta property="og:url" content="234577988-How-to-Enable-Server-Side-Logging.html" />
+<link rel="canonical" href="234577988-How-to-Enable-Server-Side-Logging.html" />
+<link rel="alternate" hreflang="en" href="234577988-How-to-Enable-Server-Side-Logging.html" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="../../../../p13.zdassets.com/hc/assets/application-3b0b6df180f05e3fa954d2e4d90e4600.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../p13.zdassets.com/hc/themes/129506/213867488/style-7e0d52207fcad1926c0e889e5c777db42e21.css?brand_id=3273006&amp;locale=en-us" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://p13.zdassets.com/hc/settings_assets/129506/200332267/QivmyxkSUPNT3DWHleS9Ew-favicon.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="../../../../p13.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="../../../../www.ookla.com/fonts/519942/937932A6FB329E5FC.css" />
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/themes/129506/213867488/script-7e0d52207fcad1926c0e889e5c777db42e21.js?brand_id=3273006&amp;locale=en-us"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="../../en-us.html">
+      <img src="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="../signin0d87.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="https://support.ookla.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="../../en-us.html">Ookla</a>
+      
+    </li>
+  
+    <li title="Speedtest Servers">
+      
+        <a href="../categories/204419868-Speedtest-Servers.html">Speedtest Servers</a>
+      
+    </li>
+  
+    <li title="Configuration">
+      
+        <a href="../sections/115000108991-Configuration.html">Configuration</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> How to Enable Server-Side Logging</h1>
+    <p title="Brian Turley"><a href="../profiles/406150982-Brian-Turley.html">
+      Brian Turley
+    </a> - <time datetime="2018-01-05T19:58:38Z" title="2018-01-05T19:58:38Z" data-datetime="calendar">January 05, 2018 19:58</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <p>Enabling server-side logging for the NetGauge OoklaServer Daemon is easy. First, you will need to edit the file <em>OoklaServer.properties</em>. You can do so by opening it in a text editor and uncommenting the five lines below the line <span class="kb-code inline"># Log to files</span>. This is done by removing the hash (<em>#</em>) from the beginning of each line. Once done, you will need to comment out the four lines under <span class="kb-code inline"># Log to the console </span>by adding a hash to the beginning of each line. Please see the KB article Ookla Server Daemon Advanced Configuration for more information about other available server daemon settings.</p>
+<h2>Where are the logs stored?</h2>
+<p>By default, the log file is stored in the same directory as the server daemon in a file named <em>ooklaserver.log</em>. The location and filename can be changed by editing the <em>OoklaServer.properties</em> file. Edit the value of <span class="kb-code inline">logging.loggers.app.channel.path</span> to equal the desired folder and file name. For example, the default entry is:</p>
+<pre class="kb-code">logging.loggers.app.channel.path = ${application.dir}/ooklaserver.log</pre>
+<p> </p>
+<p>If you would like to change the name of the log file and store it in a separate directory, <em>/System/Library/Logs/ </em>in this example,  you could modify the line to equal:</p>
+<pre class="kb-code">logging.loggers.app.channel.path = /System/Library/Logs/speedtest.log</pre>
+<p> </p>
+<h2><strong>What kind of information is stored in the log file?</strong></h2>
+<p>This depends on the logging level specified in <em>OoklaServer.properties</em>. Two logging levels are available, Information and Error. The Error level logging will only store information about the cause of encountered errors. For example, if a user navigates away from the page midway through the download test, the following error may be recorded:</p>
+<pre class="kb-code">2013-10-10 00:39:12 [17633 - 18251] [Error] Disconnect IOException: I/O error: 32</pre>
+<p> </p>
+<p>By default, the logging level is set to information. To enable error only logging, change the value of <span class="kb-code inline">logging.loggers.app.level </span> from information to error. If the logging level is left set to information, all server daemon activity is logged. This can cause lengthy log files. Here is a snippet from an actual log file showing only the information generated the first second of a new client connection:</p>
+<pre class="kb-log">2013-10-10 01:00:13 [17633 - 18251] [Information] Connection from 123.45.67.8:82095 on port 8080
+2013-10-10 01:00:13 [17633 - 18251] [Information] Input: &lt;policy-file-request/&gt;
+2013-10-10 01:00:13 [17633 - 18251] [Information] Output: &lt;cross-domain-policy&gt;
+&lt;allow-access-from domain="*" to-ports="8080"/&gt;
+&lt;/cross-domain-policy&gt;
+2013-10-10 01:00:13 [17633 - 18251] [Information] Normal Disconnect 123.45.67.8:82095
+2013-10-10 01:00:13 [17633 - 18251] [Information] Cleanup
+2013-10-10 01:00:13 [17633 - 18251] [Information] TCP uptime: 4 - current: 1, queued: 0, refused: 0, concurrent: 1
+2013-10-10 01:00:13 [17633 - 18251] [Information] Connection from 123.45.67.8:82096 on port 8080
+2013-10-10 01:00:13 [17633 - 18251] [Information] Input: HI
+2013-10-10 01:00:13 [17633 - 18251] [Information] Output: HELLO 2.1 2013-08-14.01
+</pre>
+<p>Please see the attached file, <strong>ooklaserver.log</strong>, for a complete example log of a single gigabit test, with the logging level set to information and all test functions enabled.</p>
+<p> </p>
+<h2><strong>What is the approximate file size after a day of logging?</strong></h2>
+<p>This also depends on a few factors. First of all, if your logging level is set to only capture errors, your file size will be extremely small, even with a large number of users.</p>
+<p>If your logging level is set to information, the file size can still vary depending on the client's connection speed. A single test where the client has a bi-directional connection of approximately 1.5 Mbps, results in a log file about 32kb in size, while a single test from a client with a bi-directional gigabit connections results in a log file anywhere from 700 KB to 1.5 MB, depending on the <a href="http://www.ookla.com/support/a23000438/netgauge%3A+client+configuration">client configuration template</a> specified in the NetGauge settings.</p>
+<ul class="article-body-attachments">
+<li><a href="https://support.ookla.com/attachments/token/rsbovnngjxrpr3h/?name=ooklaserver.log">ooklaserver.log</a></li>
+</ul>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+          <li>
+            <a href="../article_attachments/216755808/ooklaserver.log" target="_blank">ooklaserver.log</a>
+            <span>(900 KB)</span>
+          </li>
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="../signin390e.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="../signin390e.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">1 out of 1 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=How+to+Enable+Server-Side+Logging&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=How+to+Enable+Server-Side+Logging&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=How+to+Enable+Server-Side+Logging&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577988-How-to-Enable-Server-Side-Logging" class="share-googleplus">Google+</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="../requests/new.html">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="http://consent.truste.com/notice?domain=ziffdavis.com&amp;c=teconsent&amp;js=bb&amp;noticeType=bb" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/assets/locales/en-us-81bc1ea51b70d411a7857e0f6f67df60.js"></script>
+  <script src="../../../../ookla.zendesk.com/auth/v2/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234577988-How-to-Enable-Server-Side-Logging" data-theme="hc" data-locale="1" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="../../../../p13.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//p13.zdassets.com/hc/assets/","current_session":{"locale":"en-us","csrf_token":"9/dSJZzzJwCcJIGk+wQmahmi+uOxioWDcxIvpKUwiMMSQrJv73N42Bc6oIGWO51vQlfldu3fk1ZhwVao5FlSmw==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234577988","current_record_url":"/hc/en-us/articles/234577988-How-to-Enable-Server-Side-Logging","current_record_title":"How to Enable Server-Side Logging","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234577988-How-to-Enable-Server-Side-Logging","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"has_anonymous_kb_voting":false,"has_advanced_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_automatic_answers":false,"embeddables_connect_ipms":false},"embeddables_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.ookla.com/hc/admin/user_segments?locale=en-us","import_articles_url":"https://support.ookla.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_multiselect_field":true,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_web_form_enabled":false,"has_answer_bot_embeddable_standalone":true,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/billing","has_answer_bot":true,"has_guide_docs_importer":false,"answer_bot_management_url":"https://support.ookla.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false};
+</script>
+
+  <script src="../../../../p13.zdassets.com/hc/assets/hc_enduser-99ecbf6c6034819f1a2d9f538431319f.js"></script>
+  
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "../../tracking/eventsba3c.html?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST.html", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7BzoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkERGD7DQ==--7c64a021bb7f1365126923bdb72bc46ffd862258");
+})();
+
+  </script>
+</body>
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577988-How-to-Enable-Server-Side-Logging by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:38:36 GMT -->
+</html>

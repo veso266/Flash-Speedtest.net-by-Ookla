@@ -1,0 +1,32 @@
+<settings>
+<licensekey>xxx</licensekey>
+<customer>mycompany</customer>
+
+<servers>
+<server name="My Server" id="1">
+<method type="tcp" host="speedtest.mycompany.com:8080"/>
+<method type="http" url="http://speedtest.mycompany.com/speedtest/upload.php" />
+</server>
+</servers>
+
+<netgauge activetests="speed, latency"/>
+
+<download testlength="10" initialtest="250K" mintestsize="250K" threadsperurl="4"/>
+<upload testlength="10" ratio="5" initialtest="0" mintestsize="32K" threads="2" maxchunksize="512K" maxchunkcount="50" threadsperurl="4"/>
+<latency testlength="10" waittime="50" timeout="20"/>
+<socket-download testlength="15" initialthreads="4" minthreads="4" maxthreads="32" threadratio="750K" maxsamplesize="5000000" minsamplesize="32000" startsamplesize="1000000" startbuffersize="1" bufferlength="5000" packetlength="1000" readbuffer="65536"/>
+<socket-upload testlength="15" initialthreads="dyn:tcpulthreads" minthreads="dyn:tcpulthreads" maxthreads="32" threadratio="750K" maxsamplesize="1000000" minsamplesize="32000" startsamplesize="100000" startbuffersize="2" bufferlength="1000" packetlength="1000" disabled="false"/>
+<socket-latency testlength="10" waittime="50" timeout="20"/>
+                
+<conditions>
+<cond name="tcpulthreads" download="+100000" value="8"/>
+<cond name="tcpulthreads" download="+10000" value="4"/>
+<cond name="tcpulthreads" value="2"/>
+</conditions>
+<interface clienticon="house" incrementtemplate="500M" template="mbps" servericon="office"/>
+<endoftest columns="3" toprow="LSS" bottomrow="JSS"/>
+<errors linktodocs="false"/>
+<extras autostart="false" repeat="0"/>
+<ip enabled="3"/>
+<reporting jsreporting="3"/>
+</settings>

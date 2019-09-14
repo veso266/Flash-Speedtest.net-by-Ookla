@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577728-NetGauge-Dynamic-Translation-System by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:39:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <!-- v13473 -->
+  <title>NetGauge: Dynamic Translation System &ndash; Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="3qdjKLV99tzbIcDvnwihbbvAyeJfY39nuwZlOFtR0nc7EoNixv2pBFA/4cryNxpo4DXWdwM2abKp1Rw0GjgILw==" />
+  <meta name="description" content="Translation can be configured from the settings.xml file. You can add multiple languages and modify them as desired. You can even modify..." /><meta property="og:image" content="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ookla" />
+<meta property="og:title" content="NetGauge: Dynamic Translation System" />
+<meta property="og:description" content="Translation can be configured from the settings.xml file. You can add multiple languages and modify them as desired. You can even modify the default text within NetGauge.
+To do so, you simply inco..." />
+<meta property="og:url" content="234577728-NetGauge-Dynamic-Translation-System.html" />
+<link rel="canonical" href="234577728-NetGauge-Dynamic-Translation-System.html" />
+<link rel="alternate" hreflang="en" href="234577728-NetGauge-Dynamic-Translation-System.html" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="../../../../p13.zdassets.com/hc/assets/application-3b0b6df180f05e3fa954d2e4d90e4600.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../p13.zdassets.com/hc/themes/129506/213867488/style-7e0d52207fcad1926c0e889e5c777db42e21.css?brand_id=3273006&amp;locale=en-us" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://p13.zdassets.com/hc/settings_assets/129506/200332267/QivmyxkSUPNT3DWHleS9Ew-favicon.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="../../../../p13.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="../../../../www.ookla.com/fonts/519942/937932A6FB329E5FC.css" />
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/themes/129506/213867488/script-7e0d52207fcad1926c0e889e5c777db42e21.js?brand_id=3273006&amp;locale=en-us"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="../../en-us.html">
+      <img src="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="../signin4072.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="https://support.ookla.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="../../en-us.html">Ookla</a>
+      
+    </li>
+  
+    <li title="NetGauge">
+      
+        <a href="../categories/204419828-NetGauge.html">NetGauge</a>
+      
+    </li>
+  
+    <li title="Configuration">
+      
+        <a href="../sections/207030368-Configuration.html">Configuration</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> NetGauge: Dynamic Translation System</h1>
+    <p title="Team Ookla">
+      Team Ookla
+     - <time datetime="2016-11-11T19:21:18Z" title="2016-11-11T19:21:18Z" data-datetime="calendar">November 11, 2016 19:21</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <p>Translation can be configured from the settings.xml file. You can add multiple languages and modify them as desired. You can even modify the default text within NetGauge.</p>
+<p>To do so, you simply incorporate a translation block to your configuration file. You can use it to add new translations or selectively modify existing text values. For each desired language, add an additional translation block.</p>
+<p>For example, to replace "Latency" with "Ping" in your test, add the following to settings.xml:</p>
+<pre class="kb-code">&lt;translation lang="en"&gt;
+	&lt;text id="label_latency"&gt;Ping&lt;/text&gt;
+	&lt;text id="testinglatency"&gt;Testing Ping&lt;/text&gt;
+&lt;/translation&gt;
+</pre>
+<p>The default language used by NetGauge is English. Adding a translation block for English will replace the default text within NetGauge with the text included in your translation block. To use a language other than English, a language parameter must be passed to the Flash object as it loads. This is accomplished using the existing swfobject JavaScript library reference in the default index.html file included with NetGauge.</p>
+<p>To load a test in a specific language, we can add a static entry to the index.html file. For example, to force a test to load in Spanish regardless of the user’s location, modify the existing netgauge.swf file reference from</p>
+<pre class="kb-code">swfobject.embedSWF("netgauge.swf?v=3.0", "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+</pre>
+<p>to equal</p>
+<pre class="kb-code">swfobject.embedSWF("netgauge.swf?v=3.0<strong>&amp;lang=es</strong>", "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+</pre>
+<p>To automatically load a test in the user’s default browser language, we will need to add a variable and detect the language. Within the default index.html, modify the existing netgauge.swf file reference from</p>
+<pre class="kb-code">swfobject.embedSWF("netgauge.swf?v=3.0", "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+</pre>
+<p>to equal</p>
+<pre class="kb-code">var myLang = (window.navigator.userLanguage || window.navigator.language).substring(0,2);
+
+swfobject.embedSWF("netgauge.swf?v=3.0<strong>&amp;lang=" + myLang</strong>, "flashcontent", "620", "420", "10.0.0", false, flashvars, params, attributes);
+</pre>
+<p><strong>Note:</strong> If the detected language does not have a translation block present in settings.xml, NetGauge will default to using English.</p>
+<p>Below is a list of every string of text used by NetGauge, including the translation code to use to match your translation with the right string of text used in the Interface.</p>
+<table class="kb-table">
+<thead>
+<tr><th>Text ID</th><th>Default Value</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>starttest</td>
+<td>Begin Test</td>
+</tr>
+<tr>
+<td>restarttest</td>
+<td>Restart Test</td>
+</tr>
+<tr>
+<td>newserver</td>
+<td>New Server</td>
+</tr>
+<tr>
+<td>testagain</td>
+<td>Test Again</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>testinglatency</td>
+<td>Testing Latency</td>
+</tr>
+<tr>
+<td>testingdownload</td>
+<td>Testing Download Speed</td>
+</tr>
+<tr>
+<td>preparingdownload</td>
+<td>Preparing Download Test</td>
+</tr>
+<tr>
+<td>testingupload</td>
+<td>Testing Upload Speed</td>
+</tr>
+<tr>
+<td>preparingupload</td>
+<td>Preparing Upload Test</td>
+</tr>
+<tr>
+<td>testingfirewall</td>
+<td>Testing Firewall</td>
+</tr>
+<tr>
+<td>testingpacketloss</td>
+<td>Measuring Packet Loss</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>yourip</td>
+<td>Your IP:</td>
+</tr>
+<tr>
+<td>ping</td>
+<td>PING:</td>
+</tr>
+<tr>
+<td>mbps</td>
+<td>Mbps</td>
+</tr>
+<tr>
+<td>kbps</td>
+<td>kbps</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>firewallfound</td>
+<td>Firewall Found</td>
+</tr>
+<tr>
+<td>firewallnotfound</td>
+<td>Firewall Not Found</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>downloadspeed</td>
+<td><strong>DOWNLOAD</strong> SPEED</td>
+</tr>
+<tr>
+<td>uploadspeed</td>
+<td><strong>UPLOAD</strong> SPEED</td>
+</tr>
+<tr>
+<td>connectiongraph</td>
+<td><strong>CONNECTION</strong> GRAPH</td>
+</tr>
+<tr>
+<td>packetssent</td>
+<td>PACKETS <strong>SENT</strong></td>
+</tr>
+<tr>
+<td>packetsreceived</td>
+<td>PACKETS <strong>RECEIVED</strong></td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>label_latency</td>
+<td>Latency&nbsp;</td>
+</tr>
+<tr>
+<td>label_jitter</td>
+<td>Jitter</td>
+</tr>
+<tr>
+<td>label_firewall&nbsp;</td>
+<td>Firewall</td>
+</tr>
+<tr>
+<td>label_packetloss</td>
+<td>Packet Loss</td>
+</tr>
+<tr>
+<td>label_speed</td>
+<td>Speed&nbsp;</td>
+</tr>
+<tr>
+<td>testskipped</td>
+<td>Test Skipped</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>tile_packetloss</td>
+<td>Packet Loss</td>
+</tr>
+<tr>
+<td>tile_packetssent</td>
+<td>Packets Sent</td>
+</tr>
+<tr>
+<td>tile_packetsreceived</td>
+<td>Packets Received</td>
+</tr>
+<tr>
+<td>tile_toclient</td>
+<td>To Client:</td>
+</tr>
+<tr>
+<td>tile_toserver</td>
+<td>To Server:</td>
+</tr>
+<tr>
+<td>tile_client_tcp</td>
+<td>Client TCP</td>
+</tr>
+<tr>
+<td>tile_server_tcp</td>
+<td>Server TCP</td>
+</tr>
+<tr>
+<td>tile_client_udp</td>
+<td>Client UDP</td>
+</tr>
+<tr>
+<td>tile_server_udp</td>
+<td>Server UDP</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Open</td>
+</tr>
+<tr>
+<td>closed</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td>tile_downloadspeed</td>
+<td>Download Speed</td>
+</tr>
+<tr>
+<td>tile_uploadspeed</td>
+<td>Upload Speed</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>measuringserverusage&nbsp;&nbsp;&nbsp;</td>
+<td>Measuring Server Usage</td>
+</tr>
+<tr>
+<td>teststartingin</td>
+<td>Test starting in {SECONDS} seconds&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td>teststartingin1</td>
+<td>Test starting in 1 second</td>
+</tr>
+<tr>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+<td style="background-color: #f2f2f2;">&nbsp;</td>
+</tr>
+<tr>
+<td>sharetestresult&nbsp;&nbsp;</td>
+<td>Share test result</td>
+</tr>
+<tr>
+<td>copied</td>
+<td>Copied!</td>
+</tr>
+<tr>
+<td>error</td>
+<td>ERROR</td>
+</tr>
+<tr>
+<td>documentation</td>
+<td>Documentation</td>
+</tr>
+<tr>
+<td>meta_client</td>
+<td>Client:</td>
+</tr>
+<tr>
+<td>meta_server</td>
+<td>Server:</td>
+</tr>
+<tr>
+<td>shareurlcopied</td>
+<td>Share URL Copied to Clipboard</td>
+</tr>
+</tbody>
+</table>
+<div class="kb-related-articles">
+<h4>Related Articles</h4>
+<ul>
+<li><a href="http://www.ookla.com/support/a22983273/netgauge%3A+dynamic+translation">Dynamic Translation System - Error Messages</a></li>
+</ul>
+</div>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="../signin472c.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="../signin472c.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">1 out of 1 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=NetGauge%3A+Dynamic+Translation+System&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=NetGauge%3A+Dynamic+Translation+System&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=NetGauge%3A+Dynamic+Translation+System&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577728-NetGauge-Dynamic-Translation-System" class="share-googleplus">Google+</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="../requests/new.html">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="http://consent.truste.com/notice?domain=ziffdavis.com&amp;c=teconsent&amp;js=bb&amp;noticeType=bb" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/assets/locales/en-us-81bc1ea51b70d411a7857e0f6f67df60.js"></script>
+  <script src="../../../../ookla.zendesk.com/auth/v2/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234577728-NetGauge-Dynamic-Translation-System" data-theme="hc" data-locale="1" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="../../../../p13.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//p13.zdassets.com/hc/assets/","current_session":{"locale":"en-us","csrf_token":"yLz/YLAmErDZClCJIawNnzZznn+zFk2MLR2kYxPvgwgtCR8qw6ZNaFIUcaxMk7aabYaB6u9DW1k/zt1vUoZZUA==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234577728","current_record_url":"/hc/en-us/articles/234577728-NetGauge-Dynamic-Translation-System","current_record_title":"NetGauge: Dynamic Translation System","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234577728-NetGauge-Dynamic-Translation-System","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"has_anonymous_kb_voting":false,"has_advanced_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_automatic_answers":false,"embeddables_connect_ipms":false},"embeddables_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.ookla.com/hc/admin/user_segments?locale=en-us","import_articles_url":"https://support.ookla.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_multiselect_field":true,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_web_form_enabled":false,"has_answer_bot_embeddable_standalone":true,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/billing","has_answer_bot":true,"has_guide_docs_importer":false,"answer_bot_management_url":"https://support.ookla.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false};
+</script>
+
+  <script src="../../../../p13.zdassets.com/hc/assets/hc_enduser-99ecbf6c6034819f1a2d9f538431319f.js"></script>
+  
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "../../tracking/eventsba3c.html?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST.html", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7BzoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEQF/7DQ==--cdc54f81c4630a31ffb314fc9fc5d8fed80fd00f");
+})();
+
+  </script>
+</body>
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577728-NetGauge-Dynamic-Translation-System by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:39:43 GMT -->
+</html>

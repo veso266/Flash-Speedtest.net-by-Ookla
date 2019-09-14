@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234578528-Ookla-Server-Installation-Linux-Unix by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:44:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <!-- v13473 -->
+  <title>OoklaServer Installation - Linux / Unix &ndash; Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1uIzwvDqW86wsMLGeYw+9rGDcbJ/+meV4wlNEz2PTsIzV9OIg2oEFjuu4+MUs4Xz6nZuJyOvcUDx2jQffOaUmg==" />
+  <meta name="description" content="OoklaServer is our TCP based server daemon that provides standalone testing. The following instructions are for Unix/Linux server..." /><meta property="og:image" content="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ookla" />
+<meta property="og:title" content="OoklaServer Installation - Linux / Unix" />
+<meta property="og:description" content="OoklaServer is our TCP based server daemon that provides standalone testing. The following instructions are for Unix/Linux server platforms.
+Download the install script
+
+Open terminal and navigate ..." />
+<meta property="og:url" content="234578528-OoklaServer-Installation-Linux-Unix.html" />
+<link rel="canonical" href="234578528-OoklaServer-Installation-Linux-Unix.html" />
+<link rel="alternate" hreflang="en" href="234578528-OoklaServer-Installation-Linux-Unix.html" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="../../../../p13.zdassets.com/hc/assets/application-3b0b6df180f05e3fa954d2e4d90e4600.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../p13.zdassets.com/hc/themes/129506/213867488/style-7e0d52207fcad1926c0e889e5c777db42e21.css?brand_id=3273006&amp;locale=en-us" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://p13.zdassets.com/hc/settings_assets/129506/200332267/QivmyxkSUPNT3DWHleS9Ew-favicon.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="../../../../p13.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="../../../../www.ookla.com/fonts/519942/937932A6FB329E5FC.css" />
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/themes/129506/213867488/script-7e0d52207fcad1926c0e889e5c777db42e21.js?brand_id=3273006&amp;locale=en-us"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="../../en-us.html">
+      <img src="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="../signin1177.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-Ookla-Server-Installation-Linux-Unix&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="https://support.ookla.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="../../en-us.html">Ookla</a>
+      
+    </li>
+  
+    <li title="Speedtest Servers">
+      
+        <a href="../categories/204419868-Speedtest-Servers.html">Speedtest Servers</a>
+      
+    </li>
+  
+    <li title="Installation">
+      
+        <a href="../sections/207030448-Installation.html">Installation</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> OoklaServer Installation - Linux / Unix</h1>
+    <p title="Michael Jackson"><a href="../profiles/11124023667-Michael-Jackson.html">
+      Michael Jackson
+    </a> - <time datetime="2017-06-06T03:24:38Z" title="2017-06-06T03:24:38Z" data-datetime="calendar">June 06, 2017 03:24</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <p><span class="wysiwyg-font-size-medium">OoklaServer is our TCP based server daemon that provides standalone testing. The following instructions are for Unix/Linux server platforms.</span></p>
+<h3><span class="wysiwyg-font-size-large">Download the install script</span></h3>
+<ol>
+<li><span class="wysiwyg-font-size-medium">Open terminal and navigate to your desired install directory. This directory should not web accessible. We recommend using a non-root user to download and use this script.</span></li>
+<li><span class="wysiwyg-font-size-medium">Download the script</span>
+<ul>
+<li><span class="wysiwyg-font-size-medium">Linux</span>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">wget http://install.speedtest.net/ooklaserver/ooklaserver.sh</span></pre>
+</li>
+<li><span class="wysiwyg-font-size-medium">OS X</span>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">curl -O http://install.speedtest.net/ooklaserver/ooklaserver.sh</span></pre>
+</li>
+</ul>
+</li>
+<li><span class="wysiwyg-font-size-medium">Update script permissions to allow installation</span>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">chmod a+x ooklaserver.sh</span></pre>
+</li>
+</ol>
+<p><span class="wysiwyg-font-size-medium">If you have problems downloading or using the ooklaserver.sh script read the "Manual Installation" section at the end of this article.</span></p>
+<h3><span class="wysiwyg-font-size-large">Install the server daemon</span></h3>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">./ooklaserver.sh install</span></pre>
+<p><span class="wysiwyg-font-size-medium">The script will now automatically detect your server's OS and, after confirming your platform, download the appropriate version of the daemon. Once the daemon is installed, it will start running.</span></p>
+<p><span class="wysiwyg-font-size-medium">If you have problems downloading or using the ooklaserver.sh script read the "Manual Installation" section at the end of this article.</span></p>
+<p><span class="wysiwyg-font-size-medium"><strong>Note:</strong> We recommend installing and running OoklaServer as a non-root user for security purposes.</span></p>
+<h3><span class="wysiwyg-font-size-large">Ensure server daemon starts automatically</span></h3>
+<p><span class="wysiwyg-font-size-medium">The OoklaServer Daemon can easily be configured to start automatically. CentOS, Fedora, Debian, and most distributions derived from any of the three, all execute a script called rc.local once all system processes have started. Editing this script to include a reference to the OoklaServer Daemon will cause the daemon to start automatically at boot.</span></p>
+<p><span class="wysiwyg-underline wysiwyg-font-size-medium">CentOS/Fedora based systems:</span></p>
+<pre class="kb-code"><span class="wysiwyg-font-size-medium">/etc/rc.d/rc.local</span></pre>
+<p><span class="wysiwyg-underline wysiwyg-font-size-medium">Debian based systems:</span></p>
+<pre class="kb-code"><span class="wysiwyg-font-size-medium">/etc/rc.local<br /></span></pre>
+<p><span class="wysiwyg-font-size-medium">If you do not want to run OoklaServer as root (recommended) create a user to run OoklaServer.</span></p>
+<p><span class="wysiwyg-font-size-medium">Edit rc.local to include the following command to start the OoklaServer Daemon silently in the background. Change "ooklauser" to your non-root user that will run OoklaServer.</span></p>
+<p><em><span class="wysiwyg-font-size-medium">su ooklauser -c './full_path_to_your_Ookla_Server_Daemon/OoklaServer --daemon'</span></em></p>
+<h3><span class="wysiwyg-font-size-large">Managing the daemon</span></h3>
+<p><span class="wysiwyg-font-size-medium">To manage the OoklaServer Daemon, the following commands are available:</span></p>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">./ooklaserver.sh start
+./ooklaserver.sh restart
+./ooklaserver.sh stop</span></pre>
+<p><span class="wysiwyg-font-size-medium">For more information on each command, please view the help prompt by running the following:</span></p>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">./ooklaserver.sh -h</span></pre>
+<h3><span class="wysiwyg-font-size-large">Verify Installation </span></h3>
+<div><span class="wysiwyg-font-size-medium">You should now be able to use the <a href="http://www.ookla.com/hosttester.php">Server Tester</a> to verify your OoklaServer installation is working properly. For more information on testing your server review our "<a href="234578708-Using-the-Server-Tester.html">Using the Server Tester</a>" article. Your OoklaServer URL should use the following format:</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">speedtest.mycompany.com:8080</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">For more information on why OoklaServer testing might fail please review our "<a href="115000282232-Why-is-OoklaServer-testing-failing-on-my-server-.html">Why is OoklaServer testing failing on my server?</a>" article.</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">Once testing passes you can proceed with <a href="234578568-How-To-Install-Submit-Server.html">settings up and submitting</a> your server.</span></div>
+<div>
+<h3><span class="wysiwyg-font-size-large">Manual Installation </span></h3>
+</div>
+<div>
+<p><span class="wysiwyg-font-size-medium">Some server owners have issues using the install script due to firewalls or other limiting factors. You may download the <a href="http://install.speedtest.net/ooklaserver/stable/OoklaServer.tgz">OoklaServer files</a> directly. </span></p>
+<p><span class="wysiwyg-font-size-medium">1. After downloading the files choose the appropriate platform files for your server.</span></p>
+<p><span class="wysiwyg-font-size-medium">2. You will need to make the OoklaServer binary executable:</span></p>
+<pre class="kb-log"><span class="wysiwyg-font-size-medium">chmod a+x OoklaServer</span></pre>
+<span class="wysiwyg-font-size-medium">3. The OoklaServer.properties.default file should be renamed to OoklaServer.properties otherwise a built in default configuration will be used.</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">4. Start OoklaServer in daemon mode by running the following command:</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">"./OoklaServer --daemon"</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">5. Follow the steps above for "Ensure server daemon starts automatically"</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">6. Following the steps above for "Verify Installation"</span></div>
+<div> </div>
+<div><span class="wysiwyg-font-size-medium">Note: You can start OoklaServer without the --daemon flag to get log output to the console for troubleshooting.</span></div>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="../signinbb3b.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-OoklaServer-Installation-Linux-Unix"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="../signinbb3b.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-OoklaServer-Installation-Linux-Unix"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">3 out of 3 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=OoklaServer+Installation+-+Linux+%2F+Unix&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-OoklaServer-Installation-Linux-Unix" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=OoklaServer+Installation+-+Linux+%2F+Unix&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-OoklaServer-Installation-Linux-Unix" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=OoklaServer+Installation+-+Linux+%2F+Unix&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-OoklaServer-Installation-Linux-Unix" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234578528-OoklaServer-Installation-Linux-Unix" class="share-googleplus">Google+</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="../requests/new.html">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="http://consent.truste.com/notice?domain=ziffdavis.com&amp;c=teconsent&amp;js=bb&amp;noticeType=bb" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/assets/locales/en-us-81bc1ea51b70d411a7857e0f6f67df60.js"></script>
+  <script src="../../../../ookla.zendesk.com/auth/v2/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234578528-Ookla-Server-Installation-Linux-Unix" data-theme="hc" data-locale="1" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="../../../../p13.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//p13.zdassets.com/hc/assets/","current_session":{"locale":"en-us","csrf_token":"jik2xKgOUUq8PBAEP5hAgLUDTu7aFOixYqjRK0t+6xJrnNaO244OkjciMSFSp/uF7vZRe4ZB/mRwe6gnChcxSg==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234578528","current_record_url":"/hc/en-us/articles/234578528-OoklaServer-Installation-Linux-Unix","current_record_title":"OoklaServer Installation - Linux / Unix","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234578528-OoklaServer-Installation-Linux-Unix","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"has_anonymous_kb_voting":false,"has_advanced_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_automatic_answers":false,"embeddables_connect_ipms":false},"embeddables_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.ookla.com/hc/admin/user_segments?locale=en-us","import_articles_url":"https://support.ookla.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_multiselect_field":true,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_web_form_enabled":false,"has_answer_bot_embeddable_standalone":true,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/billing","has_answer_bot":true,"has_guide_docs_importer":false,"answer_bot_management_url":"https://support.ookla.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false};
+</script>
+
+  <script src="../../../../p13.zdassets.com/hc/assets/hc_enduser-99ecbf6c6034819f1a2d9f538431319f.js"></script>
+  
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "../../tracking/eventsba3c.html?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST.html", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7BzoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEYGL7DQ==--b735b8bcd3bb2f5aaa126dd14a08757617cf04c6");
+})();
+
+  </script>
+</body>
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234578528-Ookla-Server-Installation-Linux-Unix by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:44:52 GMT -->
+</html>

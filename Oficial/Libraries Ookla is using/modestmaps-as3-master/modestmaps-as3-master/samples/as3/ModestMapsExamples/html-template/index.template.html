@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>${title}</title>
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript" src="swfmacmousewheel2.js"></script>
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                overflow: hidden;
+            }
+            body {
+                background: ${bgcolor};
+                font: 76% Arial, sans-serif;
+                margin: 0;
+            }
+            #${application} {
+                height: 100%;
+            }
+        </style>        
+    </head>
+    <body>
+
+        <div id="${application}">
+            <p> This text is replaced by the Flash content</p>
+        </div>
+
+        <script type="text/javascript">
+
+var flashvars = {};
+
+var params = {
+	allowscriptaccess: "always",
+	allowfullscreen: true,
+	menu: true
+};
+
+var attributes = {};
+attributes.name = "${application}";
+attributes.id = "${application}";
+
+swfobject.embedSWF("${application}.swf", "${application}", "${width}", "${height}", "9.0.28.", false, flashvars, params, attributes);
+swfmacmousewheel.registerObject(attributes.id);
+
+        </script>
+        
+    </body>
+</html>

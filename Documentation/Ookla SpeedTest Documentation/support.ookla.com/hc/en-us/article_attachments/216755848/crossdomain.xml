@@ -1,0 +1,4 @@
+<cross-domain-policy>
+  <allow-access-from domain="*.ookla.com" />
+  <allow-access-from domain="*.speedtest.net" />
+</cross-domain-policy>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577588-NetGauge-Linux-Unix-Server-Daemon-Installation by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:34:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <!-- v13473 -->
+  <title>NetGauge: Linux &amp; Unix Server Daemon Installation &ndash; Ookla</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="vhpYwz3lSOwyQImB4VzNEe6P+oD0abvX75J2umzjthdbr7iJTmUXNLleqKSMY3YUtXrlFag8rQL9QQ+2LYpsTw==" />
+  <meta name="description" content="There are two options to install and control the NetGauge OoklaServer daemon.      Using a Shell Script (This is the recommended default..." /><meta property="og:image" content="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ookla" />
+<meta property="og:title" content="NetGauge: Linux &amp; Unix Server Daemon Installation" />
+<meta property="og:description" content="There are two options to install and control the NetGauge OoklaServer daemon.
+
+
+Using a Shell Script (This is the recommended default option for Linux/Unix-Based Servers)
+
+
+Manually via Termin..." />
+<meta property="og:url" content="234577588-NetGauge-Linux-Unix-Server-Daemon-Installation.html" />
+<link rel="canonical" href="234577588-NetGauge-Linux-Unix-Server-Daemon-Installation.html" />
+<link rel="alternate" hreflang="en" href="234577588-NetGauge-Linux-Unix-Server-Daemon-Installation.html" />
+
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+  <link rel="stylesheet" media="all" href="../../../../p13.zdassets.com/hc/assets/application-3b0b6df180f05e3fa954d2e4d90e4600.css" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../p13.zdassets.com/hc/themes/129506/213867488/style-7e0d52207fcad1926c0e889e5c777db42e21.css?brand_id=3273006&amp;locale=en-us" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://p13.zdassets.com/hc/settings_assets/129506/200332267/QivmyxkSUPNT3DWHleS9Ew-favicon.ico" />
+
+  <!--[if lt IE 9]>
+  <script>
+    //Enable HTML5 elements for <IE9
+    'abbr article aside audio bdi canvas data datalist details dialog \
+    figcaption figure footer header hgroup main mark meter nav output \
+    progress section summary template time video'.replace(/\w+/g,function(n){document.createElement(n)});
+  </script>
+<![endif]-->
+
+  <script src="../../../../p13.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
+  
+  
+  
+
+  <!-- add code here that should appear in the document head -->
+<link rel="stylesheet" type="text/css" href="../../../../www.ookla.com/fonts/519942/937932A6FB329E5FC.css" />
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/themes/129506/213867488/script-7e0d52207fcad1926c0e889e5c777db42e21.js?brand_id=3273006&amp;locale=en-us"></script>
+</head>
+<body class="">
+  
+  
+
+
+  
+
+
+  <div id="consent_blackbar"></div>
+<header class="header">
+  <div class="header-inner clearfix">
+    <div class="logo"><a title="Home" href="../../en-us.html">
+      <img src="http://p13.zdassets.com/hc/settings_assets/129506/200332267/LG2vzklQtF3ViVrkVldoZw-speedtest-logo-white.svg" alt="Logo">
+    </a></div>
+    <nav class="user-nav">
+      
+      <a class="submit-a-request" href="https://www.ookla.com/support-form">Submit a request</a>
+        <a class="login" data-auth-action="signin" role="button" href="../signinfadc.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation&amp;locale=1">Sign in</a>
+
+    </nav>
+  </div>
+</header>
+
+<div class="search-unit">
+  <form role="search" class="search" data-search="" action="https://support.ookla.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search" aria-label="Search" />
+<input type="submit" name="commit" value="Search" /></form>
+</div>
+
+
+  <main role="main">
+    <ol class="breadcrumbs">
+  
+    <li title="Ookla">
+      
+        <a href="../../en-us.html">Ookla</a>
+      
+    </li>
+  
+    <li title="NetGauge">
+      
+        <a href="../categories/204419828-NetGauge.html">NetGauge</a>
+      
+    </li>
+  
+    <li title="Installation">
+      
+        <a href="../sections/207030348-Installation.html">Installation</a>
+      
+    </li>
+  
+</ol>
+
+
+<article>
+  <header class="knowledge-page-header">
+    <h1> NetGauge: Linux &amp; Unix Server Daemon Installation</h1>
+    <p title="Team Ookla">
+      Team Ookla
+     - <time datetime="2017-01-23T08:47:40Z" title="2017-01-23T08:47:40Z" data-datetime="calendar">January 23, 2017 08:47</time></p>
+  </header>
+  <div class="article-column">
+    <div class="content-body article-body">
+      <h3>There are two options to install and control the NetGauge OoklaServer daemon.</h3>
+<ul>
+<li>
+<p>Using a Shell Script (This is the recommended default option for Linux/Unix-Based Servers)</p>
+</li>
+<li><a title="NetGauge: Server Daemon Setup (Manual Install)" href="https://support.ookla.com/entries/23310533-NetGauge-Server-Daemon-Setup-Manual-Install-" target="_blank">Manually via Terminal</a> (Windows Servers)</li>
+</ul>
+<p>&nbsp;</p>
+<h1><strong>Using a Shell Script (Linux/Unix only)</strong>&nbsp;</h1>
+<h3>Download the install script:</h3>
+<p>Run this command from your desired directory&nbsp;to download the install script:</p>
+<pre class="kb-log">curl -O http://install.speedtest.net/ooklaserver/ooklaserver.sh
+</pre>
+<p><img src="../../../attachments/token/9ebrdg2gtfbxty3/indexd89a.html?name=Download.png" alt="Download.png" width="600" />&nbsp;</p>
+<h3>Setup:</h3>
+<p>Update file permissions to allow installation:</p>
+<pre class="kb-log">chmod a+x ooklaserver.sh
+</pre>
+<h3><img src="../../../attachments/token/mgt226cs7ar9png/index98ff.html?name=Setup.png" alt="Setup.png" width="600" /></h3>
+<h3>How to use the installation and management script:</h3>
+<p>Use the following to view the Help prompt for Ookla Net Server:</p>
+<pre class="kb-log">./ooklaserver.sh -h</pre>
+<p><img src="../../../attachments/token/itvsk0jcgx67i7r/index3aa5.html?name=Help.png" alt="Help.png" width="600" /></p>
+<h3>Installation &amp; Startup:</h3>
+<pre class="kb-log">./ooklaserver.sh install
+</pre>
+<p>Upon confirmation of installation the shell script will start the Ookla Net Server installation.</p>
+<p>&nbsp;</p>
+<p>To manage Ookla Net Server, the following commands are available:</p>
+<pre class="kb-log">./ooklaserver.sh start
+./ooklaserver.sh restart
+./ooklaserver.sh stop</pre>
+<p>&nbsp;<img src="../../../attachments/token/wcdyarer5dbkbpk/indexf8e3.html?name=Installation.png" alt="Installation.png" width="600" /></p>
+<h3>Completion:</h3>
+<p>After Ookla Net Server has been successfully installed, verify that Ookla Net Server is externally accessible on the port it was configured for (the default is 8080). Note that both TCP and UDP port 8080 are required to be accessible. Open a browser and navigate to the host server's external IP or hostname on port 8080.</p>
+<p><strong>For Example:</strong></p>
+<pre class="kb-log">http://sea.speedtest.net:8080
+http://173.208.32.122:8080
+</pre>
+<p>A properly configured&nbsp;installation&nbsp;will return the following message:</p>
+<pre class="kb-log"><strong>OoklaServer</strong>
+It worked!</pre>
+<p>If&nbsp;Ookla Net Server&nbsp;is unavailable, please check the following:</p>
+<ul>
+<li>Ensure that no firewall or router is blocking access. The port must be open and accessible from the Internet.</li>
+<li>Verify that no other services or applications are using the port.</li>
+<li>Confirm&nbsp;Ookla Net Server&nbsp;is running:</li>
+</ul>
+<pre class="kb-log">ps -ef | grep OoklaServer</pre>
+<p>&nbsp;</p>
+<h3><strong>Optional</strong>: Edit OoklaServer.properties to change server settings</h3>
+<p>If desired, you can go back into the folder where you placed the server contents and edit the configuration file OoklaServer.properties. On Windows, edit this in a plain text editor such as Notepad (not Wordpad).</p>
+<p>Here are some of the options available:</p>
+<table>
+<tbody>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">Name</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">
+<p>Description</p>
+</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;OoklaServer.tcpPorts</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">
+<p>comma-separated list of TCP ports the server will listen to. By default we use 5060 and 8080, but this can be changed to any TCP ports.</p>
+</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;OoklaServer.udpPorts</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">
+<p>comma-separated list of UDP ports the server will listen to. By default we use 5060 and 8080, but this can be changed to any UDP ports.</p>
+</td>
+</tr>
+<tr>
+<td style="border-color: #8cacbb; background-color: #dee7ec; border-style: solid; border-width: 1px;">&nbsp;OoklaServer.maxThreads&nbsp;</td>
+<td style="border-color: #8cacbb; border-style: solid; border-width: 1px;">
+<p>The maximum number of concurrent threads allowed by the server. This will limit the number of concurrent connections. Note: a client using 8 threads would use 8 connections</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Related Article: <a title="NetGauge-Linux-Startup-Script-Options" href="https://support.ookla.com/entries/23471557-NetGauge-Linux-Startup-Script-Options" target="_blank">NetGauge: Linux Startup Script Options</a></strong></p>
+<p><strong><strong>Related <strong>Article</strong></strong>:&nbsp;<a title="NetGauge: Windows Daemon Setup (Registered Service)" href="https://support.ookla.com/entries/23019153-NetGauge-Windows-Daemon-Setup-Registered-Service" target="_blank">NetGauge: Windows Daemon Setup (Registered Service)</a></strong></p>
+<p><strong>Related Article: <a title="NetGauge: Server Daemon Setup (Manual Install)" href="https://support.ookla.com/entries/23310533-NetGauge-Server-Daemon-Setup-Manual-Install" target="_blank">NetGauge: Server Daemon Setup (Manual Install)</a></strong></p>
+<p><strong>Related Article: <a title="NetGauge: Client Installation &amp; Configuration" href="https://support.ookla.com/entries/22699676-netgauge-client-installation-configuration" target="_blank">NetGauge: Client Installation &amp; Configuration</a></strong></p>
+<p><strong>Related Article: <a title="NetGauge: End of Test Configuration" href="https://support.ookla.com/entries/22679642-netgauge-end-of-test-configuration" target="_blank">NetGauge: End of Test Configuration</a></strong></p>
+    </div>
+    <div class="article-attachments">
+      <ul class="attachments">
+        
+      </ul>
+    </div>
+    <footer class="article-footer clearfix">
+      
+        <div class="article-vote">
+          <span class="article-vote-question">Was this article helpful?</span>
+          <div class="article-vote-controls">
+            <a rel="nofollow" class="article-vote-up" title="Yes" aria-selected="false" data-auth-action="signin" href="../signinc172.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation"></a>
+            <a rel="nofollow" class="article-vote-down" title="No" aria-selected="false" data-auth-action="signin" href="../signinc172.html?return_to=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation"></a>
+          </div>
+          <small class="article-vote-count">
+            <span class="article-vote-label">4 out of 4 found this helpful</span>
+          </small>
+        </div>
+      
+      <ul class="share">
+  <li><a href="https://www.facebook.com/share.php?title=NetGauge%3A+Linux+%26+Unix+Server+Daemon+Installation&amp;u=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation" class="share-facebook">Facebook</a></li>
+  <li><a href="https://twitter.com/share?lang=en&amp;text=NetGauge%3A+Linux+%26amp%3B+Unix+Server+Daemon+Installation&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation" class="share-twitter">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Ookla&amp;title=NetGauge%3A+Linux+%26+Unix+Server+Daemon+Installation&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation" class="share-linkedin">LinkedIn</a></li>
+  <li><a href="https://plus.google.com/share?hl=en-us&amp;url=https%3A%2F%2Fsupport.ookla.com%2Fhc%2Fen-us%2Farticles%2F234577588-NetGauge-Linux-Unix-Server-Daemon-Installation" class="share-googleplus">Google+</a></li>
+</ul>
+
+    </footer>
+  </div>
+</article>
+
+<div class="article-column">
+  <div class="article-more-questions">
+    Have more questions? <a href="../requests/new.html">Submit a request</a>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <!-- Footer content -->
+  <div class="footer-inner">
+	  <div id="teconsent" style="display: none;"></div>
+  	<script async="async" src="http://consent.truste.com/notice?domain=ziffdavis.com&amp;c=teconsent&amp;js=bb&amp;noticeType=bb" crossorigin=""></script>
+  </div>
+</footer>
+
+
+
+  <!-- / -->
+
+  <script type="text/javascript" src="../../../../p13.zdassets.com/hc/assets/locales/en-us-81bc1ea51b70d411a7857e0f6f67df60.js"></script>
+  <script src="../../../../ookla.zendesk.com/auth/v2/host.js" data-brand-id="3273006" data-return-to="https://support.ookla.com/hc/en-us/articles/234577588-NetGauge-Linux-Unix-Server-Daemon-Installation" data-theme="hc" data-locale="1" data-auth-origin="3273006,true,true"></script>
+  <script type="text/javascript" src="../../../../p13.zdassets.com/assets/zendesk_pci_hc.v4.js"></script>
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"ookla","environment":"production","name":"Ookla"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":null,"role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//p13.zdassets.com/hc/assets/","current_session":{"locale":"en-us","csrf_token":"oL05hu1Q+HyA6pDPYFfyMInAPsTnlyxgSTCjHZmNL+tFCNnMntCnpAv0seoNaEk10jUhUbvCOrVb49oR2OT1sw==","shared_csrf_token":null},"settings":{"zopim_enabled":false,"spam_filter_enabled":true},"current_record_id":"234577588","current_record_url":"/hc/en-us/articles/234577588-NetGauge-Linux-Unix-Server-Daemon-Installation","current_record_title":"NetGauge: Linux \u0026 Unix Server Daemon Installation","search_results_count":null,"current_text_direction":"ltr","current_brand_url":"https://ookla.zendesk.com","current_host_mapping":"support.ookla.com","current_path":"/hc/en-us/articles/234577588-NetGauge-Linux-Unix-Server-Daemon-Installation","authentication_domain":"https://ookla.zendesk.com","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"has_anonymous_kb_voting":false,"has_advanced_upsell":false,"has_multi_language_help_center":true,"mobile_device":false,"mobile_site_enabled":true,"show_at_mentions":false,"has_copied_content":true,"embeddables_config":{"embeddables_web_widget":false,"embeddables_automatic_answers":false,"embeddables_connect_ipms":false},"embeddables_domain":"zendesk.com","answer_bot_subdomain":"static","plans_url":"https://support.ookla.com/hc/admin/plan?locale=en-us","manage_content_url":"https://support.ookla.com/hc/en-us","arrange_content_url":"https://support.ookla.com/hc/admin/arrange_contents?locale=en-us","general_settings_url":"https://support.ookla.com/hc/admin/general_settings?locale=en-us","user_segments_url":"https://support.ookla.com/hc/admin/user_segments?locale=en-us","import_articles_url":"https://support.ookla.com/hc/admin/import_articles?locale=en-us","has_community_enabled":false,"has_multiselect_field":true,"has_groups":true,"has_internal_sections":true,"has_organizations":true,"has_tag_restrictions":true,"has_answer_bot_web_form_enabled":false,"has_answer_bot_embeddable_standalone":true,"billing_url":"/access/return_to?return_to=https://ookla.zendesk.com/billing","has_answer_bot":true,"has_guide_docs_importer":false,"answer_bot_management_url":"https://support.ookla.com/hc/admin/answer_bot?locale=en-us","is_account_owner":false,"has_theming_templates":false,"theming_center_url":"https://support.ookla.com/theming","theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-preview","is_preview":false};
+</script>
+
+  <script src="../../../../p13.zdassets.com/hc/assets/hc_enduser-99ecbf6c6034819f1a2d9f538431319f.js"></script>
+  
+
+  <script type="text/javascript">
+    (function() {
+  var Tracker = {};
+
+  Tracker.track = function(eventName, data) {
+    var url = "../../tracking/eventsba3c.html?locale=en-us";
+
+    var payload = {
+      "event": eventName,
+      "data": data,
+      "referrer": document.referrer
+    };
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("POST.html", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+    xhr.send(JSON.stringify(payload));
+  };
+
+    Tracker.track("article_viewed", "BAh7BzoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkEtF77DQ==--921ab86547cd304eeb63cc0edde35d9b7913b5be");
+})();
+
+  </script>
+</body>
+
+<!-- Mirrored from support.ookla.com/hc/en-us/articles/234577588-NetGauge-Linux-Unix-Server-Daemon-Installation by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Feb 2018 22:34:58 GMT -->
+</html>
