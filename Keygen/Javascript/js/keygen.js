@@ -189,4 +189,4 @@ function GenerateKey (date, url, ServerCount, LicenseMode, product, version)
 	
 	
 	}
-console.log(GenerateKey("3/19/2034 08:00:00 GMT", "http://speedtest.windows.nt/speedtest.swf", 11, "BlackHost", "speedtest", "new"));
+//console.log(GenerateKey("3/19/2034 08:00:00 GMT", "http://speedtest.windows.nt/speedtest.swf", 11, "BlackHost", "speedtest", "new"));
