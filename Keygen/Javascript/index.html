@@ -1,12 +1,205 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>SpeedTest Keygen</title>
-<!--- Include JS Keygen ---->
-<script type="text/javascript" src="js/libs/Tools.js"></script>
-<script type="text/javascript" src="js/libs/md5.js"></script>
-<script type="text/javascript" src="js/keygen.js"></script>
-<!--- Include JS Keygen ---->
+  <meta charset="UTF-8">
+  <title>SpeedTest Keygen</title>
+  <script type="text/javascript" src="js/libs/Tools.js"></script>
+  <script type="text/javascript" src="js/libs/md5.js"></script>
+  <script type="text/javascript" src="js/keygen.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #2a2a3d;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 230, 230, 0.15);
+      width: 440px;
+      max-width: 95%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00e6e6;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 0.4rem;
+      background-color: #3a3a50;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 1.8rem;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #00e6e6;
+      color: #1e1e2f;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 5px 15px rgba(0, 230, 230, 0.3);
+    }
+
+    button:active {
+      background-color: #00bfbf;
+      transform: translateY(1px) scale(0.98);
+    }
+	
+	.output-wrapper {
+     position: relative;
+     margin-top: 1.5rem;
+  }
+
+	.output {
+	  background: #1e1e2f;
+	  border: 1px solid #333;
+	  padding: 12px;
+	  font-family: monospace;
+	  border-radius: 6px;
+	  overflow-y: auto;
+	  word-break: break-word;
+	  white-space: pre-wrap;
+	  display: inline-block;
+	  width: 93%;
+	}
+
+
+	.copy-btn {
+	  margin-top: 0.5rem;
+	  width: 100%;
+	  background-color: #00e6e6;
+	  color: #1e1e2f;
+	  border: none;
+	  border-radius: 6px;
+	  padding: 10px;
+	  font-size: 14px;
+	  font-weight: bold;
+	  cursor: pointer;
+	  transition: background-color 0.2s ease, transform 0.1s ease;
+	}
+	
+	.copy-btn:hover {
+	  background-color: #00cccc;
+	  transform: scale(1.01);
+	}
+	
+	.copy-btn:active {
+	  background-color: #00bfbf;
+	  transform: scale(0.98);
+	}
+  
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>SpeedTest Keygen</h1>
+
+    <label for="date">Date & Time</label>
+    <input type="datetime-local" id="date" value="2034-03-19T08:00">
+
+    <label for="url">URL</label>
+    <input type="text" id="url" value="http://speedtest.windows.nt/speedtest.swf">
+
+    <label for="serverCount">Server Count</label>
+    <input type="number" id="serverCount" value="11">
+
+    <label for="licenseMode">License Mode</label>
+    <select id="licenseMode">
+      <option value="Tag">Tag</option>
+      <option value="Server">Server</option>
+      <option value="Bound2HostName">Bound2HostName</option>
+      <option value="Bound2Domain">Bound2Domain</option>
+      <option value="Trial">Trial</option>
+      <option value="BlackHost">BlackHost</option>
+    </select>
+
+    <label for="product">Product</label>
+    <select id="product">
+      <option value="speedtest">speedtest</option>
+      <option value="netgauge">netgauge</option>
+    </select>
+
+    <label for="version">Version</label>
+    <select id="version">
+      <option value="new">new</option>
+      <option value="old">old</option>
+      <option value="current">current</option>
+    </select>
+
+    <button onclick="generate()">Generate Key</button>
+
+    <div class="output-wrapper">
+		<div class="output" id="output">Key will appear here...</div>
+		<button class="copy-btn" onclick="copyKey()">Copy</button>
+	</div>
+  </div>
+
+  <script>  
+    function generate() {
+      const rawDate = document.getElementById("date").value;
+      const localDate = new Date(rawDate);
+      const dateGMT = localDate.toUTCString(); // "3/19/2034 08:00:00 GMT"
+
+      const url = document.getElementById("url").value;
+      const serverCount = parseInt(document.getElementById("serverCount").value);
+      const licenseMode = document.getElementById("licenseMode").value;
+      const product = document.getElementById("product").value;
+      const version = document.getElementById("version").value;
+
+      try {
+        const key = GenerateKey(dateGMT, url, serverCount, licenseMode, product, version);
+        document.getElementById("output").innerText = key;
+      } catch (err) {
+        document.getElementById("output").innerText = "Error generating key: " + err.message;
+      }
+    }
+	
+	function copyKey() {
+		const output = document.getElementById("output");
+		const key = output.innerText;
+		
+		if (!key || key === "Key will appear here...") {
+			alert("No key to copy!");
+			return;
+		}
+		
+		navigator.clipboard.writeText(key).then(() => {
+			alert("Key copied to clipboard!");
+		}).catch(err => {
+			alert("Failed to copy key: " + err);
+		});
+	}
+	
+  </script>
 </body>
 </html>
